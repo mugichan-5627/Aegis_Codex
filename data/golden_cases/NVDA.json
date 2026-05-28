@@ -1,0 +1,16 @@
+{
+  "ticker": "NVDA",
+  "stress_scenario": "export_control_standard",
+  "assumptions": {
+    "revenue_haircut_pct": 28.5,
+    "margin_compression_bps": 420,
+    "wacc_premium_bps": 380,
+    "terminal_growth_delta": -1.4
+  },
+  "expected_output": {
+    "weighted_fair_value_range": [560, 630],
+    "bear_price_range": [440, 510],
+    "overvalued_pct_min": 20
+  },
+  "tolerance_pct": 5
+}

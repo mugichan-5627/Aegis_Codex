@@ -1,0 +1,16 @@
+{
+  "ticker": "TSM",
+  "stress_scenario": "taiwan_geopolitical_standard",
+  "assumptions": {
+    "revenue_haircut_pct": 22.0,
+    "margin_compression_bps": 330,
+    "wacc_premium_bps": 420,
+    "terminal_growth_delta": -1.2
+  },
+  "expected_output": {
+    "weighted_fair_value_range": [115, 135],
+    "bear_price_range": [108, 120],
+    "overvalued_pct_min": 15
+  },
+  "tolerance_pct": 5
+}

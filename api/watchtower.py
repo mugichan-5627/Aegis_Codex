@@ -1,0 +1,184 @@
+from __future__ import annotations
+
+import json
+import os
+import sys
+from http.server import BaseHTTPRequestHandler
+from pathlib import Path
+from typing import Any
+
+import yfinance as yf
+from dotenv import load_dotenv
+
+ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
+from lib.portfolio_manager import get_sector, validate_watchlist
+from lib.risk_engine import (
+    compute_chaos_index,
+    classify_severity,
+    count_keyword_hits,
+    fallback_keyword_hits,
+    failure_incident,
+    incident_description,
+    revenue_at_risk,
+    sector_label,
+    utc_timestamp,
+)
+from arize_mcp_client import arize_client
+
+
+load_dotenv(ROOT / ".env")
+
+
+def _json_response(handler: BaseHTTPRequestHandler, payload: dict, status: int = 200) -> None:
+    body = json.dumps(payload).encode("utf-8")
+    handler.send_response(status)
+    handler.send_header("Content-Type", "application/json")
+    handler.send_header("Access-Control-Allow-Origin", "*")
+    handler.send_header("Access-Control-Allow-Headers", "Content-Type")
+    handler.send_header("Access-Control-Allow-Methods", "POST, OPTIONS")
+    handler.send_header("Content-Length", str(len(body)))
+    handler.end_headers()
+    handler.wfile.write(body)
+
+
+def _read_json(handler: BaseHTTPRequestHandler) -> dict:
+    length = int(handler.headers.get("Content-Length", "0") or "0")
+    raw = handler.rfile.read(length).decode("utf-8") if length else "{}"
+    return json.loads(raw or "{}")
+
+
+def _vix() -> float:
+    try:
+        hist = yf.Ticker("^VIX").history(period="1d")
+        close = hist["Close"].dropna()
+        if not close.empty:
+            return round(float(close.iloc[-1]), 1)
+    except Exception:
+        pass
+    return 28.4
+
+
+def _drawdown(ticker: str) -> float:
+    hist = yf.Ticker(ticker).history(period="5d")
+    if hist is None or hist.empty:
+        return 0.0
+    open_5d = float(hist["Open"].dropna().iloc[0])
+    latest_close = float(hist["Close"].dropna().iloc[-1])
+    if open_5d == 0:
+        return 0.0
+    return round((latest_close - open_5d) / open_5d * 100, 1)
+
+
+def _tavily_hits(ticker: str) -> int:
+    key = os.environ.get("TAVILY_API_KEY", None)
+    if not key:
+        return fallback_keyword_hits(ticker)
+    try:
+        from tavily import TavilyClient
+
+        client = TavilyClient(api_key=key)
+        query = (
+            f"{ticker} export control OR sanctions OR geopolitical OR supply chain risk "
+            "site:reuters.com OR site:bloomberg.com"
+        )
+        result = client.search(query=query, max_results=8, search_depth="basic")
+        hits = count_keyword_hits(result)
+        return hits if hits > 0 else fallback_keyword_hits(ticker)
+    except Exception:
+        return fallback_keyword_hits(ticker)
+
+
+def scan_ticker(ticker: str, vix: float) -> dict:
+    drawdown_pct = _drawdown(ticker)
+    keyword_hits = _tavily_hits(ticker)
+    chaos = compute_chaos_index(drawdown_pct, vix, keyword_hits)
+    sector = sector_label(ticker, get_sector(ticker))
+    return {
+        "ticker": ticker,
+        "description": incident_description(ticker, sector, drawdown_pct, keyword_hits),
+        "chaos_index": chaos,
+        "revenue_at_risk_pct": revenue_at_risk(ticker),
+        "severity": classify_severity(chaos),
+        "sector": sector,
+        "drawdown_pct": drawdown_pct,
+        "vix": round(float(vix), 1),
+        "keyword_hits": int(keyword_hits),
+        "timestamp": utc_timestamp(),
+    }
+
+
+def handle(payload: dict[str, Any]) -> dict:
+    tickers = validate_watchlist(payload.get("tickers") or ["NVDA", "TSM", "ASML", "AMAT", "RELIANCE.NS"])
+    if not tickers:
+        tickers = ["NVDA", "TSM", "ASML", "AMAT", "RELIANCE.NS"]
+
+    vix = _vix()
+    
+    # 1. Initialize Arize trace
+    trace = arize_client.create_trace(name="Grounded Watchlist Scan", ticker=",".join(tickers))
+    trace_id = trace["trace_id"]
+    
+    incidents = []
+    for ticker in tickers:
+        # Start a span for each ticker
+        span = arize_client.start_span(trace_id=trace_id, name=f"Scan Ticker: {ticker}")
+        try:
+            inc = scan_ticker(ticker, vix)
+            incidents.append(inc)
+            arize_client.complete_span(
+                trace_id=trace_id,
+                span_id=span["span_id"],
+                inputs={"ticker": ticker, "vix": vix},
+                outputs=inc,
+                status="SUCCESS"
+            )
+        except Exception as exc:
+            inc = failure_incident(ticker, exc, vix)
+            incidents.append(inc)
+            arize_client.complete_span(
+                trace_id=trace_id,
+                span_id=span["span_id"],
+                inputs={"ticker": ticker, "vix": vix},
+                outputs=inc,
+                status="ERROR",
+                metadata={"error": str(exc)}
+            )
+
+    # 2. Finalize Arize trace
+    arize_client.complete_trace(trace_id=trace_id)
+    
+    # Extract trace from memory store to return to frontend
+    from arize_mcp_client import GLOBAL_TRACE_CONSOLE
+    matching_trace = None
+    for t in GLOBAL_TRACE_CONSOLE:
+        if t["trace_id"] == trace_id:
+            matching_trace = t.copy()
+            matching_trace["endpoint"] = arize_client.endpoint_url
+            break
+
+    return {
+        "incidents": incidents, 
+        "macro": {"vix": round(float(vix), 1), "scan_timestamp": utc_timestamp()},
+        "telemetry": matching_trace
+    }
+
+
+class handler(BaseHTTPRequestHandler):
+    def do_OPTIONS(self) -> None:
+        _json_response(self, {"ok": True})
+
+    def do_POST(self) -> None:
+        try:
+            _json_response(self, handle(_read_json(self)))
+        except Exception as exc:
+            _json_response(
+                self,
+                {
+                    "incidents": [failure_incident("UNKNOWN", exc)],
+                    "macro": {"vix": 0.0, "scan_timestamp": utc_timestamp()},
+                },
+                200,
+            )

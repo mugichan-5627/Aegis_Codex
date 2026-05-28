@@ -1,0 +1,390 @@
+
+================ SLIDE 1 ================
+Shape 1 (Text 1):
+  P0: [ MILAN AI WEEK HACKATHON — LIVE SYSTEM ]
+Shape 2 (Text 2):
+  P0: SWARM ACTIVE
+Shape 4 (Text 4):
+  P0: SWARM ACTIVE
+Shape 6 (Text 6):
+  P0: THREAT: HIGH
+Shape 13 (Text 13):
+  P0: [!]
+Shape 14 (Text 14):
+  P0: PROJECT DOOMSDAY
+Shape 16 (Text 16):
+  P0: MULTI-AGENT BLACK SWAN STRESS-TESTING ENGINE
+Shape 18 (Text 18):
+  P0: "Every portfolio has a breaking point. We find it in 60 seconds."
+Shape 20 (Text 20):
+  P0: 5
+Shape 21 (Text 21):
+  P0: AI AGENTS
+Shape 23 (Text 23):
+  P0: 6
+Shape 24 (Text 24):
+  P0: PARALLEL SEARCH VECTORS
+Shape 26 (Text 26):
+  P0: <60s
+Shape 27 (Text 27):
+  P0: ANALYSIS TIME
+Shape 29 (Text 29):
+  P0: BUILT WITH:  GOOGLE GEMINI 2.0 FLASH  |  TAVILY  |  STREAMLIT  |  PYTHON
+Shape 30 (Text 30):
+  P0: MOOSA  //  IIM KOZHIKODE  //  BATCH 29
+
+================ SLIDE 2 ================
+Shape 0 (Text 0):
+  P0: // 01  THE PROBLEM
+Shape 1 (Text 1):
+  P0: BLIND SPOTS KILL PORTFOLIOS
+Shape 5 (Text 5):
+  P0: [01] NORMAL DISTRIBUTION FAILURE
+Shape 6 (Text 6):
+  P0: Traditional models assume gaussian returns — they collapse precisely when tail risk materialises. 2008, COVID, SVB were not outliers. They were the model's blind spot.
+Shape 9 (Text 9):
+  P0: [02] SILOED RISK IDENTIFICATION
+Shape 10 (Text 10):
+  P0: Analysts identify risks in isolation, missing second-order cascades and geographic convergence. Risk [A] triggering Risk [B] triggering Risk [C] is invisible to current tools.
+Shape 13 (Text 13):
+  P0: [03] THE TOOLING GAP
+Shape 14 (Text 14):
+  P0: Existing tools are either too simplistic (flat % haircuts), too slow (weeks of manual scenario work), or black boxes with zero methodology transparency.
+Shape 17 (Text 17):
+  P0: THE GAP
+Shape 18 (Text 18):
+  P0: No tool exists that identifies specific, current Black Swan risks — validates them adversarially — maps geographic propagation — models contagion cascades — and computes distressed valuations. Transparently. In under 60 seconds.
+Shape 20 (Text 20):
+  P0: 93%
+Shape 21 (Text 21):
+  P0: OF INSTITUTIONAL INVESTORS CITE TAIL RISK AS #1 CONCERN
+Shape 22 (Text 22):
+  P0: YET ONLY 12% HAVE SYSTEMATIC TOOLS TO MODEL IT
+Shape 23 (Text 23):
+  P0: — CFA INSTITUTE 2024 SURVEY
+Shape 25 (Text 25):
+  P0: PROJECT DOOMSDAY — CONFIDENTIAL
+
+================ SLIDE 3 ================
+Shape 0 (Text 0):
+  P0: // 02  SYSTEM ARCHITECTURE
+Shape 1 (Text 1):
+  P0: HOW IT WORKS: 7-STEP PIPELINE
+Shape 5 (Text 5):
+  P0: 01
+Shape 6 (Text 6):
+  P0: USER INPUT
+Shape 7 (Text 7):
+  P0: Ticker + Chaos Level (0–1)
+Shape 11 (Text 11):
+  P0: 02
+Shape 12 (Text 12):
+  P0: WORLD STATE
+Shape 13 (Text 13):
+  P0: Live VIX / Oil / Gold / Yields → Global Fear Class
+Shape 17 (Text 17):
+  P0: 03
+Shape 18 (Text 18):
+  P0: COMPANY PROFILE
+Shape 19 (Text 19):
+  P0: Smart ticker resolve · Auto USD normalisation
+Shape 23 (Text 23):
+  P0: 04
+Shape 24 (Text 24):
+  P0: INTELLIGENCE SCAN
+Shape 25 (Text 25):
+  P0: 6 parallel Tavily vectors → Gemini synthesises 6 material risks
+Shape 28 (Text 28):
+  P0: 05
+Shape 29 (Text 29):
+  P0: ADVERSARIAL TRIBUNAL
+Shape 30 (Text 30):
+  P0: Bear ⟷ Bull ⟷ Judge — 3-agent debate per risk
+Shape 33 (Text 33):
+  P0: 06
+Shape 34 (Text 34):
+  P0: GEOGRAPHIC MAPPING
+Shape 35 (Text 35):
+  P0: Fracture nodes + curved convergence lines on Plotly globe
+Shape 38 (Text 38):
+  P0: 07
+Shape 39 (Text 39):
+  P0: VALUATION + CASCADE
+Shape 40 (Text 40):
+  P0: 5-path methodology · Contagion propagation · Transparent waterfall
+Shape 42 (Text 42):
+  P0: ◀  PHASE 1: INTELLIGENCE GATHERING
+Shape 43 (Text 43):
+  P0: ◀  PHASE 2: ANALYSIS & OUTPUT
+Shape 45 (Text 45):
+  P0: ⚡  5 AI AGENTS IN COORDINATION  ·  GEMINI 2.0 FLASH VIA GOOGLE AI STUDIO  ·  FAILOVER: NVIDIA NIM + FIREWORKS AI
+
+================ SLIDE 4 ================
+Shape 0 (Text 0):
+  P0: // 03  MULTI-AGENT SYSTEM
+Shape 1 (Text 1):
+  P0: 5 SPECIALIZED AGENTS IN COORDINATED SWARM
+Shape 5 (Text 5):
+  P0: INTELLIGENCE ANALYST
+Shape 6 (Text 6):
+  P0: RISK DISCOVERY
+Shape 8 (Text 8):
+  P0: T=0.5
+Shape 10 (Text 10):
+  P0: Synthesises 6 Tavily vectors + company fundamentals into geolocated risk scenarios with severity, probability & revenue-at-risk estimates.
+Shape 13 (Text 13):
+  P0: BEAR ADVOCATE
+Shape 14 (Text 14):
+  P0: PROSECUTION
+Shape 16 (Text 16):
+  P0: T=0.6
+Shape 18 (Text 18):
+  P0: Argues worst-case with historical precedents and catastrophic framing. Pushes severity UP. Adversarial counterweight.
+Shape 21 (Text 21):
+  P0: BULL ADVOCATE
+Shape 22 (Text 22):
+  P0: DEFENCE
+Shape 24 (Text 24):
+  P0: T=0.6
+Shape 26 (Text 26):
+  P0: Challenges evidence, presents mitigating factors, argues market has priced the risk in. Pushes severity DOWN.
+Shape 29 (Text 29):
+  P0: FRACTURE JUDGE
+Shape 30 (Text 30):
+  P0: FINAL VERDICT
+Shape 32 (Text 32):
+  P0: T=0.3
+Shape 34 (Text 34):
+  P0: Low-temperature, high-conviction. Calibrated rubric: 8+ catastrophic, 6–7 material, <4 dismissed. Final authority.
+Shape 37 (Text 37):
+  P0: CONTAGION MODELER
+Shape 38 (Text 38):
+  P0: CASCADE
+Shape 40 (Text 40):
+  P0: T=0.5
+Shape 42 (Text 42):
+  P0: Models 2nd / 3rd / 4th-order propagation. Traces how a shock cascades through P&L → credit → refinancing → capex.
+Shape 44 (Text 44):
+  P0: ▸  Single-agent = confirmation bias  ·  adversarial architecture forces steel-manning before judgment
+Shape 45 (Text 45):
+  P0: ▸  Mimics real IC process: Research Analyst → IC Debate → PM Decision  ·  Judge T=0.3 = calibrated low-variance verdicts
+
+================ SLIDE 5 ================
+Shape 0 (Text 0):
+  P0: // 04  DIFFERENTIATORS
+Shape 1 (Text 1):
+  P0: WHAT MAKES THIS DIFFERENT
+Shape 5 (Text 5):
+  P0: D1
+Shape 6 (Text 6):
+  P0: CONTEXT-AWARE VALUATION
+Shape 7 (Text 7):
+  P0: 5 distinct methodologies routed by company type. Banks get P/BV. Cyclicals get normalised EBITDA. High-growth gets EV/Revenue. Market-anchored, stressed downward only.
+Shape 10 (Text 10):
+  P0: D2
+Shape 11 (Text 11):
+  P0: GEOGRAPHIC INTELLIGENCE
+Shape 12 (Text 12):
+  P0: Every risk mapped to physical coordinates. Curved convergence lines show vulnerability concentration. Visual answer to: where on Earth is my exposure?
+Shape 15 (Text 15):
+  P0: D3
+Shape 16 (Text 16):
+  P0: CONTAGION CASCADES
+Shape 17 (Text 17):
+  P0: Models Risk A → Effect B → Effect C propagation. Compound correlation (ρ → 1) as chaos increases. Inspired by Kiyotaki-Moore credit cycles and Minsky Moments.
+Shape 20 (Text 20):
+  P0: D4
+Shape 21 (Text 21):
+  P0: FULL TRANSPARENCY
+Shape 22 (Text 22):
+  P0: Every formula shown with numbers plugged in. Every routing decision flagged. Every agent reasoning visible. Same inputs → same methodology → same output.
+Shape 25 (Text 25):
+  P0: DOOMSDAY vs. MARKET
+Shape 26 (Text 26):
+  P0: FEATURE
+Shape 27 (Text 27):
+  P0: OURS
+Shape 28 (Text 28):
+  P0: PEERS
+Shape 31 (Text 31):
+  P0: Adversarial validation
+Shape 32 (Text 32):
+  P0: ✓
+Shape 33 (Text 33):
+  P0: ✗
+Shape 34 (Text 34):
+  P0: Real-time intelligence
+Shape 35 (Text 35):
+  P0: ✓
+Shape 36 (Text 36):
+  P0: ✗
+Shape 38 (Text 38):
+  P0: Contagion cascade model
+Shape 39 (Text 39):
+  P0: ✓
+Shape 40 (Text 40):
+  P0: ✗
+Shape 41 (Text 41):
+  P0: Methodology transparency
+Shape 42 (Text 42):
+  P0: ✓
+Shape 43 (Text 43):
+  P0: ✗
+Shape 45 (Text 45):
+  P0: Indian market (NSE/BSE)
+Shape 46 (Text 46):
+  P0: ✓
+Shape 47 (Text 47):
+  P0: ✗
+Shape 48 (Text 48):
+  P0: Sub-60s analysis
+Shape 49 (Text 49):
+  P0: ✓
+Shape 50 (Text 50):
+  P0: Partial
+Shape 52 (Text 52):
+  P0: Geographic risk map
+Shape 53 (Text 53):
+  P0: ✓
+Shape 54 (Text 54):
+  P0: Partial
+Shape 55 (Text 55):
+  P0: 5 valuation engines
+Shape 56 (Text 56):
+  P0: ✓
+Shape 57 (Text 57):
+  P0: 1–2
+
+================ SLIDE 6 ================
+Shape 0 (Text 0):
+  P0: // 05  GO-TO-MARKET
+Shape 1 (Text 1):
+  P0: FROM HACKATHON TO PRODUCT
+Shape 4 (Text 4):
+  P0: $65B
+Shape 5 (Text 5):
+  P0: RISK ANALYTICS MARKET 2027
+Shape 7 (Text 7):
+  P0: $25K
+Shape 8 (Text 8):
+  P0: BLOOMBERG SEAT / YR
+Shape 10 (Text 10):
+  P0: $5M
+Shape 11 (Text 11):
+  P0: ANNUAL BESPOKE SCENARIO SPEND
+Shape 14 (Text 14):
+  P0: FREE
+Shape 15 (Text 15):
+  P0: $0
+Shape 16 (Text 16):
+  P0: Retail / Students
+Shape 18 (Text 18):
+  P0: 3 analyses/day  ·  Lead generation
+Shape 21 (Text 21):
+  P0: PRO
+Shape 22 (Text 22):
+  P0: $99–299/mo
+Shape 23 (Text 23):
+  P0: Analysts / RIAs / Funds
+Shape 25 (Text 25):
+  P0: Unlimited  ·  PDF export  ·  API access
+Shape 28 (Text 28):
+  P0: INSTITUTIONAL
+Shape 29 (Text 29):
+  P0: $2K–10K/mo
+Shape 30 (Text 30):
+  P0: Hedge Funds / PE / Family Offices
+Shape 32 (Text 32):
+  P0: Custom domains  ·  SEBI filings  ·  White-label
+Shape 35 (Text 35):
+  P0: API-AS-A-SERVICE
+Shape 36 (Text 36):
+  P0: Per-call
+Shape 37 (Text 37):
+  P0: Fintech / Robo-advisors
+Shape 39 (Text 39):
+  P0: Embed stress-test into existing products
+Shape 41 (Text 41):
+  P0: UNIT ECONOMICS — PRO TIER
+Shape 42 (Text 42):
+  P0: GEMINI API COST / ANALYSIS   $0.03–0.08
+Shape 43 (Text 43):
+  P0: TAVILY COST / ANALYSIS   $0.01–0.02
+Shape 44 (Text 44):
+  P0: GROSS MARGIN AT SCALE   >95%
+Shape 45 (Text 45):
+  P0: INDIAN MARKET (NSE/BSE) SUPPORT — MASSIVELY UNDERSERVED BY WESTERN TOOLS — KEY MOAT
+
+================ SLIDE 7 ================
+Shape 0 (Text 0):
+  P0: // 06  TECH STACK + ROADMAP
+Shape 1 (Text 1):
+  P0: BUILT WITH — NEXT 3–6 MONTHS
+Shape 5 (Text 5):
+  P0: PRIMARY AI
+Shape 6 (Text 6):
+  P0: Gemini 2.0 Flash
+Shape 8 (Text 8):
+  P0: Best latency/cost for structured JSON · Google AI Studio
+Shape 11 (Text 11):
+  P0: FAILOVER AI
+Shape 12 (Text 12):
+  P0: NVIDIA NIM (Llama 3.3 70B)
+Shape 14 (Text 14):
+  P0: Auto-switch if rate-limited — zero user disruption
+Shape 17 (Text 17):
+  P0: REAL-TIME SEARCH
+Shape 18 (Text 18):
+  P0: Tavily API
+Shape 20 (Text 20):
+  P0: Grounds AI in live events — no stale hallucinations
+Shape 23 (Text 23):
+  P0: FINANCIAL DATA
+Shape 24 (Text 24):
+  P0: yfinance
+Shape 26 (Text 26):
+  P0: Live prices, fundamentals, FX — 60+ global exchanges
+Shape 29 (Text 29):
+  P0: FRONTEND
+Shape 30 (Text 30):
+  P0: Streamlit
+Shape 32 (Text 32):
+  P0: Single Python file — deploy in minutes
+Shape 35 (Text 35):
+  P0: VISUALISATION
+Shape 36 (Text 36):
+  P0: Plotly
+Shape 38 (Text 38):
+  P0: Interactive maps (Scattermapbox) · Waterfall charts
+Shape 40 (Text 40):
+  P0: [ ROADMAP — NEXT 3–6 MONTHS ]
+Shape 43 (Text 43):
+  P0: NEXT
+Shape 44 (Text 44):
+  P0: SEC EDGAR 10-K Item 1A auto-parsing
+Shape 47 (Text 47):
+  P0: NEXT
+Shape 48 (Text 48):
+  P0: SEBI / BSE filing integration for Indian equities
+Shape 51 (Text 51):
+  P0: Q3
+Shape 52 (Text 52):
+  P0: Portfolio-level analysis + cross-holding correlation
+Shape 55 (Text 55):
+  P0: Q3
+Shape 56 (Text 56):
+  P0: PDF export: McKinsey-style IC memo
+Shape 59 (Text 59):
+  P0: Q4
+Shape 60 (Text 60):
+  P0: "Lying Gap" detection: news vs filing divergence = alpha signal
+Shape 63 (Text 63):
+  P0: Q4
+Shape 64 (Text 64):
+  P0: Macro feedback loops: Chaos >0.8 auto-adjusts VIX/Oil
+Shape 67 (Text 67):
+  P0: Q4
+Shape 68 (Text 68):
+  P0: Slack / Teams webhook alerts for watchlist stocks
+Shape 71 (Text 71):
+  P0: "The next crisis won't look like the last one. Doomsday doesn't predict which domino falls — it maps every domino, debates which are unstable, and calculates what happens when they all fall at once."

@@ -1,0 +1,2771 @@
+TRANSCRIPTION: OpenAI x Outskill | AI Builders Hackathon Kick-Off Call
+================================================================================
+
+[00:00:00] And reading books of old, the legends and the myths, Achilles and his gold,
+[00:00:27] Achilles and his gifts, Spider-Man's control, and Batman with his fist.
+[00:00:37] And clearly I don't see myself at all at last, but she said, where'd you want to go?
+[00:00:43] How much you want to risk?
+[00:00:45] I'm not looking for somebody with some superhuman gifts, some superhero, some fairy tale place,
+[00:00:55] just something I can tell you, somebody I can kiss, I want something just like this.
+[00:01:02] Ooo-oo-oo-oo, ooo-oo-oo-oo-oo, ooo-oo-oo-oo, ooo-oo-oo, ooo-oo-oo-oo, oh I want something just like this.
+[00:01:11] Oh, I want something just like this I want something just like this
+[00:01:32] Oh
+[00:02:02] I want somebody with some super human kiss
+[00:02:06] Some superhero
+[00:02:08] Some fairy tale place
+[00:02:10] Just something I can turn to
+[00:02:13] Somebody I can miss
+[00:02:15] I want something just like this
+[00:02:24] I want something just like this
+[00:02:33] I want something just like this
+[00:02:42] I want something just like this
+[00:02:52] Where'd she wanna go? How much you wanna miss?
+[00:02:56] I'm looking for somebody with some super human kiss
+[00:03:01] Some superhero
+[00:03:03] Some fairy tale place
+[00:03:05] Just something I can turn to
+[00:03:08] Somebody I can kiss
+[00:03:10] I want something just like this
+[00:03:13] I want something just like this
+[00:03:31] I want something just like this
+[00:03:35] I want something just like this
+[00:03:44] I want something just like this
+[00:04:05] I want something just like this
+[00:04:13] Hello, am I going to go?
+[00:04:23] Excuse me
+[00:04:25] Yeah, you just get started
+[00:04:27] I'm ready
+[00:04:29] Just click on the button
+[00:04:32] Yeah, in a minute
+[00:04:43] Look at the stars
+[00:04:56] Look how they shine from you
+[00:05:02] Everything you do
+[00:05:08] Yeah, they were all yellow
+[00:05:11] I came along
+[00:05:14] I wrote a song for you
+[00:05:19] And all the things you do
+[00:05:25] And it was called Yellow
+[00:05:34] Okay, so I'm connected with my audio now
+[00:05:39] Let me know whenever we are ready to start
+[00:05:49] Oh, I can't hear you
+[00:05:51] I think there's some background music here
+[00:05:53] Can you hear me now?
+[00:06:04] We'll just get started in a minute
+[00:06:07] Arjun and everyone who's listening
+[00:06:09] We'll just get started in a minute
+[00:06:10] People are still joining in
+[00:06:11] We have about 5.15 on the call
+[00:06:14] And yeah, perfect
+[00:06:18] Got it
+[00:06:19] Yeah, just let me know
+[00:06:20] I'm already, yes
+[00:06:21] Yeah, perfect
+[00:06:36] Let me know
+[00:06:37] I love you so
+[00:07:01] I slam a clock
+[00:07:03] I jump to crush for you
+[00:07:08] Oh, what a thing to do
+[00:07:20] Cause you are all yellow
+[00:07:27] I true a lie
+[00:07:29] I do a lie
+[00:07:32] And it was all yellow
+[00:07:46] Alright, let's get started
+[00:07:48] Let's get started
+[00:07:49] Can you all drop in the chat
+[00:07:52] Are you all able to hear me?
+[00:07:54] Can you all see all the raries?
+[00:07:56] Can we kick this off with all the energy that we got?
+[00:08:00] Perfect, we have about almost 600 people
+[00:08:02] And there are more joining in
+[00:08:04] But yeah, let me also turn my camera on
+[00:08:07] Welcome everybody
+[00:08:09] Welcome everybody
+[00:08:10] Are you all able to hear and see me?
+[00:08:12] Yeah
+[00:08:13] Perfect
+[00:08:14] I'll also spotlight Arjun with me here
+[00:08:17] So that we are all here
+[00:08:21] One second
+[00:08:23] Arjun, do you see the reactions?
+[00:08:25] Do you see what we have been able to do in last one week?
+[00:08:28] Yes
+[00:08:30] Yes, yes, yes
+[00:08:32] I see all that thumbs up
+[00:08:34] And a lot of interesting people join the call
+[00:08:36] Perfect
+[00:08:38] Folks, Arjun is joining in
+[00:08:40] He is travelling currently
+[00:08:42] And he is on his phone as you can actually see
+[00:08:44] Because Codex is making a lot of big
+[00:08:47] So he is making sure the world does it right
+[00:08:49] Welcome Arjun
+[00:08:50] Do you want to give them a quick head start
+[00:08:52] And yeah, I can sort of share them
+[00:08:55] After that
+[00:08:57] For sure, for sure
+[00:08:59] So I'll start with like a quick intro
+[00:09:01] And then also share about the build-a-thon
+[00:09:03] That we have planned for this entire week
+[00:09:06] So quick intro about me
+[00:09:08] I am Arjun
+[00:09:09] Currently I work at OpenAI
+[00:09:11] So particularly I am part of the GTM startups team over here
+[00:09:14] And I was also like the first solution
+[00:09:17] For the technical hires in India
+[00:09:19] I see some comment voices not coming
+[00:09:21] Can you just please confirm
+[00:09:23] If my voice is clear and loud
+[00:09:25] Yeah, I can hear
+[00:09:27] You can almost quickly confirm if you are able to hear him
+[00:09:29] Yeah, perfect
+[00:09:31] The reaction says, the chat says
+[00:09:33] Great
+[00:09:35] Yeah, I think it's all loud and clear
+[00:09:37] So yeah, I was just saying
+[00:09:38] Yeah, I was the first technical hire at OpenAI
+[00:09:40] And I particularly look at all these startups in Indian region
+[00:09:43] Along with my rest of the team
+[00:09:45] I currently am based out of Bangalore
+[00:09:47] So we have planned this whole
+[00:09:50] Codex build-a-thon along with
+[00:09:52] Like home and team from like growth school and outskill
+[00:09:56] So I think we were like very excited to take this forward
+[00:09:59] With the whole Indian startups and builders
+[00:10:02] Who could leverage the power of Codex
+[00:10:04] And build something like really interesting in this week's time
+[00:10:07] So like regarding the instructions and everything
+[00:10:10] I think it's all clear and it was also there on the Luma link
+[00:10:13] But we have still set up this call
+[00:10:15] So that if there's like any question or any
+[00:10:17] Anything that we are not clear off
+[00:10:19] We can use this particular meeting to answer all of your queries
+[00:10:23] But in general like so far since we have been behind Codex
+[00:10:26] Building this super application
+[00:10:28] We are very excited to see how
+[00:10:31] Indian users or Indian builders could leverage this super power
+[00:10:35] To build something which was not possible before
+[00:10:38] Now with all Codex super power where you have automation
+[00:10:41] Where you have GPT 5.5 model
+[00:10:43] Where it is able to do like insane amount of stuff
+[00:10:45] We have 1 million context length
+[00:10:47] Which it can remember like any big context history
+[00:10:50] For you to just continuously keep on working
+[00:10:52] And automating and building
+[00:10:54] So those kind of
+[00:10:56] These are like some super powers which are not available before
+[00:10:59] And now it is at disposal of
+[00:11:02] Disposable of like everyone here in India
+[00:11:04] So we just want like everyone get like familiar with
+[00:11:07] What is Codex and what possibilities are there for you
+[00:11:10] So now automate like daily workflows that you have
+[00:11:13] And also like build along with us for that
+[00:11:16] So I think at the end of this hackathon
+[00:11:18] We would want to see like lot of innovative use cases
+[00:11:21] That we at OpenAI haven't seen
+[00:11:24] So it would unlock like lot of new potential
+[00:11:26] Or the possibilities that we were not
+[00:11:29] Sure of how people could take up
+[00:11:31] And yeah I think it is from the adoption
+[00:11:34] Point of view also a great initiative by
+[00:11:37] Outside team and maybe us at OpenAI
+[00:11:40] Where we want this Codex
+[00:11:43] And agentic framework to be part of your lives now
+[00:11:46] Because since we have already used all the frontier
+[00:11:49] CPLs at all around the globe
+[00:11:52] Even Sinbergal who was the developer at OpenCLAW
+[00:11:55] He is now with OpenAI
+[00:11:57] So he has like 10 different terminals open at
+[00:12:00] 3 different monitors and his agents are always
+[00:12:03] Working in the background
+[00:12:05] So now we want to bring that same capability
+[00:12:07] In the hand of all of us
+[00:12:09] So that we can also be
+[00:12:11] We can upgrade our daily lifestyle and daily
+[00:12:13] Workflows to enhance our productivity
+[00:12:16] And yeah just focus on the things which are now
+[00:12:18] Required which is majorly how you design architecture
+[00:12:21] How you take decision and let the agent do
+[00:12:23] All the hard work which is
+[00:12:25] Which doesn't require like lot of
+[00:12:27] Mindological thinking
+[00:12:29] So yeah that is our initiative with Outskill
+[00:12:31] And that is how we want to take this forward
+[00:12:33] And I am very personally excited to see how
+[00:12:35] All of us builders in India
+[00:12:37] Are able to build innovative stuff
+[00:12:40] Out of that so yeah I think
+[00:12:42] I'll stop there and I think
+[00:12:44] Home you can take it forward from here
+[00:12:46] But if there is anything you want I can
+[00:12:48] Quickly answer that yeah
+[00:12:50] Perfect
+[00:12:51] No I think Arjun just one thing right
+[00:12:53] One question before we sort of let you go
+[00:12:55] I know that you had the kind so
+[00:12:57] What kind of ideas that you are most excited about
+[00:13:01] Since we sort of worked on the shortlisting together
+[00:13:03] In the next 7 days what kind of
+[00:13:05] Projects do you see getting shipped
+[00:13:07] Or something that people should focus on
+[00:13:09] That would be the final question for you
+[00:13:11] Right so something what we are looking
+[00:13:13] Over here is some kind of automation
+[00:13:15] So now we know like when there was no AI
+[00:13:17] When there was no agentic workflow
+[00:13:19] There was like lot of manual work
+[00:13:21] That we have been seeing
+[00:13:23] But now with AI we can like automate
+[00:13:25] Lot of stuff
+[00:13:26] We can like connect with like lot of MCP server
+[00:13:28] The skills or some plugins
+[00:13:30] Which are able to take action on your behalf
+[00:13:33] Even when you are not there
+[00:13:34] And only where there is like critical stuff
+[00:13:36] Which would require human in the review
+[00:13:38] It should be delegated to the human
+[00:13:40] But whatever like manual workflow
+[00:13:42] The general workflow that
+[00:13:44] That doesn't require like human input
+[00:13:46] Should be handled by agents
+[00:13:48] So now what we want to see
+[00:13:50] People building is something innovative
+[00:13:52] Which maybe we might have not thought about
+[00:13:54] But something related to where
+[00:13:56] Agents are there
+[00:13:57] They are able to automate like lot of stuff
+[00:13:59] And only the places where human review is required
+[00:14:01] Only put humans over there
+[00:14:03] So since now it's like very much possible
+[00:14:05] With codecs so that is one
+[00:14:07] Second thing that we are seeing
+[00:14:09] Like lot of people now you are working in
+[00:14:11] Maybe some enterprises
+[00:14:12] Some of the organization
+[00:14:13] There might be some people from colleges as well
+[00:14:15] So they might be seeing like lot of
+[00:14:17] Manual stuff
+[00:14:18] As a life progress
+[00:14:20] They encounter something
+[00:14:21] This is something manual
+[00:14:22] And maybe this could be automated
+[00:14:24] Maybe using codec or any other tool
+[00:14:26] So we want to see some new ideas
+[00:14:29] Or innovative ideas
+[00:14:30] Where these workflows can
+[00:14:39] As well so we can like schedule
+[00:14:41] Like a daily work
+[00:14:42] Or maybe it could be
+[00:14:44] Where it does
+[00:14:46] How one can place it
+[00:14:48] From a flat
+[00:14:49] It could get context on a calendar
+[00:14:51] It takes like all the information
+[00:14:53] With all your connectors
+[00:14:55] To an actionable task
+[00:14:57] On your behalf
+[00:14:58] So yeah I think these are
+[00:15:00] The things that we look forward to
+[00:15:02] And yeah once you like do submission
+[00:15:04] We would also like to see how you are able to
+[00:15:06] Leverage codecs
+[00:15:08] While you build whatever you build
+[00:15:10] So that is like another part
+[00:15:12] And innovation yeah that goes without saying
+[00:15:15] Got it
+[00:15:16] Perfect I think with that
+[00:15:18] I think I let Arjun leave for the day
+[00:15:22] You know I know he's busy definitely
+[00:15:25] And the voice was slightly cracking
+[00:15:27] Which his work is calling again
+[00:15:28] So I think that's a sign
+[00:15:30] Thank you so much Arjun for joining us
+[00:15:31] I think let me quickly take them through
+[00:15:33] What do we have in store for us
+[00:15:35] Over the next seven days
+[00:15:36] And I think yeah if you have something
+[00:15:38] We'd love to have you again sometime
+[00:15:41] Great great great
+[00:15:42] Yeah thank you
+[00:15:43] And thank you everyone for joining this
+[00:15:45] I'm sure like Homewood
+[00:15:46] Help you answer all the questions
+[00:15:47] But I'm always there at the back end
+[00:15:49] From the OpenAI team
+[00:15:50] Like looking and supervising this from our end
+[00:15:53] And would love to
+[00:15:54] Very excited to see what all you can build
+[00:15:56] And what submission we could have
+[00:15:58] So please give your best shot
+[00:16:00] At building what you do
+[00:16:01] And also please share everything on social media
+[00:16:03] So that we keep seeing
+[00:16:05] Like what you guys are building
+[00:16:06] So Homewood
+[00:16:07] Like give you like entire format
+[00:16:08] What to post, when to post
+[00:16:10] And how to make it social
+[00:16:11] So yeah I'm looking forward for it
+[00:16:13] Okay then Homewood
+[00:16:14] Thank you so much
+[00:16:15] I'll take a leave now
+[00:16:16] Thank you
+[00:16:17] Bye
+[00:16:19] Thank you Arjun for quickly joining
+[00:16:21] And setting the stage
+[00:16:22] I think folks what I'll do is
+[00:16:24] For the next sometime
+[00:16:25] I'll take you through
+[00:16:26] What do we have in store
+[00:16:27] And what's expected out of you
+[00:16:29] We have already about 750 people
+[00:16:31] That are in that
+[00:16:32] I stopped the chat for some time
+[00:16:34] Because I see people who are dropping links
+[00:16:36] Folks you will get the time of networking also
+[00:16:38] The hackathon is not really designed
+[00:16:40] To help you build products
+[00:16:41] But also
+[00:16:44] To sort of help you get the right network
+[00:16:46] But please do not spam
+[00:16:48] Let's all be professional
+[00:16:50] We are all professionals here
+[00:16:51] And over the next 7 days
+[00:16:53] We'll be doing a lot of shipping
+[00:16:55] And fun and learning as well
+[00:16:56] So as Arjun set the stage for us
+[00:16:59] I'll quickly share the screen
+[00:17:01] And sort of get started
+[00:17:03] On what we have in store for all of you
+[00:17:05] Okay
+[00:17:06] Give me one quick second
+[00:17:08] Perfect
+[00:17:09] The call will be going till 8pm
+[00:17:11] We'll try to finish till 8
+[00:17:12] And if you have questions
+[00:17:13] We'll stay back till 8.15
+[00:17:15] And do that as well
+[00:17:16] I'll try to answer all of the questions
+[00:17:19] In the next it's already there
+[00:17:20] But just in case if you are unable to
+[00:17:23] We'll take that questions done as well
+[00:17:25] And make sure most of you
+[00:17:27] Who can take
+[00:17:28] Who can be on camera
+[00:17:30] Please be on camera
+[00:17:31] We'd love to see all of you together as well
+[00:17:34] Normally we try to do this under a webinar
+[00:17:36] So we don't see you
+[00:17:38] But I think it would be wonderful to see you as well
+[00:17:40] For all of you who are raising hands
+[00:17:42] We'll come to that
+[00:17:43] Very quickly let me share what we have
+[00:17:45] Give me one second
+[00:17:47] I'll start sharing my screen
+[00:17:49] And the team will turn the chat on and off
+[00:17:51] As we go about it
+[00:17:53] Okay
+[00:17:54] One second
+[00:17:59] Perfect
+[00:18:00] Where are we
+[00:18:01] Where are we
+[00:18:02] Perfect
+[00:18:05] Perfect
+[00:18:06] Perfect
+[00:18:07] Can you all give a thumbs up
+[00:18:08] If you are all able to see the screen
+[00:18:10] Also in the chat
+[00:18:11] Just a quick yes
+[00:18:12] Would do
+[00:18:13] A quick yes
+[00:18:14] Would do
+[00:18:15] Perfect
+[00:18:16] Perfect
+[00:18:17] Perfect
+[00:18:18] Perfect
+[00:18:19] The chat will be off
+[00:18:20] Karthik
+[00:18:21] Turn the chat on and off
+[00:18:22] As I sort of go
+[00:18:23] You know
+[00:18:24] Indeed
+[00:18:25] In the other
+[00:18:26] Once again
+[00:18:27] We'll be back
+[00:18:28] In the next
+[00:18:29] We'll be back
+[00:18:30] In the next
+[00:18:31] We'll be back
+[00:18:33] Once again
+[00:18:34] Welcome everybody
+[00:18:35] To AI Builders Hackathon
+[00:18:37] We thought
+[00:18:38] Why not
+[00:18:39] You know
+[00:18:40] Two brands
+[00:18:41] Come together
+[00:18:42] Somebody who leads tech in the world
+[00:18:43] And somebody who leads education
+[00:18:44] Come together and build something interesting
+[00:18:46] So once again
+[00:18:47] Welcome
+[00:18:48] With genuine
+[00:18:49] Gratitude
+[00:18:50] You have come through
+[00:18:51] You know
+[00:18:52] Multiple channels
+[00:18:53] Most of you have seen
+[00:18:54] Are promotional ads
+[00:18:55] Not ads
+[00:18:56] The post on
+[00:18:57] Chat GPT
+[00:18:58] India's channel
+[00:18:59] Your outskills channel
+[00:19:00] Web ofs
+[00:19:01] You know
+[00:19:02] Quite a few things
+[00:19:03] So what we are going to do
+[00:19:04] Is we are going to build
+[00:19:05] And ship a product
+[00:19:06] In next seven days
+[00:19:07] And how exactly
+[00:19:08] We are here
+[00:19:09] To do that
+[00:19:10] Is what I'm going to cover
+[00:19:11] We are exactly at Monday
+[00:19:12] 7 PM
+[00:19:13] And we try to aim this
+[00:19:14] For a seven day thing
+[00:19:15] And end at
+[00:19:16] Sunday evening
+[00:19:17] 7 PM
+[00:19:18] Right
+[00:19:19] Now what exactly
+[00:19:20] This is going to look like
+[00:19:21] I'll quickly cover that
+[00:19:22] Most of you
+[00:19:23] Most of the questions
+[00:19:24] You already know
+[00:19:25] How a normal hackathon happens
+[00:19:26] But what are
+[00:19:27] We here to do
+[00:19:28] Along with you
+[00:19:29] Where can we help you
+[00:19:30] Because I'm going to go deeper
+[00:19:31] On slightly more
+[00:19:32] Okay
+[00:19:33] The chat will be on and off
+[00:19:34] As I said
+[00:19:35] So if you are not able to chat
+[00:19:36] It's not your
+[00:19:38] Problem or Zoom's problem
+[00:19:39] We have kept it off
+[00:19:40] At this point of time
+[00:19:41] Right
+[00:19:42] Whenever you sort of ask questions
+[00:19:43] We'll keep it on and off
+[00:19:44] Perfect
+[00:19:45] Let's get to it
+[00:19:46] So we wanted to sort of
+[00:19:47] Do a slightly more curated one
+[00:19:49] That's why you see
+[00:19:50] A lot of people coming in
+[00:19:52] We got almost
+[00:19:53] About 10,000 entries
+[00:19:55] In the last
+[00:19:56] 7 to 10 days
+[00:19:57] That we were able to promote
+[00:19:58] And
+[00:19:59] We thought
+[00:20:00] Okay
+[00:20:01] What do we do with
+[00:20:02] 10,000 people
+[00:20:03] Do we want to do
+[00:20:04] Such a big one
+[00:20:05] No
+[00:20:06] We wanted to make it
+[00:20:07] Slightly more curated one
+[00:20:08] So that is why we ask
+[00:20:09] For your LinkedIn profiles
+[00:20:10] That is why we ask you
+[00:20:11] For your ideas
+[00:20:12] And that is why we ask you
+[00:20:13] For your GitHub profile
+[00:20:14] So everybody
+[00:20:15] Went through a first
+[00:20:16] Shortlist of
+[00:20:17] 3,500 people
+[00:20:18] We told you
+[00:20:19] We may
+[00:20:20] Give you an outcome
+[00:20:21] In 24 hours
+[00:20:22] But we took slightly more time
+[00:20:23] Because of the
+[00:20:24] Response that we got
+[00:20:25] So almost 3,500 people
+[00:20:27] Came down
+[00:20:28] And in the last 2 days
+[00:20:29] In Saturday and Sunday
+[00:20:31] Is where we spend time
+[00:20:32] On actually drilling it down
+[00:20:33] To 1,000 people
+[00:20:34] That we shortlisted
+[00:20:35] Builders whose ideas
+[00:20:37] Were very interesting
+[00:20:39] A real pain point
+[00:20:40] That we think from our side
+[00:20:41] That could be a real addition
+[00:20:42] To the world
+[00:20:43] Along with that
+[00:20:44] You had a developer background
+[00:20:47] Either in your sort of work
+[00:20:49] Or in your GitHub activity
+[00:20:50] Either you are an indie hacker
+[00:20:51] Or you are a builder
+[00:20:52] Or you are a senior tech
+[00:20:53] Professional trying to solve
+[00:20:54] Right
+[00:20:55] In the chat
+[00:20:56] Very quickly
+[00:20:57] Which countries
+[00:20:58] You all are joining us from
+[00:21:00] Can we drop it in the chat
+[00:21:02] The chat is on now
+[00:21:03] Where are you joining in from
+[00:21:05] Quickly
+[00:21:07] Majority of you definitely
+[00:21:09] Will be from India
+[00:21:10] Definitely
+[00:21:11] But which region in India
+[00:21:12] Which region are you from India
+[00:21:18] Interesting
+[00:21:19] Interesting
+[00:21:20] Got it
+[00:21:21] And can you all type in
+[00:21:22] Who are you
+[00:21:23] Are you an indie hacker
+[00:21:25] Are you a tech professional
+[00:21:27] Are you an engineer
+[00:21:32] A lot of people are CTOs
+[00:21:34] Data analyst
+[00:21:35] Everyone around developer ecosystem
+[00:21:37] Is there with us
+[00:21:38] Love to see that
+[00:21:40] Wonderful
+[00:21:41] Wonderful
+[00:21:42] Wonderful
+[00:21:43] I'll keep the chat off
+[00:21:44] One more time
+[00:21:45] Perfect
+[00:21:46] Perfect
+[00:21:47] So if you have made it
+[00:21:48] If you have made it
+[00:21:49] Congratulations
+[00:21:50] If you did not hear it
+[00:21:51] On our emails
+[00:21:52] And WhatsApp before
+[00:21:54] Congratulations
+[00:21:55] You have made it
+[00:21:56] You are at least
+[00:21:57] In the first 10%
+[00:21:58] Of the 10,000 entries that we received
+[00:22:00] So in order to become the top 1%
+[00:22:03] That's what the next 7 days will decide
+[00:22:05] And how is where you get help
+[00:22:07] From us and the OpenAI team
+[00:22:09] Now welcome
+[00:22:10] Once again
+[00:22:11] What we are looking for is 4 things
+[00:22:12] This is what we are going to cover
+[00:22:13] In today's conversation
+[00:22:15] And you should have
+[00:22:16] Something live by the end of next 7 days
+[00:22:18] Is the single line outcome
+[00:22:20] Or the KPI
+[00:22:21] As you could say
+[00:22:22] AI has changed
+[00:22:23] How products get built
+[00:22:24] We used to take about
+[00:22:25] Good 3 months
+[00:22:26] To ideate
+[00:22:27] Plan
+[00:22:28] Strategize
+[00:22:29] Get to a dam
+[00:22:30] An ideation
+[00:22:31] And also launch our first
+[00:22:32] MVP would be looking like a 6 month journey
+[00:22:34] But today 1% can build
+[00:22:36] What once required an entire team
+[00:22:38] And a lot of you already
+[00:22:40] The idea that you submitted
+[00:22:41] You would already have a few
+[00:22:42] Very small version of the MVPs
+[00:22:44] Or prototypes already
+[00:22:46] In just 2 to 3 hours
+[00:22:47] If you spend good time
+[00:22:48] A first draft of MVP ships out
+[00:22:51] And that's what
+[00:22:53] Is the power of today
+[00:22:54] And there are agents
+[00:22:55] Which are already
+[00:22:56] 24-7
+[00:22:57] Running
+[00:22:58] Codex
+[00:22:59] Also very actively promoting
+[00:23:00] And working on that feature
+[00:23:01] Coming out
+[00:23:02] And what we are going to do
+[00:23:04] Is we are going to spend
+[00:23:05] Not just 2 hours
+[00:23:06] Or 24-7
+[00:23:07] We are just beyond that
+[00:23:08] We are going to share
+[00:23:09] A proper 7 day commitment
+[00:23:11] Now why 7 days?
+[00:23:12] You may be able to ship out
+[00:23:13] A good beautiful MVP
+[00:23:15] That you can share with your team
+[00:23:16] Use 10-15 members
+[00:23:17] Can use it
+[00:23:18] But it will still be limited to that
+[00:23:20] What we want to do
+[00:23:21] Is actually focus on developing
+[00:23:24] Something that could go live
+[00:23:25] To thousands of people
+[00:23:26] And something that comes out of you
+[00:23:29] So that's why
+[00:23:30] We have kept it a 7 day
+[00:23:31] And not a 1 day
+[00:23:32] Or a 2 day
+[00:23:33] Or a 3 day
+[00:23:34] Or a 24 day
+[00:23:35] Or a month long activity
+[00:23:36] Because that's the right amount of time
+[00:23:37] Required from all of us
+[00:23:39] You will be learning by building
+[00:23:41] If you have never built
+[00:23:42] A future before
+[00:23:43] A product before
+[00:23:44] And if your idea is selected
+[00:23:46] Okay, let me check this
+[00:23:47] Before we get details
+[00:23:48] Into that
+[00:23:50] How many of you are first time builders
+[00:23:52] And how many of you are
+[00:23:53] Second time
+[00:23:54] Or third time
+[00:23:55] Or fourth time builders
+[00:23:56] In the chat
+[00:23:57] In the chat
+[00:23:58] Is this your first time
+[00:23:59] Or are you a regular one
+[00:24:00] We have quite a mixed bag of audience
+[00:24:02] As I saw in the selection
+[00:24:04] But would like to see
+[00:24:05] In the chat as well quickly
+[00:24:10] A lot of you are regular builders
+[00:24:11] A lot of you are regular builders
+[00:24:12] So you exactly know
+[00:24:13] Exactly know the kind of product
+[00:24:15] Statements that people would be facing
+[00:24:16] But all of you are first time builders
+[00:24:18] It's going to be amazing
+[00:24:19] And as I said
+[00:24:21] It's not going to be just
+[00:24:22] You building in silos
+[00:24:23] You will get to meet
+[00:24:24] A lot of these people
+[00:24:25] Who are on the call with me
+[00:24:26] And we do a lot of activities
+[00:24:28] But all the ideas
+[00:24:30] All the products
+[00:24:31] Are going to be built individually
+[00:24:33] And these are the same idea
+[00:24:34] That you have sort of registered
+[00:24:37] On the portal with
+[00:24:38] So there are two ecosystems
+[00:24:39] And why we thought to do this
+[00:24:42] OpenAI which works at frontier
+[00:24:44] Of AI models and APIs
+[00:24:46] Along with the Codex ecosystem
+[00:24:47] Going very deep
+[00:24:48] Into developer ecosystem
+[00:24:49] And you know
+[00:24:50] Changing the plateau there
+[00:24:52] AI native workflows
+[00:24:53] Is what it is known for
+[00:24:55] And the kind of innovations
+[00:24:57] It has been able to do
+[00:24:58] And we actually believe
+[00:24:59] It's going to be the future of software
+[00:25:02] That goes to B2C and B2B ecosystems
+[00:25:06] And then you have Outskill
+[00:25:07] A lot of you
+[00:25:08] People know already
+[00:25:10] You come from our ecosystems already
+[00:25:11] Which is focused on
+[00:25:13] Building the developer ecosystem
+[00:25:16] Building on engineer's vertical
+[00:25:18] Very actively
+[00:25:19] And also
+[00:25:20] Looking at
+[00:25:21] Building the journalist vertical as well
+[00:25:23] We have been
+[00:25:24] From the time
+[00:25:25] ChatGPD launched
+[00:25:26] We were the first ones
+[00:25:28] In the world
+[00:25:29] To sort of launch the first
+[00:25:30] ChatGPD workshop
+[00:25:31] And today we are the first ones
+[00:25:32] To sort of
+[00:25:33] You know
+[00:25:34] Partner with OpenAI and
+[00:25:35] Bring this developer ecosystem
+[00:25:36] A tool
+[00:25:37] A platform
+[00:25:38] To sort of
+[00:25:39] You know
+[00:25:40] Propel from here
+[00:25:41] So we have had
+[00:25:42] Mentors web shift
+[00:25:43] We have had builders web shift
+[00:25:44] We have been
+[00:25:45] On the culture of
+[00:25:46] Shipping inside
+[00:25:47] Of a lot of our ecosystem
+[00:25:48] A lot of our programs
+[00:25:49] That we do are
+[00:25:50] You know
+[00:25:51] Almost at a nominal cost
+[00:25:52] Are completely free
+[00:25:53] Actually
+[00:25:54] Dedicating to build
+[00:25:55] The next generation of workforce
+[00:25:56] And it's truly an
+[00:25:57] Execution ecosystem
+[00:25:58] So why don't we join forces
+[00:26:00] And give that access
+[00:26:01] To OpenAI's capabilities
+[00:26:02] To the hands of people
+[00:26:04] Who are going to build
+[00:26:05] The future of tomorrow
+[00:26:06] Specifically India
+[00:26:07] Right?
+[00:26:08] And that's why
+[00:26:09] We did this
+[00:26:10] We are early in the year
+[00:26:11] In a lot of us
+[00:26:12] Know this
+[00:26:13] A lot of us are
+[00:26:14] First time builders
+[00:26:15] Of very few
+[00:26:16] But regular builders
+[00:26:17] Already know
+[00:26:18] Solo builders are winning today
+[00:26:19] It is the age of builders
+[00:26:21] Who can ship products
+[00:26:22] And distribution is also open
+[00:26:24] At the same time
+[00:26:25] It's not a way
+[00:26:26] Or you know
+[00:26:27] The time when you have to put money
+[00:26:29] And sort of a lot of
+[00:26:30] You know traction
+[00:26:31] Into just getting those distributions
+[00:26:33] But also
+[00:26:34] Now by going into a build
+[00:26:36] In public narrative
+[00:26:37] Doing a lot of activities outside
+[00:26:39] Along with building a product
+[00:26:40] You can get that distribution
+[00:26:42] And see actually traction
+[00:26:43] In your product
+[00:26:44] And execution today
+[00:26:45] Is cheap
+[00:26:46] There was a time
+[00:26:47] When all the engineering
+[00:26:48] Or building these MVPs
+[00:26:50] It used to cost a lot
+[00:26:51] In terms of hiring an agency
+[00:26:53] To test out the idea
+[00:26:54] Or building a product
+[00:26:55] Or you itself
+[00:26:56] You needed at least
+[00:26:57] 3 to 4 people
+[00:26:58] But today it doesn't
+[00:26:59] Right?
+[00:27:00] And that's what's
+[00:27:01] Making start-ups
+[00:27:02] Move faster
+[00:27:03] Right?
+[00:27:04] So there are 3 stages
+[00:27:05] That we are going to work on
+[00:27:06] During the next 7 days
+[00:27:07] The phase 1 is
+[00:27:08] Starting the build
+[00:27:09] Which is today
+[00:27:10] We have already
+[00:27:12] Gotten started
+[00:27:13] Right?
+[00:27:14] If you read the email properly
+[00:27:15] It was mentioned that
+[00:27:16] The next step is
+[00:27:17] Building
+[00:27:18] Right?
+[00:27:19] There are no hiccups
+[00:27:20] In between
+[00:27:21] What is required from you
+[00:27:22] At this point of time
+[00:27:23] Is building
+[00:27:24] You already submitted your ideas
+[00:27:26] Based on that
+[00:27:27] On which you got selected
+[00:27:28] The next step from here is
+[00:27:30] You will start to build on these ideas
+[00:27:32] And there will be 2 checkpoints
+[00:27:33] Right?
+[00:27:34] The first checkpoint
+[00:27:35] Will come in on day 3
+[00:27:36] Which is Wednesday
+[00:27:37] Right?
+[00:27:38] So what will happen is
+[00:27:39] It is an MVP checkpoint
+[00:27:40] Now what exactly MVP checkpoint is
+[00:27:42] Whatever ideas that you have
+[00:27:44] We would like to have a very small toy version of it
+[00:27:47] What is a toy version?
+[00:27:48] Something that is workable
+[00:27:50] It may not be beautiful
+[00:27:51] It may sort of not be a ready live product
+[00:27:54] But we would like to see
+[00:27:55] How your user flow comes in
+[00:27:57] What are your screens looking like
+[00:27:59] A very scrappy
+[00:28:00] 1st draft version of your idea
+[00:28:02] What exactly comes out of it
+[00:28:04] Right?
+[00:28:05] So that's phase 1
+[00:28:06] The 2nd phase will come in on Friday
+[00:28:09] Which is day 5
+[00:28:10] And at day 5
+[00:28:11] We will expect a working prototype from you
+[00:28:14] Something that is live
+[00:28:15] Something that's working
+[00:28:16] And which is demo ready
+[00:28:17] Right?
+[00:28:18] And at the end
+[00:28:19] By end of Sunday
+[00:28:20] We would expect you
+[00:28:22] We would expect you
+[00:28:23] To submit a 1 pager document
+[00:28:25] On why you selected this idea
+[00:28:27] What exactly your hypothesis is
+[00:28:29] To build and solve this
+[00:28:30] And at the same time
+[00:28:31] A live walkthrough
+[00:28:33] A demo of your product
+[00:28:35] You recording a video of
+[00:28:37] How you would give a demo
+[00:28:38] If you are picturing this product
+[00:28:40] If you are sort of taking into thousands of people
+[00:28:44] That's what we would expect from you
+[00:28:46] Now how exactly this is going to run through
+[00:28:48] I'll iterate one more time
+[00:28:50] Today we are at phase 1
+[00:28:52] Or day 1
+[00:28:53] You will start to build
+[00:28:54] Whichever idea that you have picked
+[00:28:55] That's the idea that you need to build on top of
+[00:28:57] If you want to change
+[00:28:59] We don't want you to change the idea
+[00:29:02] Because that's the main front of
+[00:29:04] Your submission and application
+[00:29:07] Once you submit
+[00:29:08] We will be matching in terms of
+[00:29:09] Whatever you have given us
+[00:29:10] In terms of idea
+[00:29:11] And what you actually build
+[00:29:12] Right?
+[00:29:13] So you may face side
+[00:29:14] Challenges there
+[00:29:15] Right now
+[00:29:16] What you need to do is
+[00:29:17] Whatever idea you have
+[00:29:18] Start slightly more researching
+[00:29:20] On okay
+[00:29:21] What is the TAM
+[00:29:22] Who exactly will be the target audience
+[00:29:24] Who exactly is this product going to help
+[00:29:26] And in what way
+[00:29:27] Right?
+[00:29:28] Start with that
+[00:29:29] And then start building an MVP
+[00:29:30] By day 3
+[00:29:31] Wetness day
+[00:29:32] Along with that
+[00:29:33] What you will receive from us
+[00:29:34] Is daily
+[00:29:35] You will receive nudges
+[00:29:36] And check in information
+[00:29:39] About what you should be able to get done
+[00:29:42] Right?
+[00:29:43] So daily you will receive an email
+[00:29:44] And a message on the WhatsApp community
+[00:29:46] And through your WhatsApp DM
+[00:29:48] Is what did you get done
+[00:29:50] With instruction of what you need to get done
+[00:29:52] On that particular day
+[00:29:53] Right?
+[00:29:54] You can go fast and slow
+[00:29:55] Depending on your pace
+[00:29:56] This is majorly to help the first time builders
+[00:29:58] Have some structure
+[00:29:59] And also people who are sort of working out
+[00:30:01] Or who have the
+[00:30:02] You know, time taking
+[00:30:03] And very dedicated jobs
+[00:30:05] You have that time
+[00:30:06] Right?
+[00:30:07] We expect you to spend about good
+[00:30:09] You know, 1 to 2 hours every day
+[00:30:11] To build this and sort of sharpen it
+[00:30:12] You can choose to do more or less
+[00:30:14] And you can choose to go fast and slow
+[00:30:16] Right?
+[00:30:17] That's completely on you
+[00:30:18] Now this hackathon
+[00:30:19] 50% is in your hands
+[00:30:21] And 50% is on our hands
+[00:30:22] We are the backbone
+[00:30:24] Of giving you steps
+[00:30:26] Of how you should think
+[00:30:27] How you should sharpen your ideas
+[00:30:29] How you should actually look at building an MVP
+[00:30:31] Where you would need help
+[00:30:32] And we will also
+[00:30:33] Keep on collecting questions
+[00:30:34] Every day when that happens
+[00:30:36] And your progress
+[00:30:37] Every day when that happens
+[00:30:38] And Wednesday once again
+[00:30:40] Is when there are 2 live sessions
+[00:30:42] That will happen
+[00:30:43] Right?
+[00:30:44] One is when we will do a session on
+[00:30:46] Wednesday at the same time
+[00:30:47] 7 p.m. IST
+[00:30:49] And next session
+[00:30:50] That will happen on Friday
+[00:30:52] Right?
+[00:30:53] Now what these sessions will help you with
+[00:30:54] These sessions will help you with
+[00:30:55] On a lot of questions
+[00:30:57] That you might get stuck with
+[00:30:58] Okay, I'm trying to build a healthcare app
+[00:31:01] I got stuck with this API
+[00:31:03] I got stuck with
+[00:31:04] I'm not able to find this data
+[00:31:05] Whatever these questions that you have
+[00:31:08] We'll cover that
+[00:31:09] Second, we'll also give you nitty-gritties
+[00:31:11] Of how can you use AI better
+[00:31:13] To sort of get to your outcome
+[00:31:15] Right?
+[00:31:16] What are the right way of using AI
+[00:31:18] What is the right way of saving tokens
+[00:31:20] Or sort of doing that
+[00:31:21] So we'll do a mix of workshop
+[00:31:23] And a Q&A
+[00:31:24] So you get that particular help
+[00:31:25] Friday
+[00:31:26] When we come back
+[00:31:27] On a session
+[00:31:28] Once again
+[00:31:29] We'll look at a lot of our MVPs
+[00:31:31] We'll share sort of feedback
+[00:31:32] On what exactly a lot of people have been able to achieve and build
+[00:31:36] And we'll give you some direction
+[00:31:37] In terms of how a business is built
+[00:31:40] How a product is built
+[00:31:41] What are the next steps
+[00:31:42] How do you validate the idea
+[00:31:44] And the user flow at the same time
+[00:31:46] So before we finish on Sunday
+[00:31:48] You have that feedback coming in
+[00:31:49] You have all the expertise that you need
+[00:31:52] In order to build not only a shippable version
+[00:31:54] But something that you can launch to thousands of people
+[00:31:57] They can use it and give you feedback
+[00:31:59] The idea, folks, of this hackathon is not only definitely
+[00:32:02] To build a shippable product
+[00:32:04] But also to see if we can help you get traction
+[00:32:07] And I'll tell you how we will enable that
+[00:32:09] If you are one of it
+[00:32:11] And you will go through definitely stages of it multiple times
+[00:32:15] And we'll keep on giving you this information on a daily basis
+[00:32:18] Through our emails and WhatsApp communications
+[00:32:20] But that's how this looks like
+[00:32:21] Three phases
+[00:32:22] First phase today
+[00:32:23] Start building on the idea that you have currently
+[00:32:25] Second
+[00:32:26] MVP checkpoint is on Wednesday
+[00:32:28] You will get forms to submit
+[00:32:30] And in way you should submit it
+[00:32:32] What the format would be
+[00:32:33] Phase 3
+[00:32:34] A final shippable prototype
+[00:32:36] And by Sunday a working application
+[00:32:38] That sort of can be used by multiple people
+[00:32:41] If we change anything
+[00:32:43] If we change anything
+[00:32:44] It will be actively communicated
+[00:32:46] And adjusted for in the next seven days itself
+[00:32:49] Okay
+[00:32:50] So that's how the next seven days are going to look like
+[00:32:52] I'll open the chat and ask one question
+[00:32:54] Are we all clear
+[00:32:56] Type all clear in the chat
+[00:33:00] I'll open the chat
+[00:33:02] Perfect
+[00:33:03] All clear in the chat
+[00:33:07] I'll take the questions also towards the end
+[00:33:09] All the doubts
+[00:33:10] All the doubts will come towards the end
+[00:33:12] I'll mention about codecs and credits in API
+[00:33:15] I know what questions you have
+[00:33:16] But all clear so far
+[00:33:18] All clear so far
+[00:33:19] All clear so far
+[00:33:26] Got it perfect
+[00:33:27] Perfect
+[00:33:28] Perfect
+[00:33:30] Perfect
+[00:33:31] So what we expect you to do
+[00:33:33] What we expect you to do is this
+[00:33:35] Right
+[00:33:37] We don't want you to think a lot about idea
+[00:33:40] I received
+[00:33:42] If not tens
+[00:33:43] At least fifty to seventy messages
+[00:33:45] On LinkedIn and email
+[00:33:47] That oh can you please open the application for one more day
+[00:33:50] I was thinking and sharpening the idea
+[00:33:52] But I couldn't submit
+[00:33:53] But we said
+[00:33:54] I'm sorry we can't do it
+[00:33:56] Right
+[00:33:57] We are not looking for perfection
+[00:33:59] We don't want a billion dollar product coming in seven days
+[00:34:02] That would be
+[00:34:04] Very different expectation
+[00:34:06] We don't want massive list of features
+[00:34:09] Okay I paid thousand agents in seven days
+[00:34:13] Or just taking a lot of time in just the research point
+[00:34:18] Right
+[00:34:19] We want fast execution
+[00:34:21] Right
+[00:34:22] What do you mean by fast execution
+[00:34:24] You have already picked out the problem
+[00:34:26] How can you solve that one problem
+[00:34:29] Very nicely
+[00:34:30] In very detail
+[00:34:31] And properly
+[00:34:33] And how do you keep on experimenting
+[00:34:35] Experimenting with different features
+[00:34:37] Different workflows to get to that solution faster
+[00:34:41] And how do you keep on shipping
+[00:34:43] How do you keep on shipping
+[00:34:44] What does that mean
+[00:34:45] When you execute fast
+[00:34:47] When you learn fast
+[00:34:48] If your idea is going to work
+[00:34:50] Not work
+[00:34:51] What changes you would want
+[00:34:52] How quickly are you able to ship
+[00:34:54] This will also be understood in your submissions
+[00:34:58] When you submit on Friday
+[00:35:00] When you submit on Wednesday
+[00:35:01] We'll also ask you about the iterations that you did
+[00:35:04] And understanding how exactly your mind thinks
+[00:35:07] In terms of product thinking
+[00:35:09] How do you build a product
+[00:35:10] How do you go from just building a very small workflow
+[00:35:13] A low fidelity design
+[00:35:15] To high fidelity design
+[00:35:16] To building a user journey
+[00:35:18] To making a MVP
+[00:35:19] To building a final product
+[00:35:22] So speed along with useful wins
+[00:35:25] Useful that your customer
+[00:35:27] That your potential customer or user would actually like
+[00:35:31] How do you make things better
+[00:35:32] Faster or cheaper for your customer
+[00:35:34] In any form or fashion
+[00:35:36] That is going to be one of the major criteria
+[00:35:38] For people who are going to win this
+[00:35:41] So five lenses
+[00:35:43] This is what the judging criteria is going to be
+[00:35:46] For the final products all of you submit
+[00:35:49] First of all technical execution
+[00:35:51] Does the project work
+[00:35:53] Is this technically credible
+[00:35:55] Does it have any bugs
+[00:35:57] Can this product actually go live in production
+[00:36:03] Can this product be hacked in one go
+[00:36:07] Whatever
+[00:36:08] That will give you much more specific ideas about going about that
+[00:36:11] That's why we have these sessions also
+[00:36:13] The first criteria once again would be technical execution
+[00:36:15] The second would be usefulness
+[00:36:18] Does it actually solve a real problem
+[00:36:20] A real workflow
+[00:36:23] Arjun spoke about a lot of workflows
+[00:36:25] That they are focusing on automation
+[00:36:27] That they are focusing on
+[00:36:28] Definitely that is one of the key idea
+[00:36:30] Whatever problem that you have fixed
+[00:36:32] That you have chosen
+[00:36:34] Are you able to actually solve it
+[00:36:36] And how easily
+[00:36:38] How efficiently are you able to solve it
+[00:36:41] Third
+[00:36:42] Creativity and originality
+[00:36:45] You know what
+[00:36:46] Let me tell you this
+[00:36:47] Out of all the 10,000 ideas that we received
+[00:36:50] If not less
+[00:36:51] About 700 people submitted
+[00:36:53] That we want to build an AI job board
+[00:36:57] Something that helps people find jobs
+[00:37:00] Sort out their resumes properly
+[00:37:03] Definitely we were looking for solutions like that also
+[00:37:06] But we are looking for something that is unique
+[00:37:08] Which is not done before
+[00:37:10] Something that is new in the AI native era
+[00:37:14] We don't want
+[00:37:15] Okay, humans do 10 steps
+[00:37:16] My agent can do same 10 steps faster
+[00:37:18] Great
+[00:37:19] But can you do it in 3 steps
+[00:37:21] What is the
+[00:37:22] What is the agentic UX
+[00:37:24] How exactly you think about agentic workflows
+[00:37:27] Is what the creativity and originality is going to be judged on
+[00:37:30] Is the idea
+[00:37:31] Or implementation
+[00:37:32] The way of implementation distinctive
+[00:37:35] Fourth
+[00:37:37] Codex usage
+[00:37:39] Did the builder meaningfully use codex
+[00:37:41] Not just mention it
+[00:37:42] Now a lot of you would have question
+[00:37:44] Are we getting chart GPD pro
+[00:37:46] Are we getting codex credits
+[00:37:48] Are we getting API from open AI
+[00:37:50] No folks
+[00:37:51] You are not getting any of these
+[00:37:53] You are not getting any of these
+[00:37:55] Right
+[00:37:56] What we expect from you is a
+[00:37:58] Bootstrap founder mindset
+[00:38:00] Imagine you don't have any resources
+[00:38:02] You only have free APIs available from open router
+[00:38:06] Or any other tool that you may want to use
+[00:38:08] Right
+[00:38:09] That's the stack that we will be using
+[00:38:11] But also whatever limits
+[00:38:14] Codex and chart GPD provides
+[00:38:16] How you are able to meaningfully integrate
+[00:38:18] That in your ecosystem
+[00:38:20] It's what going to be looked at also
+[00:38:22] Right
+[00:38:23] Did the builder meaningfully use codex
+[00:38:25] And not just mention
+[00:38:26] Oh we did this with codex
+[00:38:27] Great
+[00:38:28] But how meaningful part that was
+[00:38:30] So here
+[00:38:31] Once again
+[00:38:32] Your founder mindset is going to come in
+[00:38:34] That oh I
+[00:38:35] My problem had 10 steps to solve
+[00:38:37] Step 7 and 8 were the most meaningful
+[00:38:39] And that's where codex
+[00:38:40] Helped me get through it
+[00:38:42] So you are going to look out for that also
+[00:38:45] And finally
+[00:38:46] Finally
+[00:38:47] Presentation clarity
+[00:38:49] What do you mean by presentation clarity
+[00:38:52] Is exactly
+[00:38:53] When you do that demo
+[00:38:54] When you give us the recorded videos
+[00:38:56] You will get the submission criterias
+[00:38:58] As well
+[00:38:59] Basically
+[00:39:00] One the final submission will have
+[00:39:02] You will be running us through your products
+[00:39:04] While
+[00:39:06] While you will be actually
+[00:39:08] Let's say you are doing a demo
+[00:39:09] To a user
+[00:39:10] Or an investor
+[00:39:11] Give me one quick second
+[00:39:12] Sorry
+[00:39:13] Take problems
+[00:39:14] Charger
+[00:39:15] Never happens
+[00:39:16] But yeah
+[00:39:17] Perfect
+[00:39:18] So this is the 5 criterias
+[00:39:20] That we are going to look for very actively
+[00:39:22] Right
+[00:39:27] Wow
+[00:39:29] I think
+[00:39:30] I think whenever we do
+[00:39:32] Certain interesting initiatives
+[00:39:33] Lord Murphy
+[00:39:35] Always follows us
+[00:39:36] Murphy is Murphy's law
+[00:39:37] Whatever has to go wrong
+[00:39:38] Will go wrong
+[00:39:39] So our Zoom had a limit
+[00:39:41] And now my laptop was about to die
+[00:39:43] But regardless of that
+[00:39:44] Regardless of that
+[00:39:45] 5 lenses
+[00:39:46] 5
+[00:39:47] And all of this
+[00:39:48] Folks
+[00:39:49] This is 5 criterias
+[00:39:50] All of them will be given to you also
+[00:39:53] After this call is done
+[00:39:54] So that you can optimize for all of it
+[00:39:56] You will get a checklist
+[00:39:57] That you can benchmark your product against
+[00:39:59] And see what happens
+[00:40:00] It would not be like
+[00:40:02] Oh we are all
+[00:40:03] Oh we don't know what happened
+[00:40:04] How it is selected
+[00:40:05] All of that
+[00:40:06] You will be made completely clear
+[00:40:07] Try to keep as transparent
+[00:40:08] As possible from our side
+[00:40:09] In all terms and phases
+[00:40:11] So that's about the final selection criteria
+[00:40:15] Final
+[00:40:16] The top 5 winners who get selected
+[00:40:17] Will be sort of marked on these basis
+[00:40:20] In the chat
+[00:40:21] Are we all clear?
+[00:40:24] All clear in the chat
+[00:40:38] Perfect
+[00:40:39] Perfect
+[00:40:41] Perfect
+[00:40:45] Perfect
+[00:40:47] As I said
+[00:40:48] Right
+[00:40:49] As I said
+[00:40:50] We want you to think like a founder
+[00:40:52] Not just a solo builder
+[00:40:53] Right
+[00:40:54] One mindset basically talks about overbuilding
+[00:40:56] We already spoke about
+[00:40:57] You know
+[00:40:58] Perfectionism
+[00:40:59] We spoke about that
+[00:41:00] How actually you think about
+[00:41:01] One clear problem statement
+[00:41:02] Which is your idea
+[00:41:03] Only thing
+[00:41:04] How you can chain
+[00:41:05] You can modify your idea slightly
+[00:41:07] You can't change it completely
+[00:41:09] Right
+[00:41:10] If you said
+[00:41:11] Let's say for an example
+[00:41:12] I want to build a healthcare receptionist app
+[00:41:17] And now you want to change it to
+[00:41:18] Oh I want to build a healthcare admin app
+[00:41:21] That also solves for xyz features
+[00:41:23] If you want to go deeper into the same problem
+[00:41:25] You can do that
+[00:41:27] If you want to change the problem completely
+[00:41:29] Unfortunately that won't be considered
+[00:41:32] In the final selections
+[00:41:33] Right
+[00:41:34] One
+[00:41:35] Narrow
+[00:41:36] You can go slightly more narrow
+[00:41:37] But still useful
+[00:41:38] I wanted to do ten things
+[00:41:41] But I'm choosing to do two
+[00:41:43] But doing
+[00:41:44] Solving it very nicely
+[00:41:45] Right
+[00:41:46] I'm focusing on two out of ten features
+[00:41:48] That I wanted to build
+[00:41:49] And ship early
+[00:41:50] What do you mean by ship early?
+[00:41:51] Whatever you want to test
+[00:41:53] Whatever you think is the first
+[00:41:54] Sort of
+[00:41:55] You know
+[00:41:56] Workable solution
+[00:41:57] Ship that first
+[00:41:58] And then add the layers of it afterwards
+[00:42:00] Right
+[00:42:01] Demo clearly
+[00:42:02] I think
+[00:42:03] That instructions will come to you as well
+[00:42:05] We will sort of be
+[00:42:06] You know
+[00:42:07] Giving you that understanding
+[00:42:08] Along with collecting feedback
+[00:42:10] We not only want to do
+[00:42:11] Okay
+[00:42:12] I build an MVP
+[00:42:13] I submit on Wednesday
+[00:42:14] Great
+[00:42:15] I build
+[00:42:16] You know
+[00:42:17] A few more features
+[00:42:18] And add it
+[00:42:19] Till Friday
+[00:42:20] And submit it
+[00:42:21] Great
+[00:42:22] No
+[00:42:23] At every step
+[00:42:24] On a daily basis
+[00:42:25] We want you to
+[00:42:26] Validate your ideas
+[00:42:27] We want you to
+[00:42:28] Validate your user journey
+[00:42:29] We want you to
+[00:42:30] Validate
+[00:42:31] The final product
+[00:42:32] Collect a lot of feedback
+[00:42:33] And iterate
+[00:42:34] That's what experimentation means
+[00:42:36] And that's what we'll be judging as well
+[00:42:38] And how you will do that
+[00:42:39] I'll come to that in one bit
+[00:42:41] In one bit
+[00:42:42] In one very short bit
+[00:42:43] Right
+[00:42:44] Once again
+[00:42:45] The idea is not only to help you
+[00:42:46] Just ship a product
+[00:42:47] But also to validate your idea
+[00:42:50] And after seven days
+[00:42:51] You actually have something meaningful
+[00:42:53] That could become let's say
+[00:42:54] A 2K, 5K, 10K MRL business
+[00:42:56] Right
+[00:42:57] And we'll push you towards
+[00:42:58] That direction very actively
+[00:42:59] There will be challenges
+[00:43:01] There will be constraints
+[00:43:02] But that's where a founder mindset gets tested
+[00:43:04] And that's why you are one of the thousand people
+[00:43:07] In the country who have been selected
+[00:43:09] So if you don't believe
+[00:43:10] We do
+[00:43:11] That you can do it
+[00:43:12] And we will help you do that
+[00:43:13] Right
+[00:43:15] What painful problem can I solve
+[00:43:18] Is what we put in ideas
+[00:43:19] It was one of the major
+[00:43:21] It was one of the major
+[00:43:22] Ideas for us to accept
+[00:43:24] Your application
+[00:43:25] Now think about these five things
+[00:43:26] Right
+[00:43:27] Winning products
+[00:43:28] This is how they look like
+[00:43:29] Right
+[00:43:31] First of all
+[00:43:32] Are you making it cheap
+[00:43:34] Sort of you know
+[00:43:35] Time-wise
+[00:43:36] If you are saving time
+[00:43:37] Of anyone
+[00:43:38] How much
+[00:43:39] Are you automating
+[00:43:40] Someone's work
+[00:43:41] Or someone's version
+[00:43:42] Are you reducing
+[00:43:43] Friction in the process
+[00:43:44] A task needs
+[00:43:45] 15 steps
+[00:43:46] My agent
+[00:43:47] My workflow is able
+[00:43:48] To do it in three
+[00:43:49] Right
+[00:43:50] Increasing speed
+[00:43:51] At the same time
+[00:43:52] And then
+[00:43:53] Quality
+[00:43:54] Right
+[00:43:55] We'll
+[00:43:56] Once again
+[00:43:57] All of the things that you are seeing
+[00:43:58] You will receive it after the call
+[00:43:59] And the deck will also be shared
+[00:44:00] Along with specific ideas as well
+[00:44:02] And daily prompts
+[00:44:03] To how do you think
+[00:44:04] And keep on making better products
+[00:44:06] On these criteria as well
+[00:44:07] Right
+[00:44:08] But this is the mindset
+[00:44:10] And how we wanted to think about now
+[00:44:12] Distribution
+[00:44:13] Right
+[00:44:15] How many of you
+[00:44:16] All of you
+[00:44:17] Most of you who are regular founders
+[00:44:19] How many of you believe this
+[00:44:20] That 90% of products fail
+[00:44:23] Because of poor distribution
+[00:44:25] People have been able to make
+[00:44:26] Wonderful products
+[00:44:27] But
+[00:44:28] Only because they don't get
+[00:44:29] Right distribution
+[00:44:30] Or they don't know how to solve
+[00:44:31] For
+[00:44:32] Marketing or sales
+[00:44:33] Or whatever that distribution
+[00:44:34] Would be
+[00:44:35] Or organic distribution
+[00:44:36] They don't work out
+[00:44:37] Right
+[00:44:38] How many of you believe
+[00:44:39] Yes
+[00:44:40] No in the chat
+[00:44:41] Or you have been able to do something
+[00:44:42] But
+[00:44:43] I had a great idea
+[00:44:44] Great product
+[00:44:45] But nobody used it
+[00:44:46] How many of you have
+[00:44:47] Had this problem
+[00:44:48] Before?
+[00:44:50] And do you want to change
+[00:44:51] This in next seven days?
+[00:44:53] Do you want to actively
+[00:44:54] Work on changing
+[00:44:55] This in next seven days?
+[00:44:59] Let's change this
+[00:45:00] In the chat
+[00:45:01] Let's change this
+[00:45:19] Now
+[00:45:20] A lot of you had a question
+[00:45:22] Right
+[00:45:23] How do we actually help you
+[00:45:25] Build momentum and distribution
+[00:45:27] How do we help you
+[00:45:29] Building that distribution
+[00:45:31] Validating that idea
+[00:45:32] Now
+[00:45:33] We as an outskill
+[00:45:34] And open AI
+[00:45:35] Have been able to solve
+[00:45:36] One thing
+[00:45:37] Wonderfully well
+[00:45:38] Wonderfully well
+[00:45:39] There are multiple companies
+[00:45:40] In the globe
+[00:45:41] But only a few
+[00:45:42] Have been able to solve
+[00:45:43] For distribution properly
+[00:45:45] And we are here
+[00:45:46] To give you that arm
+[00:45:47] From our side
+[00:45:48] Give you that help
+[00:45:49] And support from our side
+[00:45:50] Right
+[00:45:51] So how does that happen
+[00:45:54] On a daily level
+[00:45:55] You will receive
+[00:45:56] Our prompts
+[00:45:57] Of what actually you should be doing
+[00:45:59] If you don't have a direction
+[00:46:00] Or what you have been doing
+[00:46:01] And we would expect
+[00:46:03] Expect a daily progress from you
+[00:46:06] It can be a screenshot
+[00:46:08] It can be a paragraph
+[00:46:10] It can be a few action items
+[00:46:12] Right
+[00:46:13] And you have to
+[00:46:14] It is not a compulsion
+[00:46:16] But if you want to actually
+[00:46:17] Solve for distribution
+[00:46:18] You will have to build
+[00:46:20] This in public
+[00:46:22] You will have to do this
+[00:46:24] Hackathon in public
+[00:46:26] So we will expect
+[00:46:27] Either a Twitter
+[00:46:28] Or a LinkedIn
+[00:46:29] Or a Reddit
+[00:46:30] Momentum from you
+[00:46:31] What is that
+[00:46:32] Whatever you do it on a daily basis
+[00:46:34] We will give you that idea
+[00:46:35] Of what exactly to frame
+[00:46:37] How to talk about
+[00:46:38] What exactly to include
+[00:46:39] And post that on Twitter
+[00:46:41] LinkedIn or Reddit
+[00:46:42] Whichever communities that you find helpful
+[00:46:45] And share it with us
+[00:46:47] On the daily check-in form
+[00:46:48] That will come to you
+[00:46:50] And when it receives us
+[00:46:52] Whichever ideas
+[00:46:54] The progress notes
+[00:46:55] We like the most
+[00:46:56] On a daily basis
+[00:46:57] We will keep on reposting that
+[00:46:59] Commenting and liking
+[00:47:00] And make sure
+[00:47:01] You get that distribution
+[00:47:02] Not only from our pool
+[00:47:04] But something that you create
+[00:47:06] For your own idea
+[00:47:07] So in the next 7 days
+[00:47:08] You not only have a product ready
+[00:47:10] You also have your first 100 followers
+[00:47:12] Or your first 100 users
+[00:47:14] Along with you
+[00:47:15] Actually validating this idea
+[00:47:17] So in 7 days you actually know
+[00:47:19] Oh my god
+[00:47:20] This problem is not going to
+[00:47:21] You know
+[00:47:22] The solution that I have is not going to work
+[00:47:24] Or it's going to work
+[00:47:25] And I need to double down
+[00:47:26] That's what is going to be expected
+[00:47:29] Once again
+[00:47:30] It is not compulsory
+[00:47:32] It is only compulsory for people
+[00:47:34] Who actually want to build distribution
+[00:47:36] Along with shipping a live product
+[00:47:39] In the next 7 days
+[00:47:40] Right
+[00:47:41] And if you want to do that
+[00:47:42] We will enable that public feedback loop for you
+[00:47:45] And also the daily check-in journey
+[00:47:47] So you can be accountable on yourself
+[00:47:49] Building that as well
+[00:47:50] Right
+[00:47:53] All clear in the chat
+[00:47:54] All clear
+[00:47:56] How many of you are in for build in public?
+[00:47:59] Type build in public in the chat
+[00:48:04] Everyone will get an opportunity
+[00:48:06] To share their links
+[00:48:07] Connect with each other
+[00:48:08] And do all of that
+[00:48:09] The most important part is going to be you
+[00:48:13] Committing to this journey
+[00:48:15] Shipping a product
+[00:48:16] While building this as well
+[00:48:19] While building distribution as well
+[00:48:21] That's what we are going to
+[00:48:24] Enable with you
+[00:48:26] Perfect
+[00:48:27] The chat is off now
+[00:48:32] Two checkpoints
+[00:48:33] As I already mentioned
+[00:48:34] I'm just clarifying it one more time
+[00:48:37] Two checkpoints
+[00:48:38] First is Wednesday
+[00:48:39] We will expect a product brief
+[00:48:40] You will receive how we wanted
+[00:48:42] And all the submission steps also
+[00:48:44] Right
+[00:48:45] But I want to make sure that you are ready
+[00:48:47] And you know what's expected out of you in the first phase
+[00:48:49] Which is one pager, investor pitch
+[00:48:52] What is your idea?
+[00:48:54] How exactly you are going to go about it
+[00:48:56] What is your user flow going to look like?
+[00:48:58] Why you are the right person to solve it
+[00:49:00] Product brief definitely
+[00:49:02] MPP screenshots or a user flow diagram
+[00:49:04] By Friday
+[00:49:05] Research and idea validation
+[00:49:07] You would have already posted a few posts
+[00:49:09] You would have received feedback
+[00:49:11] You would have gotten a lot of interesting feedback
+[00:49:13] And you would have iterated
+[00:49:14] So what does that research say?
+[00:49:16] You need to change a few things
+[00:49:18] Any features that you change
+[00:49:19] What are the experiments that you did
+[00:49:20] What is the feedback that you received
+[00:49:22] What is the idea of validation
+[00:49:24] That you received with a working prototype link
+[00:49:26] And a demo walkthrough video
+[00:49:30] Along with that will be your final public launch post also
+[00:49:34] Right
+[00:49:35] Which you will submit by the end of Sunday
+[00:49:38] Which you will submit by the end of Sunday
+[00:49:40] Deadlines will not change
+[00:49:44] Sunday, end of the day
+[00:49:45] Sunday 10 to 12 pm
+[00:49:48] 12 pm is when
+[00:49:49] Whenever the clock hits Monday
+[00:49:51] The deadline is ended
+[00:49:52] Unfortunately we won't be able to change it
+[00:49:54] There are a lot of people who already wanted to apply
+[00:49:56] We weren't able to open it
+[00:49:57] Same will happen here
+[00:49:59] And we actually believe you will be able to ship this
+[00:50:04] And you are not building alone
+[00:50:06] You are not building alone
+[00:50:07] If you think you are building alone
+[00:50:08] No
+[00:50:09] Definitely there will be thousand people
+[00:50:11] Who are here with us
+[00:50:12] Who are actively building solo products
+[00:50:15] But we will make sure that is our responsibility
+[00:50:17] That is why you have outskilled and opening eye together
+[00:50:20] Working on this
+[00:50:21] So that you can find your own peers
+[00:50:23] If at the end of 7 days
+[00:50:24] Even if let's say in the journey you feel
+[00:50:27] Maybe this is not something I want to continue
+[00:50:29] But we are able to pair you up with someone
+[00:50:31] Who you may be able to work with
+[00:50:33] After the 7 days
+[00:50:34] You will actively get mentoring
+[00:50:37] In these two days when the phases are
+[00:50:39] You will get that mentor support through sessions
+[00:50:41] And a lot of the questions that will come in as well
+[00:50:44] You will not only build but learn in public also
+[00:50:47] Through a lot of feedback that we will enable for you
+[00:50:50] Through our ecosystems
+[00:50:54] And also pushing into startup ecosystem
+[00:50:58] A lot of first time founders
+[00:51:00] A lot of first time builders
+[00:51:01] Or people who already have a job
+[00:51:03] How do you break out and become a founder
+[00:51:06] How do you get into the startup ecosystem
+[00:51:08] That is what we want you to actually do in the 7 days
+[00:51:11] You don't have to worry about any of these
+[00:51:13] That is our responsibility
+[00:51:15] All the things that you see on this slide
+[00:51:17] Is what is our responsibility
+[00:51:19] You are the builder
+[00:51:20] And everything around is structured around you
+[00:51:23] For the next 7 days
+[00:51:24] And that's what our responsibility is going to be
+[00:51:27] So it is your job to build and our job to enable you
+[00:51:31] To get that distribution
+[00:51:33] To get that peers
+[00:51:34] To get that team
+[00:51:35] To get opportunity to get out
+[00:51:36] And start building something of your own
+[00:51:41] As I said
+[00:51:43] WhatsApp community is always open
+[00:51:46] While you may not be able to type in right now
+[00:51:49] In a few days we will open a WhatsApp group as well
+[00:51:52] So that you can interact with each other
+[00:51:54] A daily check-in will happen
+[00:51:56] Every morning you will get a prompt
+[00:51:58] And then whatever is required
+[00:52:00] You will be sort of expected to submit
+[00:52:02] Or sort of update your progress by the end of the day
+[00:52:06] And a networking and support ecosystem
+[00:52:08] We will also do this collaborative networking
+[00:52:11] Networking meetups
+[00:52:13] And keep on sharing your active opportunities
+[00:52:15] Where you can push in your product and launch it as well
+[00:52:19] That's what we are going to do
+[00:52:20] And two sessions
+[00:52:21] As I said
+[00:52:22] Unblocking Arts
+[00:52:23] Wednesday 7pm
+[00:52:24] And Friday 7pm
+[00:52:25] And that's exactly when we will have this live sessions again
+[00:52:29] And that's exactly what we wanted to share
+[00:52:31] In very brief of the detail
+[00:52:34] Once again
+[00:52:35] These are the same things
+[00:52:36] In terms of how you actually play fair and build real
+[00:52:39] We are going to make sure
+[00:52:41] And folks
+[00:52:42] One more understanding
+[00:52:44] We will be accepting all the new products
+[00:52:46] Which have been built in this seven days
+[00:52:48] Not something that we have already built before today
+[00:52:52] That is not something that we are focusing on
+[00:52:54] We are focusing on something
+[00:52:55] That we have actually built in the next seven days
+[00:52:57] So build during hackathon
+[00:52:59] Policy number one
+[00:53:00] Policy two, responsible AI usage
+[00:53:04] And I will tell you how we will validate as well
+[00:53:07] We can't share everything
+[00:53:09] Live with you also here
+[00:53:10] But we will check
+[00:53:11] How are you looking at the AI usage
+[00:53:13] What are the sort of models have you been using
+[00:53:16] How have you been able to correct it
+[00:53:18] Right
+[00:53:19] Any plagiarized content
+[00:53:20] Any sort of illegal use of any picture
+[00:53:24] Photo code
+[00:53:25] Whatever that is
+[00:53:26] Won't be appreciated
+[00:53:27] Originality
+[00:53:28] I already mentioned your idea
+[00:53:29] Your code
+[00:53:30] And are helping you worship that muscle
+[00:53:34] And at the same time
+[00:53:35] No fake demos
+[00:53:36] If it's a mock
+[00:53:37] You can say that
+[00:53:38] You can be as honest as possible with us
+[00:53:42] Our job is to make you win
+[00:53:44] And we can only do that if you are honest with us
+[00:53:47] Right
+[00:53:48] And if you trust
+[00:53:50] If you put that trust in us
+[00:53:51] We'll make sure that you win in the next seven days
+[00:53:53] And also after that
+[00:53:54] If that sort of
+[00:53:55] You know for very few of people
+[00:53:57] Who we believe actually is possible also
+[00:54:00] Right
+[00:54:01] If you are genuinely dedicated on solving the problem that you selected
+[00:54:03] If you have forgotten your idea
+[00:54:05] Some of you mentioned
+[00:54:06] You will send it back to you on your email once again
+[00:54:09] Right
+[00:54:10] So that you know what you have signed up for
+[00:54:13] So that's basically how we are going to
+[00:54:15] You know keep some sanity check over the next seven days
+[00:54:18] And once again I want to emphasize on momentum
+[00:54:21] Over perfection
+[00:54:22] On a daily basis
+[00:54:23] The one question that will come to you is
+[00:54:25] What did you get done to date?
+[00:54:30] How much thinking did you did?
+[00:54:32] No
+[00:54:33] How much conversation did you did?
+[00:54:35] No
+[00:54:36] What did you get done?
+[00:54:38] How much experimentation did you get done?
+[00:54:40] How many times
+[00:54:41] You broke your head into building that one feature
+[00:54:43] Or that workflow
+[00:54:45] So build that real thing
+[00:54:47] Make product that is useful
+[00:54:49] Do a lot of research around that also if
+[00:54:51] You know you still need that help and muscle
+[00:54:53] And iterate fast
+[00:54:54] You are actually
+[00:54:55] Actually going to look at a lot of experimentation
+[00:54:57] The changing in iteration that you are going to do in the final demo as well
+[00:55:00] That's what will also contribute
+[00:55:02] To you winning or making it to the top five
+[00:55:06] Now this today is your time
+[00:55:10] This today is your time
+[00:55:11] You have to build
+[00:55:12] It's all on you
+[00:55:13] And it's support of outside ecosystem
+[00:55:16] And open AI's ecosystem to get
+[00:55:18] This might be your first year product
+[00:55:20] But we will make sure in the next seven days
+[00:55:22] You are able to ship that
+[00:55:23] And do a great job there
+[00:55:25] While we help you to look at
+[00:55:27] And get you your first customers or first users
+[00:55:29] And at the same time how do we
+[00:55:31] Open your brain to how do you be actively involved in the startup ecosystem
+[00:55:35] Or if it's just a portfolio project for you
+[00:55:38] How do you properly add that and pitch it to the next
+[00:55:41] Let's say you know job that you would want to get
+[00:55:43] Or whatever that is
+[00:55:44] And how do you use this particular seven days
+[00:55:48] To make it an inflection point in your career
+[00:55:50] We are going to give you a lot of ideas of how to do around
+[00:55:53] A lot of your goals as well
+[00:55:55] Building is one thing that you need to focus on
+[00:55:57] And that's the whole core job of a builder
+[00:56:00] Of a founder
+[00:56:01] Everything which comes along the way
+[00:56:03] Is what we are going to help you
+[00:56:04] Support you and guide you with
+[00:56:06] So that's how this is going to look like
+[00:56:09] All clear in the chat
+[00:56:11] All clear in the chat
+[00:56:12] Are you all following with me?
+[00:56:13] Are you all understanding how we are going to do this?
+[00:56:17] Do you all feel this is going to be okay
+[00:56:20] Now I feel slightly more calm down
+[00:56:26] Vipul I'll answer your question
+[00:56:27] Give me two minutes please
+[00:56:30] Do you all understood
+[00:56:32] That how actually we are going to go on a YE
+[00:56:35] Aditya Kaskam a YE
+[00:56:37] What's the problem?
+[00:56:44] What if we have forgotten our idea
+[00:56:46] We'll come to that I'll tell you
+[00:56:48] We'll send that to you
+[00:56:49] Back okay
+[00:56:50] No credits even from OpenAI
+[00:57:01] Yeah there are no credits from OpenAI
+[00:57:03] There are no credits from Outskill also
+[00:57:05] When we started Outskill
+[00:57:07] Nobody handed out credits to us
+[00:57:09] When OpenAI started
+[00:57:11] Nobody handed free credits to them
+[00:57:12] Right?
+[00:57:13] What we actually want you to do
+[00:57:15] Folks once again
+[00:57:16] We want you to think like a booth staff founder
+[00:57:19] There are already a lot of free resources available
+[00:57:22] This is not an any other hackathon to just win some grants
+[00:57:25] We are not going to do that
+[00:57:27] Unfortunately I'm very sorry
+[00:57:29] If that is what you were expecting
+[00:57:30] Right?
+[00:57:31] This is not a hackathon
+[00:57:32] Where you ship a product and get a grant
+[00:57:34] Or get a certificate
+[00:57:36] We are actually focusing on builders
+[00:57:39] Who want to build real products
+[00:57:40] And use our help
+[00:57:42] In building that distribution
+[00:57:44] And becoming something great in a startup ecosystem
+[00:57:47] Right?
+[00:57:48] That's what we expect
+[00:57:49] Right?
+[00:57:50] And that's how it's going to operate
+[00:57:52] You'll get a lot of support definitely
+[00:57:54] Right?
+[00:57:55] From as I said from all the different teams
+[00:57:57] Right?
+[00:57:58] So what we'll do now
+[00:57:59] For the next 10 minutes
+[00:58:00] I'm going to open this up for questions
+[00:58:02] We are exactly at 7
+[00:58:04] Wow it's 4 minutes left
+[00:58:08] Yeah
+[00:58:09] First we'll open it up for questions
+[00:58:11] Then I'll also tell you
+[00:58:13] What are the next steps from here
+[00:58:15] Right?
+[00:58:16] A lot of you would have already received
+[00:58:17] Reflections link in the email
+[00:58:19] I'll talk about that also very quickly
+[00:58:21] Right?
+[00:58:22] But while I do that
+[00:58:23] While I do that
+[00:58:24] Give me one second
+[00:58:29] Give me one second folks
+[00:58:39] Perfect
+[00:58:40] Perfect
+[00:58:41] So what I'm going to do now
+[00:58:42] Is open the chat box for 10 seconds
+[00:58:44] Keep your questions ready
+[00:58:46] Keep your questions ready and type in
+[00:58:48] And we are going to take a few questions
+[00:58:50] And then we'll
+[00:58:52] I'll drive you through the next steps
+[00:58:54] And then we'll close out for the day
+[00:58:55] In next 20-25 minutes
+[00:58:57] And if there are more questions
+[00:58:58] We'll stay back here for some time
+[00:58:59] Okay?
+[00:59:02] There's a Google form the team has shared
+[00:59:04] Make sure you fill in that form
+[00:59:06] And I'll make sure to pick in questions
+[00:59:08] From there quickly
+[00:59:09] And make sure
+[00:59:10] Most of we are able to answer
+[00:59:12] Without spamming the chat
+[00:59:14] We are dropping any links apart from us
+[00:59:17] And if we have time
+[00:59:18] I would like to keep 10 minutes also
+[00:59:20] So that we can have this networking activity also
+[00:59:23] So that you can also speak and meet with each other
+[00:59:29] Got it
+[00:59:30] Give me one second
+[00:59:31] I'm just opening up the form
+[00:59:45] But folks how does this sound till now
+[00:59:47] In the
+[00:59:48] Do you have still permission to react
+[00:59:50] I think yeah you have
+[00:59:54] Oh yeah perfect
+[00:59:57] Give me one second
+[00:59:58] The form is just opening up
+[01:00:15] Perfect I can see a couple of questions
+[01:00:20] I'll just start answering them in a bit
+[01:00:34] Interesting interesting
+[01:00:36] Perfect
+[01:00:38] So let me answer a few common questions
+[01:00:40] That are coming in right
+[01:00:41] Once so that we are done with them
+[01:00:43] If that was your question
+[01:00:44] The first question
+[01:00:46] What if I have forgotten my idea
+[01:00:48] How many of you have this question
+[01:00:50] I forgot
+[01:00:51] It's been five days
+[01:00:52] I forgot my idea
+[01:00:54] So what is going to happen is
+[01:00:56] After this call
+[01:00:57] My team is going to send you an email with your idea
+[01:01:00] That you have submitted
+[01:01:01] Your full application form that you submitted
+[01:01:03] You will receive that
+[01:01:04] So you exactly know what you are going to build
+[01:01:07] Right
+[01:01:08] Now in case if there's a change in idea
+[01:01:11] In case if there's a change in idea
+[01:01:13] I told you two things
+[01:01:14] Right
+[01:01:15] One is you can go deeper
+[01:01:16] Do the same problem statement
+[01:01:17] You can't change completely
+[01:01:20] So you will also tomorrow
+[01:01:22] When you receive the first check in
+[01:01:24] First check in
+[01:01:25] Any adjustments if you want to make to the idea
+[01:01:27] Will give you that option to do that
+[01:01:29] Right
+[01:01:30] That's true
+[01:01:33] Now next one
+[01:01:37] Now it's a good question
+[01:01:38] It's a good question
+[01:01:39] It's coming from Sahil
+[01:01:41] For the demo video can we use an AI voice over
+[01:01:44] An editor video
+[01:01:45] You can use your creativity
+[01:01:47] You are open to do it
+[01:01:48] Completely open
+[01:01:51] My project is
+[01:01:54] As it will usually take three to five days
+[01:01:57] So I thought of another project
+[01:01:59] Folks, this is a good question
+[01:02:00] Let me answer that also
+[01:02:01] My project is building Dash
+[01:02:03] But it won't be possible to make it live as Chrome
+[01:02:06] Or App Store
+[01:02:07] Or another one usually takes three to five business days
+[01:02:09] Of launching it live
+[01:02:10] We don't expect you to launch it on any App Store in seven days
+[01:02:14] What we want is some app that you can demo and show us
+[01:02:17] Right
+[01:02:18] Let's say if I want to build a mobile app
+[01:02:20] Right
+[01:02:21] It definitely will
+[01:02:22] Apple will take about months to review that and get it
+[01:02:24] We don't want that
+[01:02:25] Do you have an APK file
+[01:02:27] That you can run us through on the demo
+[01:02:29] That's great
+[01:02:30] Can you run it on local and drive us through
+[01:02:31] Great
+[01:02:32] That works
+[01:02:33] That works
+[01:02:34] If a person
+[01:02:37] If a person has
+[01:02:41] If a person has pro subscription already
+[01:02:43] And another person does not
+[01:02:44] How will that be monitored
+[01:02:47] One second
+[01:02:49] Interesting
+[01:02:50] What happened?
+[01:02:51] I think there was some setting problem
+[01:02:53] But no worries
+[01:02:54] I will make sure that happened
+[01:02:59] So a lot of you would have some unfair advantages
+[01:03:04] Right
+[01:03:05] A lot of you would be first time builders
+[01:03:07] You may not know how to build a product
+[01:03:09] But you may come from some expertise
+[01:03:10] We have, let me tell you this
+[01:03:12] We have people who are 17 year olds
+[01:03:15] And we have people who are 55 years of old in this hackathon
+[01:03:19] Everybody has their own leverages
+[01:03:21] Right
+[01:03:22] Somebody will already have a Codex Pro account
+[01:03:24] Somebody would already have cloud accounts
+[01:03:26] Somebody would already have another accounts
+[01:03:28] That's their advantage
+[01:03:29] You can choose to use what you want
+[01:03:32] But also have Codex integrated in your workflow
+[01:03:35] What you can also do in case
+[01:03:36] If that's
+[01:03:37] We'll see if a team can enable that
+[01:03:39] If some of you already have a few accounts
+[01:03:41] And you would like to open up
+[01:03:42] For people and use together
+[01:03:44] We'll see if
+[01:03:46] We can open up
+[01:03:48] Now this is one question that is coming from
+[01:03:50] Prayansh
+[01:03:51] And I think a lot of you would have that
+[01:03:52] So I'll anyways take it very honestly
+[01:03:54] And answer that
+[01:03:55] Right
+[01:03:56] So isn't it unfair competition
+[01:03:58] Someone who already has a $200 Codex plan
+[01:04:01] Will have a massive unfair advantage
+[01:04:03] Over anyone else
+[01:04:04] Yes
+[01:04:06] Yes it would be
+[01:04:07] It would be
+[01:04:08] Why not
+[01:04:09] Why not
+[01:04:10] And they have worked hard to earn that $200
+[01:04:12] To get a subscription
+[01:04:13] That's why they have their expertise
+[01:04:15] Right
+[01:04:17] Now
+[01:04:18] Someone who is let's say 20, 25 year old
+[01:04:20] How many people
+[01:04:22] I'll tell you the problem statement
+[01:04:24] People who are at 45, 50 years old
+[01:04:26] Sometimes they struggle with new ideas
+[01:04:28] Fresh perspectives that you guys don't have
+[01:04:31] And they spend a lot of time
+[01:04:32] Working with all of you to do that
+[01:04:35] So do you not have your own unfair advantage
+[01:04:37] You do have
+[01:04:39] As I said
+[01:04:40] This is not any other hackathon
+[01:04:41] Where you can come and build a product
+[01:04:43] And earn grants
+[01:04:44] And do nothing about it
+[01:04:45] We actually want to focus on people
+[01:04:47] Who want to ship real products
+[01:04:49] And back them
+[01:04:50] That's where all the efforts of open air
+[01:04:52] And outskill go
+[01:04:53] Where to find a problem statement
+[01:04:55] We'll give that to you
+[01:04:56] I want to change the idea
+[01:04:58] I already answered that
+[01:04:59] We need to make some product
+[01:05:00] That we gave ideas
+[01:05:01] Okay
+[01:05:02] How is equality justified
+[01:05:04] Some users will have
+[01:05:05] Force
+[01:05:06] That's fine
+[01:05:07] Everybody has their own thing
+[01:05:08] I live in Bangalore
+[01:05:09] I have better access to start-up ecosystems
+[01:05:12] Somebody does not
+[01:05:13] Can we change anything about it
+[01:05:14] We can't
+[01:05:18] Got it
+[01:05:19] And I think
+[01:05:21] Can we use local LLMs
+[01:05:22] Such as Olama
+[01:05:23] You can
+[01:05:24] What needs to be submitted like a document
+[01:05:26] We'll share you exact step-by-step process
+[01:05:28] As the phases come
+[01:05:31] Do we need to pay any amount
+[01:05:32] For this hackathon
+[01:05:33] No, you do not
+[01:05:36] Is there a size limit
+[01:05:37] To the video submission
+[01:05:38] No
+[01:05:39] You can submit a video link instead
+[01:05:40] Yes, you can
+[01:05:42] Build in public and support
+[01:05:43] From team for a project
+[01:05:44] How will that be distributed and conducted
+[01:05:46] Also timelines while a PPT
+[01:05:48] Yeah, we'll share that
+[01:05:49] All of that with you
+[01:05:50] Specifically as well
+[01:05:51] And on a daily basis
+[01:05:52] We'll keep collecting questions
+[01:05:53] So when we come to Wednesday
+[01:05:55] We already know the questions
+[01:05:56] And where you are
+[01:05:58] Is it strictly individual
+[01:05:59] Or can we team up to
+[01:06:00] If we have same idea
+[01:06:01] And both of us got approved
+[01:06:03] It is fine if you do that
+[01:06:05] But only when you know each other
+[01:06:06] We won't be building things for you
+[01:06:10] Does it need to be open source
+[01:06:11] Not a requirement
+[01:06:12] It can be, it can be not
+[01:06:16] Do we have to build products from scratch
+[01:06:18] Or no
+[01:06:23] Build something that you were
+[01:06:25] Building during this hackathon
+[01:06:30] How will you track usage
+[01:06:31] We will, in the sort of criteria
+[01:06:33] That we give it to you
+[01:06:34] We'll have that understanding of it
+[01:06:38] What if the idea of the app
+[01:06:39] That you are building requires us to build the app
+[01:06:40] As I said
+[01:06:41] We want to see a demo of it
+[01:06:43] Not a, I don't want to go and play store
+[01:06:45] And download your apps
+[01:06:46] It's basically
+[01:06:48] We don't want to publish you
+[01:06:49] Wherever the process takes time
+[01:06:51] Which is not in your control
+[01:06:52] That's fine
+[01:06:53] We don't want you to once again
+[01:06:54] Publish on App Store or Amazon
+[01:06:56] Or whichever store
+[01:06:57] It takes seven days
+[01:06:59] It's just not seven days
+[01:07:00] It actually takes months to actually get approved also
+[01:07:02] But you want to see something that you build
+[01:07:04] And you can share the link of that in a drive
+[01:07:06] As an APK that we can download and check and use
+[01:07:12] If you choose not to do the distribution part
+[01:07:14] Will that affect our marketing negatively?
+[01:07:16] No
+[01:07:17] No
+[01:07:18] If you do not participate or want to do
+[01:07:19] Building public activity or daily check-ins
+[01:07:21] That's completely fine
+[01:07:23] It will not impact in any of your submissions
+[01:07:26] Any of your final scoring
+[01:07:28] Right
+[01:07:29] But if you want to use the muscle that we have built
+[01:07:31] And are leveraged to get you
+[01:07:33] You can do that
+[01:07:34] But if you do not do it
+[01:07:35] It does not impact your final rating
+[01:07:40] Can we use any IDE?
+[01:07:41] Yes, you can
+[01:07:43] What is the price of the winner?
+[01:07:44] Oh, did we not share it?
+[01:07:46] Yeah
+[01:07:47] Folks, everybody
+[01:07:48] All the submissions that happen until Sunday
+[01:07:50] The results will be coming out on Tuesday
+[01:07:53] Or Wednesday
+[01:07:54] Right
+[01:07:55] We can share the dates also
+[01:07:57] So today we are exactly at 25th May
+[01:08:00] The hackathon will end on 31st May Sunday
+[01:08:03] The final results will come in at
+[01:08:05] On 2nd June or 3rd June
+[01:08:08] Right
+[01:08:09] And 5, top 5 builders will be selected
+[01:08:12] Who will receive Codex Pro account for 1 full year
+[01:08:16] Individually
+[01:08:17] 5 individual accounts will be given out
+[01:08:19] To people who actually go out
+[01:08:21] And are there any other bonuses?
+[01:08:24] Let's see, Karthik
+[01:08:26] How about
+[01:08:27] Yeah, we will share it
+[01:08:28] As we go deeper
+[01:08:29] But as I said
+[01:08:30] We want to actually back people
+[01:08:32] Who actually want to build meaningful products
+[01:08:34] And take that journey, right?
+[01:08:38] Is it possible to have a pitch for other products as well
+[01:08:40] Which I shipped?
+[01:08:41] No, that won't be considered
+[01:08:45] Is it okay to use other coding tools?
+[01:08:48] It is okay to use that
+[01:08:51] Why can we not change the idea?
+[01:08:52] That can be a case where you might have found a different domain or a gap
+[01:08:55] That's completely fine
+[01:08:56] If you want to change the idea completely from what you selected
+[01:09:00] It won't sort of
+[01:09:01] You know, that was one of the important part of you getting selected
+[01:09:04] The submission might get
+[01:09:05] The final selection might get impacted
+[01:09:07] But also at the same time
+[01:09:09] You will get the idea that you have put out in the form
+[01:09:11] Again in the emails that we shared with you
+[01:09:14] And I have
+[01:09:19] Can we build a solution as a containerized web app?
+[01:09:21] You can
+[01:09:24] For a product where it is not revenue based product
+[01:09:26] What are the criterias for selection?
+[01:09:28] Folks, once again
+[01:09:30] Revenue
+[01:09:31] Or any distribution is not a part of the final selection
+[01:09:35] Final selection only depends on the five criterias that I shared
+[01:09:39] And that does not involve that
+[01:09:41] You will have to have 100 users
+[01:09:42] Or you will need to generate money from it
+[01:09:44] A final working app
+[01:09:46] Or a prototype or a product
+[01:09:48] Or that automation is what is going to be considered
+[01:09:51] The tech stack is the goal here
+[01:09:56] Community idea question
+[01:09:57] Can you make a discord if it's possible?
+[01:10:00] Participated in
+[01:10:01] No, we'll write now for one, two days
+[01:10:03] We'll keep it to WhatsApp
+[01:10:04] And after that, we'll sort of, you know, get to it
+[01:10:09] Can we get all things set in a meeting as document
+[01:10:11] Because I'm attending while traveling to some emergency
+[01:10:13] Yes, you will get that
+[01:10:15] If the idea or product is a B2B
+[01:10:17] Is it okay? Like, it is fine
+[01:10:19] Yes, it is fine
+[01:10:20] B2B, B2C, B2B, B2C
+[01:10:22] Everything is fine
+[01:10:23] If your idea is selected
+[01:10:24] If you are here
+[01:10:25] Idea that you have thought of is already in
+[01:10:27] So you can go ahead on top and build on top of that
+[01:10:31] A lot of ideas
+[01:10:32] A lot of questions are around that
+[01:10:35] Can we get a copy? You will get
+[01:10:37] Build whatever we build
+[01:10:38] We'll have full control and coordinates
+[01:10:40] Everything is yours
+[01:10:41] We don't want anything
+[01:10:42] Any idea that you build
+[01:10:43] Anything that you ship
+[01:10:45] Anything that you share on the forms
+[01:10:47] Everything with us
+[01:10:48] Outskill
+[01:10:49] If your idea controls nothing
+[01:10:51] It is your product
+[01:10:52] It is owned by you completely
+[01:10:54] And definitely if you are following the rules of
+[01:10:56] Whatever platforms that you have been using
+[01:10:58] But we don't own anything
+[01:10:59] So if I think like a booster founder
+[01:11:01] Can I use any LLM
+[01:11:02] Or are we tied up with codecs
+[01:11:04] You can use everything
+[01:11:05] But also integrate codecs in the building journey
+[01:11:10] As a student
+[01:11:11] How can I build full application without
+[01:11:13] Will you help me?
+[01:11:14] We'll keep on sharing daily updates on
+[01:11:16] If you are first time builders
+[01:11:17] Like a lot of you are
+[01:11:18] On a daily basis
+[01:11:19] We'll keep on sharing ideas of how you should think
+[01:11:21] How you should build
+[01:11:22] So it's easier for you to do that
+[01:11:24] We'll also share you examples
+[01:11:25] Of what people have been building inside community
+[01:11:27] So that you keep on consistently getting that advice also
+[01:11:35] As a first time builder
+[01:11:36] How to kickstart
+[01:11:37] To build one such large scale
+[01:11:38] What are the key indicators
+[01:11:39] One must keep in mind
+[01:11:41] There is nothing large scale
+[01:11:43] That we need to eye for seven days
+[01:11:45] Who is this
+[01:11:46] This is Siddhi Agarwal
+[01:11:47] Siddhi there is nothing large scale
+[01:11:49] We don't want an Amazon to be built in seven days
+[01:11:51] What we want is
+[01:11:52] If let's say an idea off like that
+[01:11:54] Can you build a simple app which
+[01:11:56] Where you can list
+[01:11:57] List a book
+[01:11:58] List a product
+[01:11:59] And people can buy
+[01:12:01] A first MVP
+[01:12:02] That is workable and shippable
+[01:12:04] And can be used by people
+[01:12:07] I want to implement a much better idea
+[01:12:08] Having better ROI and potential
+[01:12:09] Is that possible
+[01:12:10] Google is provisioning
+[01:12:13] Okay
+[01:12:14] Any reasons
+[01:12:15] No reasons
+[01:12:16] If basically you want to
+[01:12:18] Integrate multiple facts
+[01:12:19] You can do that
+[01:12:20] Feel free to do that
+[01:12:22] I have not received your email with reflection link
+[01:12:26] I will just take you through one more time
+[01:12:28] My products copyright issues
+[01:12:30] I think I covered that
+[01:12:31] It remains yours
+[01:12:33] I need like a good validation of my idea
+[01:12:36] Of is it really good and scalable in future
+[01:12:38] Because giving without cause is not viable
+[01:12:41] So need help in that particular area
+[01:12:43] Exactly why building public method is designed
+[01:12:46] How will you help us with actual distribution of a product's release
+[01:12:49] Please the hackathon is great by the way
+[01:12:51] How will we help
+[01:12:52] As and when you keep on sharing your daily progress notes
+[01:12:55] You will see that coming through
+[01:12:56] We will also share it within our own communities
+[01:12:58] In our own user basis
+[01:13:00] And the socials as well
+[01:13:03] These are all the common questions that I am seeing
+[01:13:06] There are about exactly 300 questions to be really honest
+[01:13:11] And all of them
+[01:13:12] As I was skimming through
+[01:13:14] All of them talk about exact same thing
+[01:13:17] Which is about these couple of challenges and things
+[01:13:21] What I am going to do now
+[01:13:22] Do is one
+[01:13:23] In the chat
+[01:13:24] In the chat
+[01:13:25] Are we all clear
+[01:13:26] Anything that I have not covered
+[01:13:27] You can drop it in the chat now for next 10 seconds
+[01:13:30] And then I will run you through the reflections post
+[01:13:32] And then we should have time for a quick breakout activity
+[01:13:36] In the chat
+[01:13:37] Opening it now
+[01:13:44] Got it
+[01:13:45] Turning the chat off now
+[01:13:46] Jerome
+[01:13:47] Jerome
+[01:13:48] What if we have forgotten our idea
+[01:13:49] Can we get access to see
+[01:13:50] Jerome
+[01:13:51] I mentioned
+[01:13:52] Yes
+[01:13:53] You will get access
+[01:13:54] How you will get access
+[01:13:55] Our team will send you your idea
+[01:13:56] That is shortlisted
+[01:13:57] On your email
+[01:13:58] After this call ends
+[01:13:59] If I get selected into top five
+[01:14:01] Will we get help after it
+[01:14:02] Promoting it by mentor
+[01:14:03] Mohit
+[01:14:04] You might get it
+[01:14:05] And we will share it
+[01:14:06] As we reach all the milestones
+[01:14:09] Will the winners get
+[01:14:10] PPO in OpenAI
+[01:14:11] No
+[01:14:12] Can't promise
+[01:14:13] Okay
+[01:14:14] One second
+[01:14:15] If I get
+[01:14:16] Okay
+[01:14:17] What if already started building that product
+[01:14:18] If you have started building Sunday
+[01:14:19] It is completely fine
+[01:14:20] But not something that is already created
+[01:14:21] Before that
+[01:14:22] Okay
+[01:14:23] Okay
+[01:14:24] Okay
+[01:14:25] Okay
+[01:14:26] Okay
+[01:14:27] Okay
+[01:14:28] Okay
+[01:14:29] Okay
+[01:14:30] Okay
+[01:14:31] Okay
+[01:14:32] Okay
+[01:14:33] Okay
+[01:14:34] Okay
+[01:14:35] Okay
+[01:14:36] And then that is already created before that
+[01:14:38] Can I show dummy user on my app
+[01:14:40] You can
+[01:14:41] But once again
+[01:14:42] Users and all of that
+[01:14:43] Are not the major criteria
+[01:14:45] While we will do
+[01:14:46] Help you
+[01:14:47] You are getting the direction
+[01:14:48] Can you re-share the links
+[01:14:49] Yeah
+[01:14:50] My Q&A is not addressed
+[01:14:51] Swamsee
+[01:14:52] Better we would have put the question itself
+[01:14:54] I will open chat once again
+[01:14:55] Once again
+[01:14:56] My idea does not include any agents
+[01:14:57] Or any AI features in the application
+[01:14:59] Will this be okay
+[01:15:00] It is fine
+[01:15:01] It is fine
+[01:15:02] Folks we want
+[01:15:03] A product
+[01:15:04] An automation to come in
+[01:15:05] It may not be AI first product or AI first thing, while it is built with AI, right?
+[01:15:12] Built with AI is major focus, then requesting the recording, you will get it.
+[01:15:17] Share the PPT.
+[01:15:18] We will share it.
+[01:15:19] My idea.
+[01:15:20] Okay.
+[01:15:21] Can we build a dev tool?
+[01:15:22] You can build a dev tool.
+[01:15:23] Can we network with web of an open AI team after even the hackathon?
+[01:15:25] I'll tell you as we reach, you know, the each milestone folks, there are surprises also
+[01:15:29] coming in.
+[01:15:30] I can't tell literally everything on the first call, right?
+[01:15:32] Let's focus on building and we will make sure what you will get and whatnot as we get deeper
+[01:15:37] into it.
+[01:15:40] Can we do an offline meetup?
+[01:15:41] I don't know.
+[01:15:42] We may or we may not.
+[01:15:45] Got it.
+[01:15:47] Perfect.
+[01:15:48] Uh, one second.
+[01:15:50] There was someone who said my question was not answered.
+[01:15:54] I'm trying to find, but we have so much.
+[01:15:56] So we keep it to that.
+[01:15:59] Understood.
+[01:16:00] Understood.
+[01:16:01] Please answer this.
+[01:16:02] It's a genuine question.
+[01:16:04] I have my idea.
+[01:16:05] I may be built as a website.
+[01:16:06] So the product that I will be building is under that and not exactly in that website.
+[01:16:09] So can I do this?
+[01:16:10] But I will be using that website for the users to understand about my product.
+[01:16:13] Uh, Shubham, we will recommend you to build a new product.
+[01:16:16] Uh, you know, if it's already on a website, that's fine, but whatever you are building
+[01:16:20] new, you can share that as a demo.
+[01:16:23] Okay.
+[01:16:24] Perfect.
+[01:16:25] Perfect.
+[01:16:26] So folks, what happened is.
+[01:16:30] When we shared you the link, when we sort of gave you the, uh, acceptance, we also shared
+[01:16:36] a reflection post, right?
+[01:16:38] What is the reflection post?
+[01:16:40] I'll show you as well.
+[01:16:41] This product also is built with, uh, AI itself.
+[01:16:44] So I'll quickly run you through and also share the link in the chat very quickly.
+[01:16:48] And yeah, so I'm dropping the link in the chat.
+[01:17:00] Okay.
+[01:17:04] So what is this?
+[01:17:05] So what we have done for every session, for every check-in, for every phase, this is how
+[01:17:12] we are going to move forward one second.
+[01:17:21] Now this is something that we shared with all of you.
+[01:17:24] I spoke about the built-in public concept.
+[01:17:26] This is how we start the hackathon night, everybody who's on call with me, you can go
+[01:17:30] on the link and you can, first of all, add your image.
+[01:17:34] If you have it handy, I'll show you how, uh, sort of this works out.
+[01:17:39] I've added my image, my name, which is your name.
+[01:17:48] What is your product or idea or a problem statement at this point of time, if you do not remember,
+[01:17:52] you can talk about what are you excited in building?
+[01:17:55] What are you excited in terms of what excites you in joining and building through this hackathon?
+[01:18:01] Right.
+[01:18:02] Let's say, uh, one second.
+[01:18:05] I am excited to help thousand builders launch, build and launch their products in next seven
+[01:18:21] days.
+[01:18:22] Okay.
+[01:18:23] Okay.
+[01:18:24] So in this profession, who am I?
+[01:18:26] I'm a student.
+[01:18:27] I, what is my designation?
+[01:18:28] Whatever that is.
+[01:18:29] If you are a student, you can type in student or whatever your designation would be head
+[01:18:34] of community and JTM.
+[01:18:35] What's your company?
+[01:18:36] If you are in a college or an Institute, type your name or name on Institute.
+[01:18:41] Once you click on generate post an image, you will see a post getting generated along
+[01:18:47] with an image that will come in along with an image that will come in excited to share
+[01:18:54] that I have been shortlisted for the open AI outskill AI builders hackathon over the
+[01:18:58] next week.
+[01:18:59] I'll be building alongside thousand selected builders from across the country to launch real
+[01:19:03] products using codecs by open AI will also get access.
+[01:19:05] This is basically what the post generates.
+[01:19:08] And this is the picture that gets generated.
+[01:19:10] You can do two things.
+[01:19:11] You can either directly click on post on LinkedIn or you can copy text and download
+[01:19:18] the image and go to X or you can sort of, you know, come to, come to LinkedIn, drop this
+[01:19:30] and copy and paste the post that time in and click on post, click on post after today.
+[01:19:37] You will also get, let's say, let me actually do that.
+[01:19:42] After today, what you will also receive is a form, whoever has made this post already,
+[01:19:49] you will have to sort of just give us the link so that we can sort of amplify this post
+[01:19:53] view.
+[01:19:54] This is how it will look like when you click here, copy the link to post.
+[01:19:56] This is what you'll sort of submit or you can go to Twitter.
+[01:20:01] You can once again copy the image and talk about what are you excited about?
+[01:20:07] Let's say at this point of time, I'll mention this one, two things, right?
+[01:20:11] And I'll mention Forex, outskill.
+[01:20:16] And yeah, if you want to add any other one and you can click on post, you also see something
+[01:20:21] on my Twitter, right?
+[01:20:22] Build in public.
+[01:20:23] We are going to create a few smaller communities so that you can actively connect with each
+[01:20:28] other, share it with each other and share it with an ecosystem that actually promotes
+[01:20:33] building products where people actually keep on building.
+[01:20:35] A lot of you would already be familiar with a lot of these activities, but we'll share
+[01:20:40] you.
+[01:20:41] How do you build?
+[01:20:42] You focus on building the idea.
+[01:20:43] We'll focus on how do you build the distribution and helping you support with that and giving
+[01:20:47] you steps and doing that, right?
+[01:20:48] So that's basically how we look at doing this with you.
+[01:20:52] And that's basically what this link will do that for you.
+[01:20:56] At every phase, you will receive a similar infrastructure, similar page or similar one.
+[01:21:01] At this point of time, everybody who is starting and who is committing for this journey,
+[01:21:06] make sure you do that.
+[01:21:08] It is not compulsory.
+[01:21:09] Once again, it is not compulsory.
+[01:21:11] It is for you to build that momentum for you and getting started with it so that daily,
+[01:21:16] when you keep on posting about what you're building, your audience knows what you're
+[01:21:20] building and people, when we promote your post, when people come to you, they exactly
+[01:21:25] see that journey that you have been building and you can see that just doing this.
+[01:21:30] We have been in the last five years, I've been able to train almost 15 million learners
+[01:21:34] and about people have not only built their own distribution, but also built following
+[01:21:38] along with it.
+[01:21:39] And we see this model working for everyone who sort of actually wants to become a builder.
+[01:21:45] One of the major problems, you can build a wonderful product, but if you can crack distribution,
+[01:21:49] that's when you become a wonderful founder also, right?
+[01:21:52] But regardless of that, don't worry about any of that right now, your focus is on building
+[01:21:55] and building only now in the chat, in the chat, in the chat, do you want to do a quick
+[01:22:01] breakout activity exactly, exactly 10 minutes?
+[01:22:06] I'll open the chat now, first answer me one, are we all clear and are we all ready in
+[01:22:11] the chat?
+[01:22:12] Are we all ready in the chat?
+[01:22:13] Are we all ready in the chat?
+[01:22:22] Why is it called Codex if the hackathon does not provide Codex access and participant?
+[01:22:26] It is also called open AI and out skill hackathon, right?
+[01:22:30] Because you get support from these both teams to actually do this, right?
+[01:22:35] But okay.
+[01:22:36] Perfect.
+[01:22:37] Are we all ready Folks, please, no links in the chat, we will give you enough time to network
+[01:22:53] with each other.
+[01:22:54] We will give you time.
+[01:22:55] We'll give you time.
+[01:22:56] We'll give you time.
+[01:22:57] We'll give you time to promote your GitHub.
+[01:22:58] We'll give you time.
+[01:22:59] We'll give you time.
+[01:23:03] And everyone who is doing this, please, please, right, please don't tell me that you did you
+[01:23:08] guys didn't give clarity, right?
+[01:23:09] Let's let's all work together as a team to help each other out, right?
+[01:23:13] In the chat, are we all clear and ready?
+[01:23:20] And if we see someone spamming, can we please remove them at least for today?
+[01:23:24] Yeah.
+[01:23:25] Rahul, you will get the answers as we go deeper right now.
+[01:23:46] The focus is on building and not funding.
+[01:23:49] Have you built it already?
+[01:23:50] No.
+[01:23:51] Seven days hackathon is for builders.
+[01:23:53] If you're already a builder, this is not for you.
+[01:23:55] Please do not spam.
+[01:23:56] It is not helpful.
+[01:23:57] It is not professional and it would not be appreciated, right?
+[01:24:00] Please folks, I'm trying to be as helpful as possible.
+[01:24:03] Let's help people who actually want to build and do that, right?
+[01:24:06] If you have been selected, we see some evaluation and helping that from you.
+[01:24:12] Okay.
+[01:24:13] Perfect.
+[01:24:15] Perfect.
+[01:24:16] Do you want to do?
+[01:24:17] Do you want to do?
+[01:24:18] Do you want to do a breakout activity quickly?
+[01:24:33] Perfect.
+[01:24:34] I think we'll go slightly above if we do that.
+[01:24:37] So I'll just take final few questions which are coming in and then we'll close out for
+[01:24:41] the day.
+[01:24:42] Can we use GitHub?
+[01:24:43] Rasha, thank you for dropping it 50 times.
+[01:24:46] Can we use GitHub and use Netlify to deploy and give a link to access?
+[01:24:49] You can do that.
+[01:24:50] You can do that.
+[01:24:52] Is no codex an eliminator?
+[01:24:54] Yes, it is.
+[01:24:57] How do we access technical help if we get stuck?
+[01:25:00] Dhruv, you will receive the Q&A forms every day and we'll help you with the resources
+[01:25:04] to do that as well.
+[01:25:05] Also, the calls will happen along with that.
+[01:25:08] How do I access the Outskill LinkedIn tool?
+[01:25:10] Richard, we'll share the link one more time in the chat and also on the email once
+[01:25:13] the call is done.
+[01:25:14] Can we exchange the codex subscription for a laptop or something?
+[01:25:18] As a community, if you want to do that, we'll see how we can make that available.
+[01:25:21] But for now, no.
+[01:25:23] My MVP will have the feature.
+[01:25:24] I given my idea, but also many more features as I want to go deeper.
+[01:25:27] You can do that.
+[01:25:28] Tandi.
+[01:25:29] Will top five participants get...
+[01:25:31] Yeah.
+[01:25:32] Will Sama join in last day?
+[01:25:35] No.
+[01:25:36] Abhijit.
+[01:25:37] I can't promise that.
+[01:25:38] Can I use my premium?
+[01:25:39] You can.
+[01:25:40] Okay.
+[01:25:41] Got it.
+[01:25:45] I think there were a few people who want.
+[01:25:47] Please answer.
+[01:25:48] Will you help the winner to launch the selected product at scale?
+[01:25:51] Apoorva, we cannot promise that.
+[01:25:53] This is a hackathon to ship out a product.
+[01:25:56] What happens after that will come in at the end of it.
+[01:25:58] Not right.
+[01:25:59] Right.
+[01:26:00] For the next seven days, the focus is on building and building only.
+[01:26:04] Perfect.
+[01:26:07] I think we have reactions on folks already, all clear, all excited, all excited.
+[01:26:15] Can we take a quick picture?
+[01:26:17] If we all can turn our cameras on, if we all can turn our cameras on, we'd like to take
+[01:26:22] a quick picture and announce it to the world on.
+[01:26:27] Perfect.
+[01:26:28] Perfect.
+[01:26:29] Perfect.
+[01:26:31] Perfect.
+[01:26:32] Perfect.
+[01:26:33] I have, I'll just one second folks.
+[01:26:38] I'll hide non-video participants.
+[01:26:41] Perfect.
+[01:26:42] Perfect.
+[01:26:43] Perfect.
+[01:26:44] Can we, can we all do a thumbs up?
+[01:26:46] Can we all do a thumbs up?
+[01:26:48] Yeah.
+[01:26:49] Let's do that.
+[01:26:50] Wow.
+[01:26:51] You can, you can also react on that along with that.
+[01:26:55] I'm seeing a lot of familiar faces also.
+[01:26:57] I'm seeing a lot of familiar faces also.
+[01:27:01] Got it.
+[01:27:06] Got it.
+[01:27:07] Perfect.
+[01:27:08] Perfect.
+[01:27:09] Wonderful.
+[01:27:10] I think I got it.
+[01:27:11] I think I got it.
+[01:27:12] I think I got it.
+[01:27:13] It's wonderful to see.
+[01:27:14] I'll take a couple of names whom I have seen in a couple of chats.
+[01:27:17] I have seen Saurabh before.
+[01:27:19] Saurabh Omik.
+[01:27:20] I've seen Preetam Ji who's here.
+[01:27:22] You know, a couple of times Preetam Sirul Ji.
+[01:27:25] Sayyid Hassan is here.
+[01:27:27] Long time standing.
+[01:27:28] Karthikare who's just here.
+[01:27:30] So he's also on camera.
+[01:27:32] I have Nitin.
+[01:27:34] Vedant.
+[01:27:36] I don't know if I know Anuja.
+[01:27:39] I think I've seen in some session.
+[01:27:41] But yeah, there are a lot of people without cameras also.
+[01:27:45] Apoorva Pandey I think one I see.
+[01:27:47] There are a lot of people.
+[01:27:48] Folks, how many of you have seen me in any sessions before this?
+[01:27:54] What do you call this?
+[01:27:55] Yeah.
+[01:27:57] Got it.
+[01:27:58] Abhisheep.
+[01:27:59] Yeah.
+[01:28:00] This is the first time.
+[01:28:01] Thank you.
+[01:28:02] Got it.
+[01:28:04] I think I've also not seen me.
+[01:28:06] Teeka.
+[01:28:07] Teeka.
+[01:28:08] Appreciate folks.
+[01:28:09] First of all, gratitude.
+[01:28:11] Thank you so much for all for joining this call and also joining this hackathon.
+[01:28:15] I personally will make sure that you all get a wonderful experience in the next seven
+[01:28:20] days and you actually achieve the outcomes that you have signed up for.
+[01:28:23] Right.
+[01:28:24] And everybody who has seen me before can vouch for that.
+[01:28:27] At least I can say that.
+[01:28:28] In the chat, can we confirm that I would be able to do that?
+[01:28:32] Everybody who has seen me before.
+[01:28:34] I'll open the chat for those people.
+[01:28:37] Yeah.
+[01:28:38] For everybody else.
+[01:28:39] For everybody else.
+[01:28:40] You have come in from Web of Instagram.
+[01:28:43] Right.
+[01:28:44] Web of YouTube channel.
+[01:28:45] How many of you have come from Staying Ahead Community?
+[01:28:48] You follow Web of Sisanti and you saw this reel and you came in.
+[01:28:53] Or on LinkedIn or you saw chat GPT India or you saw.
+[01:28:57] Right.
+[01:28:58] They're all.
+[01:28:59] Did you come in?
+[01:29:02] Nice.
+[01:29:03] Perfect.
+[01:29:04] Perfect.
+[01:29:05] Kapila.
+[01:29:06] I already answered that.
+[01:29:07] Please do not spam.
+[01:29:08] The recording will come to you.
+[01:29:09] You can see that one more time.
+[01:29:10] If that's the case.
+[01:29:12] PPT will also be shared.
+[01:29:13] Folks.
+[01:29:14] I'll answer that question already.
+[01:29:16] I'll share the recording.
+[01:29:20] Got it.
+[01:29:21] With that.
+[01:29:22] With that.
+[01:29:23] With that.
+[01:29:24] Thank you so much all for joining in.
+[01:29:27] Appreciate all of your support.
+[01:29:29] All of your excitement.
+[01:29:31] I think it makes me also excited along with a lot of them.
+[01:29:34] So I'll also be accountable on LinkedIn and other platforms to show you what we have been
+[01:29:38] able to achieve.
+[01:29:39] And a lot of you that will get in.
+[01:29:41] Right.
+[01:29:42] I hope we see wonderful products getting shipped.
+[01:29:44] We'll give you as much support as we can.
+[01:29:46] We'll make sure that you don't get stuck around into a lot of technical details.
+[01:29:50] And where you can access a lot of free credits.
+[01:29:53] How you can sort of go around building that.
+[01:29:55] How could you can use that to boost our founder mindset and get.
+[01:29:59] Get things done in the next seven days.
+[01:30:02] And I hope to see a lot of people getting success at a global stage.
+[01:30:05] And that's what we want to prepare you for.
+[01:30:08] With that.
+[01:30:09] With that.
+[01:30:10] This is Aum Asnani.
+[01:30:11] Signing off for the day.
+[01:30:12] For AI Builders Hikeathon.
+[01:30:14] We have kicked off the first phase.
+[01:30:17] And we hope to see a lot of interesting ideas getting built your ideas.
+[01:30:22] Once again you will receive it on emails.
+[01:30:24] You know after this call is done along with the recording of this.
+[01:30:27] So that you can refer and the deck that will come to you as well.
+[01:30:30] Right.
+[01:30:31] For everybody who's seeing me.
+[01:30:32] I'll see you once again in couple of days and on WhatsApp.
+[01:30:36] Right.
+[01:30:37] Thank you so much for joining in.
+[01:30:38] Thank you so much.
+[01:30:39] Can do a quick way of the hands.
+[01:30:40] Can you do that.
+[01:30:41] Perfect.
+[01:30:42] Thank you so much folks.
+[01:30:43] We'll see you very soon.
+[01:30:44] Right.
+[01:30:45] Bye.
+[01:30:46] Thank you.
+
+
+================================================================================
+FULL CONTINUOUS TRANSCRIPTION:
+================================================================================
+
+And reading books of old, the legends and the myths, Achilles and his gold, Achilles and his gifts, Spider-Man's control, and Batman with his fist. And clearly I don't see myself at all at last, but she said, where'd you want to go? How much you want to risk? I'm not looking for somebody with some superhuman gifts, some superhero, some fairy tale place, just something I can tell you, somebody I can kiss, I want something just like this. Ooo-oo-oo-oo, ooo-oo-oo-oo-oo, ooo-oo-oo-oo, ooo-oo-oo, ooo-oo-oo-oo, oh I want something just like this. Oh, I want something just like this I want something just like this Oh I want somebody with some super human kiss Some superhero Some fairy tale place Just something I can turn to Somebody I can miss I want something just like this I want something just like this I want something just like this I want something just like this Where'd she wanna go? How much you wanna miss? I'm looking for somebody with some super human kiss Some superhero Some fairy tale place Just something I can turn to Somebody I can kiss I want something just like this I want something just like this I want something just like this I want something just like this I want something just like this I want something just like this Hello, am I going to go? Excuse me Yeah, you just get started I'm ready Just click on the button Yeah, in a minute Look at the stars Look how they shine from you Everything you do Yeah, they were all yellow I came along I wrote a song for you And all the things you do And it was called Yellow Okay, so I'm connected with my audio now Let me know whenever we are ready to start Oh, I can't hear you I think there's some background music here Can you hear me now? We'll just get started in a minute Arjun and everyone who's listening We'll just get started in a minute People are still joining in We have about 5.15 on the call And yeah, perfect Got it Yeah, just let me know I'm already, yes Yeah, perfect Let me know I love you so I slam a clock I jump to crush for you Oh, what a thing to do Cause you are all yellow I true a lie I do a lie And it was all yellow Alright, let's get started Let's get started Can you all drop in the chat Are you all able to hear me? Can you all see all the raries? Can we kick this off with all the energy that we got? Perfect, we have about almost 600 people And there are more joining in But yeah, let me also turn my camera on Welcome everybody Welcome everybody Are you all able to hear and see me? Yeah Perfect I'll also spotlight Arjun with me here So that we are all here One second Arjun, do you see the reactions? Do you see what we have been able to do in last one week? Yes Yes, yes, yes I see all that thumbs up And a lot of interesting people join the call Perfect Folks, Arjun is joining in He is travelling currently And he is on his phone as you can actually see Because Codex is making a lot of big So he is making sure the world does it right Welcome Arjun Do you want to give them a quick head start And yeah, I can sort of share them After that For sure, for sure So I'll start with like a quick intro And then also share about the build-a-thon That we have planned for this entire week So quick intro about me I am Arjun Currently I work at OpenAI So particularly I am part of the GTM startups team over here And I was also like the first solution For the technical hires in India I see some comment voices not coming Can you just please confirm If my voice is clear and loud Yeah, I can hear You can almost quickly confirm if you are able to hear him Yeah, perfect The reaction says, the chat says Great Yeah, I think it's all loud and clear So yeah, I was just saying Yeah, I was the first technical hire at OpenAI And I particularly look at all these startups in Indian region Along with my rest of the team I currently am based out of Bangalore So we have planned this whole Codex build-a-thon along with Like home and team from like growth school and outskill So I think we were like very excited to take this forward With the whole Indian startups and builders Who could leverage the power of Codex And build something like really interesting in this week's time So like regarding the instructions and everything I think it's all clear and it was also there on the Luma link But we have still set up this call So that if there's like any question or any Anything that we are not clear off We can use this particular meeting to answer all of your queries But in general like so far since we have been behind Codex Building this super application We are very excited to see how Indian users or Indian builders could leverage this super power To build something which was not possible before Now with all Codex super power where you have automation Where you have GPT 5.5 model Where it is able to do like insane amount of stuff We have 1 million context length Which it can remember like any big context history For you to just continuously keep on working And automating and building So those kind of These are like some super powers which are not available before And now it is at disposal of Disposable of like everyone here in India So we just want like everyone get like familiar with What is Codex and what possibilities are there for you So now automate like daily workflows that you have And also like build along with us for that So I think at the end of this hackathon We would want to see like lot of innovative use cases That we at OpenAI haven't seen So it would unlock like lot of new potential Or the possibilities that we were not Sure of how people could take up And yeah I think it is from the adoption Point of view also a great initiative by Outside team and maybe us at OpenAI Where we want this Codex And agentic framework to be part of your lives now Because since we have already used all the frontier CPLs at all around the globe Even Sinbergal who was the developer at OpenCLAW He is now with OpenAI So he has like 10 different terminals open at 3 different monitors and his agents are always Working in the background So now we want to bring that same capability In the hand of all of us So that we can also be We can upgrade our daily lifestyle and daily Workflows to enhance our productivity And yeah just focus on the things which are now Required which is majorly how you design architecture How you take decision and let the agent do All the hard work which is Which doesn't require like lot of Mindological thinking So yeah that is our initiative with Outskill And that is how we want to take this forward And I am very personally excited to see how All of us builders in India Are able to build innovative stuff Out of that so yeah I think I'll stop there and I think Home you can take it forward from here But if there is anything you want I can Quickly answer that yeah Perfect No I think Arjun just one thing right One question before we sort of let you go I know that you had the kind so What kind of ideas that you are most excited about Since we sort of worked on the shortlisting together In the next 7 days what kind of Projects do you see getting shipped Or something that people should focus on That would be the final question for you Right so something what we are looking Over here is some kind of automation So now we know like when there was no AI When there was no agentic workflow There was like lot of manual work That we have been seeing But now with AI we can like automate Lot of stuff We can like connect with like lot of MCP server The skills or some plugins Which are able to take action on your behalf Even when you are not there And only where there is like critical stuff Which would require human in the review It should be delegated to the human But whatever like manual workflow The general workflow that That doesn't require like human input Should be handled by agents So now what we want to see People building is something innovative Which maybe we might have not thought about But something related to where Agents are there They are able to automate like lot of stuff And only the places where human review is required Only put humans over there So since now it's like very much possible With codecs so that is one Second thing that we are seeing Like lot of people now you are working in Maybe some enterprises Some of the organization There might be some people from colleges as well So they might be seeing like lot of Manual stuff As a life progress They encounter something This is something manual And maybe this could be automated Maybe using codec or any other tool So we want to see some new ideas Or innovative ideas Where these workflows can As well so we can like schedule Like a daily work Or maybe it could be Where it does How one can place it From a flat It could get context on a calendar It takes like all the information With all your connectors To an actionable task On your behalf So yeah I think these are The things that we look forward to And yeah once you like do submission We would also like to see how you are able to Leverage codecs While you build whatever you build So that is like another part And innovation yeah that goes without saying Got it Perfect I think with that I think I let Arjun leave for the day You know I know he's busy definitely And the voice was slightly cracking Which his work is calling again So I think that's a sign Thank you so much Arjun for joining us I think let me quickly take them through What do we have in store for us Over the next seven days And I think yeah if you have something We'd love to have you again sometime Great great great Yeah thank you And thank you everyone for joining this I'm sure like Homewood Help you answer all the questions But I'm always there at the back end From the OpenAI team Like looking and supervising this from our end And would love to Very excited to see what all you can build And what submission we could have So please give your best shot At building what you do And also please share everything on social media So that we keep seeing Like what you guys are building So Homewood Like give you like entire format What to post, when to post And how to make it social So yeah I'm looking forward for it Okay then Homewood Thank you so much I'll take a leave now Thank you Bye Thank you Arjun for quickly joining And setting the stage I think folks what I'll do is For the next sometime I'll take you through What do we have in store And what's expected out of you We have already about 750 people That are in that I stopped the chat for some time Because I see people who are dropping links Folks you will get the time of networking also The hackathon is not really designed To help you build products But also To sort of help you get the right network But please do not spam Let's all be professional We are all professionals here And over the next 7 days We'll be doing a lot of shipping And fun and learning as well So as Arjun set the stage for us I'll quickly share the screen And sort of get started On what we have in store for all of you Okay Give me one quick second Perfect The call will be going till 8pm We'll try to finish till 8 And if you have questions We'll stay back till 8.15 And do that as well I'll try to answer all of the questions In the next it's already there But just in case if you are unable to We'll take that questions done as well And make sure most of you Who can take Who can be on camera Please be on camera We'd love to see all of you together as well Normally we try to do this under a webinar So we don't see you But I think it would be wonderful to see you as well For all of you who are raising hands We'll come to that Very quickly let me share what we have Give me one second I'll start sharing my screen And the team will turn the chat on and off As we go about it Okay One second Perfect Where are we Where are we Perfect Perfect Perfect Can you all give a thumbs up If you are all able to see the screen Also in the chat Just a quick yes Would do A quick yes Would do Perfect Perfect Perfect Perfect The chat will be off Karthik Turn the chat on and off As I sort of go You know Indeed In the other Once again We'll be back In the next We'll be back In the next We'll be back Once again Welcome everybody To AI Builders Hackathon We thought Why not You know Two brands Come together Somebody who leads tech in the world And somebody who leads education Come together and build something interesting So once again Welcome With genuine Gratitude You have come through You know Multiple channels Most of you have seen Are promotional ads Not ads The post on Chat GPT India's channel Your outskills channel Web ofs You know Quite a few things So what we are going to do Is we are going to build And ship a product In next seven days And how exactly We are here To do that Is what I'm going to cover We are exactly at Monday 7 PM And we try to aim this For a seven day thing And end at Sunday evening 7 PM Right Now what exactly This is going to look like I'll quickly cover that Most of you Most of the questions You already know How a normal hackathon happens But what are We here to do Along with you Where can we help you Because I'm going to go deeper On slightly more Okay The chat will be on and off As I said So if you are not able to chat It's not your Problem or Zoom's problem We have kept it off At this point of time Right Whenever you sort of ask questions We'll keep it on and off Perfect Let's get to it So we wanted to sort of Do a slightly more curated one That's why you see A lot of people coming in We got almost About 10,000 entries In the last 7 to 10 days That we were able to promote And We thought Okay What do we do with 10,000 people Do we want to do Such a big one No We wanted to make it Slightly more curated one So that is why we ask For your LinkedIn profiles That is why we ask you For your ideas And that is why we ask you For your GitHub profile So everybody Went through a first Shortlist of 3,500 people We told you We may Give you an outcome In 24 hours But we took slightly more time Because of the Response that we got So almost 3,500 people Came down And in the last 2 days In Saturday and Sunday Is where we spend time On actually drilling it down To 1,000 people That we shortlisted Builders whose ideas Were very interesting A real pain point That we think from our side That could be a real addition To the world Along with that You had a developer background Either in your sort of work Or in your GitHub activity Either you are an indie hacker Or you are a builder Or you are a senior tech Professional trying to solve Right In the chat Very quickly Which countries You all are joining us from Can we drop it in the chat The chat is on now Where are you joining in from Quickly Majority of you definitely Will be from India Definitely But which region in India Which region are you from India Interesting Interesting Got it And can you all type in Who are you Are you an indie hacker Are you a tech professional Are you an engineer A lot of people are CTOs Data analyst Everyone around developer ecosystem Is there with us Love to see that Wonderful Wonderful Wonderful I'll keep the chat off One more time Perfect Perfect So if you have made it If you have made it Congratulations If you did not hear it On our emails And WhatsApp before Congratulations You have made it You are at least In the first 10% Of the 10,000 entries that we received So in order to become the top 1% That's what the next 7 days will decide And how is where you get help From us and the OpenAI team Now welcome Once again What we are looking for is 4 things This is what we are going to cover In today's conversation And you should have Something live by the end of next 7 days Is the single line outcome Or the KPI As you could say AI has changed How products get built We used to take about Good 3 months To ideate Plan Strategize Get to a dam An ideation And also launch our first MVP would be looking like a 6 month journey But today 1% can build What once required an entire team And a lot of you already The idea that you submitted You would already have a few Very small version of the MVPs Or prototypes already In just 2 to 3 hours If you spend good time A first draft of MVP ships out And that's what Is the power of today And there are agents Which are already 24-7 Running Codex Also very actively promoting And working on that feature Coming out And what we are going to do Is we are going to spend Not just 2 hours Or 24-7 We are just beyond that We are going to share A proper 7 day commitment Now why 7 days? You may be able to ship out A good beautiful MVP That you can share with your team Use 10-15 members Can use it But it will still be limited to that What we want to do Is actually focus on developing Something that could go live To thousands of people And something that comes out of you So that's why We have kept it a 7 day And not a 1 day Or a 2 day Or a 3 day Or a 24 day Or a month long activity Because that's the right amount of time Required from all of us You will be learning by building If you have never built A future before A product before And if your idea is selected Okay, let me check this Before we get details Into that How many of you are first time builders And how many of you are Second time Or third time Or fourth time builders In the chat In the chat Is this your first time Or are you a regular one We have quite a mixed bag of audience As I saw in the selection But would like to see In the chat as well quickly A lot of you are regular builders A lot of you are regular builders So you exactly know Exactly know the kind of product Statements that people would be facing But all of you are first time builders It's going to be amazing And as I said It's not going to be just You building in silos You will get to meet A lot of these people Who are on the call with me And we do a lot of activities But all the ideas All the products Are going to be built individually And these are the same idea That you have sort of registered On the portal with So there are two ecosystems And why we thought to do this OpenAI which works at frontier Of AI models and APIs Along with the Codex ecosystem Going very deep Into developer ecosystem And you know Changing the plateau there AI native workflows Is what it is known for And the kind of innovations It has been able to do And we actually believe It's going to be the future of software That goes to B2C and B2B ecosystems And then you have Outskill A lot of you People know already You come from our ecosystems already Which is focused on Building the developer ecosystem Building on engineer's vertical Very actively And also Looking at Building the journalist vertical as well We have been From the time ChatGPD launched We were the first ones In the world To sort of launch the first ChatGPD workshop And today we are the first ones To sort of You know Partner with OpenAI and Bring this developer ecosystem A tool A platform To sort of You know Propel from here So we have had Mentors web shift We have had builders web shift We have been On the culture of Shipping inside Of a lot of our ecosystem A lot of our programs That we do are You know Almost at a nominal cost Are completely free Actually Dedicating to build The next generation of workforce And it's truly an Execution ecosystem So why don't we join forces And give that access To OpenAI's capabilities To the hands of people Who are going to build The future of tomorrow Specifically India Right? And that's why We did this We are early in the year In a lot of us Know this A lot of us are First time builders Of very few But regular builders Already know Solo builders are winning today It is the age of builders Who can ship products And distribution is also open At the same time It's not a way Or you know The time when you have to put money And sort of a lot of You know traction Into just getting those distributions But also Now by going into a build In public narrative Doing a lot of activities outside Along with building a product You can get that distribution And see actually traction In your product And execution today Is cheap There was a time When all the engineering Or building these MVPs It used to cost a lot In terms of hiring an agency To test out the idea Or building a product Or you itself You needed at least 3 to 4 people But today it doesn't Right? And that's what's Making start-ups Move faster Right? So there are 3 stages That we are going to work on During the next 7 days The phase 1 is Starting the build Which is today We have already Gotten started Right? If you read the email properly It was mentioned that The next step is Building Right? There are no hiccups In between What is required from you At this point of time Is building You already submitted your ideas Based on that On which you got selected The next step from here is You will start to build on these ideas And there will be 2 checkpoints Right? The first checkpoint Will come in on day 3 Which is Wednesday Right? So what will happen is It is an MVP checkpoint Now what exactly MVP checkpoint is Whatever ideas that you have We would like to have a very small toy version of it What is a toy version? Something that is workable It may not be beautiful It may sort of not be a ready live product But we would like to see How your user flow comes in What are your screens looking like A very scrappy 1st draft version of your idea What exactly comes out of it Right? So that's phase 1 The 2nd phase will come in on Friday Which is day 5 And at day 5 We will expect a working prototype from you Something that is live Something that's working And which is demo ready Right? And at the end By end of Sunday We would expect you We would expect you To submit a 1 pager document On why you selected this idea What exactly your hypothesis is To build and solve this And at the same time A live walkthrough A demo of your product You recording a video of How you would give a demo If you are picturing this product If you are sort of taking into thousands of people That's what we would expect from you Now how exactly this is going to run through I'll iterate one more time Today we are at phase 1 Or day 1 You will start to build Whichever idea that you have picked That's the idea that you need to build on top of If you want to change We don't want you to change the idea Because that's the main front of Your submission and application Once you submit We will be matching in terms of Whatever you have given us In terms of idea And what you actually build Right? So you may face side Challenges there Right now What you need to do is Whatever idea you have Start slightly more researching On okay What is the TAM Who exactly will be the target audience Who exactly is this product going to help And in what way Right? Start with that And then start building an MVP By day 3 Wetness day Along with that What you will receive from us Is daily You will receive nudges And check in information About what you should be able to get done Right? So daily you will receive an email And a message on the WhatsApp community And through your WhatsApp DM Is what did you get done With instruction of what you need to get done On that particular day Right? You can go fast and slow Depending on your pace This is majorly to help the first time builders Have some structure And also people who are sort of working out Or who have the You know, time taking And very dedicated jobs You have that time Right? We expect you to spend about good You know, 1 to 2 hours every day To build this and sort of sharpen it You can choose to do more or less And you can choose to go fast and slow Right? That's completely on you Now this hackathon 50% is in your hands And 50% is on our hands We are the backbone Of giving you steps Of how you should think How you should sharpen your ideas How you should actually look at building an MVP Where you would need help And we will also Keep on collecting questions Every day when that happens And your progress Every day when that happens And Wednesday once again Is when there are 2 live sessions That will happen Right? One is when we will do a session on Wednesday at the same time 7 p.m. IST And next session That will happen on Friday Right? Now what these sessions will help you with These sessions will help you with On a lot of questions That you might get stuck with Okay, I'm trying to build a healthcare app I got stuck with this API I got stuck with I'm not able to find this data Whatever these questions that you have We'll cover that Second, we'll also give you nitty-gritties Of how can you use AI better To sort of get to your outcome Right? What are the right way of using AI What is the right way of saving tokens Or sort of doing that So we'll do a mix of workshop And a Q&A So you get that particular help Friday When we come back On a session Once again We'll look at a lot of our MVPs We'll share sort of feedback On what exactly a lot of people have been able to achieve and build And we'll give you some direction In terms of how a business is built How a product is built What are the next steps How do you validate the idea And the user flow at the same time So before we finish on Sunday You have that feedback coming in You have all the expertise that you need In order to build not only a shippable version But something that you can launch to thousands of people They can use it and give you feedback The idea, folks, of this hackathon is not only definitely To build a shippable product But also to see if we can help you get traction And I'll tell you how we will enable that If you are one of it And you will go through definitely stages of it multiple times And we'll keep on giving you this information on a daily basis Through our emails and WhatsApp communications But that's how this looks like Three phases First phase today Start building on the idea that you have currently Second MVP checkpoint is on Wednesday You will get forms to submit And in way you should submit it What the format would be Phase 3 A final shippable prototype And by Sunday a working application That sort of can be used by multiple people If we change anything If we change anything It will be actively communicated And adjusted for in the next seven days itself Okay So that's how the next seven days are going to look like I'll open the chat and ask one question Are we all clear Type all clear in the chat I'll open the chat Perfect All clear in the chat I'll take the questions also towards the end All the doubts All the doubts will come towards the end I'll mention about codecs and credits in API I know what questions you have But all clear so far All clear so far All clear so far Got it perfect Perfect Perfect Perfect So what we expect you to do What we expect you to do is this Right We don't want you to think a lot about idea I received If not tens At least fifty to seventy messages On LinkedIn and email That oh can you please open the application for one more day I was thinking and sharpening the idea But I couldn't submit But we said I'm sorry we can't do it Right We are not looking for perfection We don't want a billion dollar product coming in seven days That would be Very different expectation We don't want massive list of features Okay I paid thousand agents in seven days Or just taking a lot of time in just the research point Right We want fast execution Right What do you mean by fast execution You have already picked out the problem How can you solve that one problem Very nicely In very detail And properly And how do you keep on experimenting Experimenting with different features Different workflows to get to that solution faster And how do you keep on shipping How do you keep on shipping What does that mean When you execute fast When you learn fast If your idea is going to work Not work What changes you would want How quickly are you able to ship This will also be understood in your submissions When you submit on Friday When you submit on Wednesday We'll also ask you about the iterations that you did And understanding how exactly your mind thinks In terms of product thinking How do you build a product How do you go from just building a very small workflow A low fidelity design To high fidelity design To building a user journey To making a MVP To building a final product So speed along with useful wins Useful that your customer That your potential customer or user would actually like How do you make things better Faster or cheaper for your customer In any form or fashion That is going to be one of the major criteria For people who are going to win this So five lenses This is what the judging criteria is going to be For the final products all of you submit First of all technical execution Does the project work Is this technically credible Does it have any bugs Can this product actually go live in production Can this product be hacked in one go Whatever That will give you much more specific ideas about going about that That's why we have these sessions also The first criteria once again would be technical execution The second would be usefulness Does it actually solve a real problem A real workflow Arjun spoke about a lot of workflows That they are focusing on automation That they are focusing on Definitely that is one of the key idea Whatever problem that you have fixed That you have chosen Are you able to actually solve it And how easily How efficiently are you able to solve it Third Creativity and originality You know what Let me tell you this Out of all the 10,000 ideas that we received If not less About 700 people submitted That we want to build an AI job board Something that helps people find jobs Sort out their resumes properly Definitely we were looking for solutions like that also But we are looking for something that is unique Which is not done before Something that is new in the AI native era We don't want Okay, humans do 10 steps My agent can do same 10 steps faster Great But can you do it in 3 steps What is the What is the agentic UX How exactly you think about agentic workflows Is what the creativity and originality is going to be judged on Is the idea Or implementation The way of implementation distinctive Fourth Codex usage Did the builder meaningfully use codex Not just mention it Now a lot of you would have question Are we getting chart GPD pro Are we getting codex credits Are we getting API from open AI No folks You are not getting any of these You are not getting any of these Right What we expect from you is a Bootstrap founder mindset Imagine you don't have any resources You only have free APIs available from open router Or any other tool that you may want to use Right That's the stack that we will be using But also whatever limits Codex and chart GPD provides How you are able to meaningfully integrate That in your ecosystem It's what going to be looked at also Right Did the builder meaningfully use codex And not just mention Oh we did this with codex Great But how meaningful part that was So here Once again Your founder mindset is going to come in That oh I My problem had 10 steps to solve Step 7 and 8 were the most meaningful And that's where codex Helped me get through it So you are going to look out for that also And finally Finally Presentation clarity What do you mean by presentation clarity Is exactly When you do that demo When you give us the recorded videos You will get the submission criterias As well Basically One the final submission will have You will be running us through your products While While you will be actually Let's say you are doing a demo To a user Or an investor Give me one quick second Sorry Take problems Charger Never happens But yeah Perfect So this is the 5 criterias That we are going to look for very actively Right Wow I think I think whenever we do Certain interesting initiatives Lord Murphy Always follows us Murphy is Murphy's law Whatever has to go wrong Will go wrong So our Zoom had a limit And now my laptop was about to die But regardless of that Regardless of that 5 lenses 5 And all of this Folks This is 5 criterias All of them will be given to you also After this call is done So that you can optimize for all of it You will get a checklist That you can benchmark your product against And see what happens It would not be like Oh we are all Oh we don't know what happened How it is selected All of that You will be made completely clear Try to keep as transparent As possible from our side In all terms and phases So that's about the final selection criteria Final The top 5 winners who get selected Will be sort of marked on these basis In the chat Are we all clear? All clear in the chat Perfect Perfect Perfect Perfect As I said Right As I said We want you to think like a founder Not just a solo builder Right One mindset basically talks about overbuilding We already spoke about You know Perfectionism We spoke about that How actually you think about One clear problem statement Which is your idea Only thing How you can chain You can modify your idea slightly You can't change it completely Right If you said Let's say for an example I want to build a healthcare receptionist app And now you want to change it to Oh I want to build a healthcare admin app That also solves for xyz features If you want to go deeper into the same problem You can do that If you want to change the problem completely Unfortunately that won't be considered In the final selections Right One Narrow You can go slightly more narrow But still useful I wanted to do ten things But I'm choosing to do two But doing Solving it very nicely Right I'm focusing on two out of ten features That I wanted to build And ship early What do you mean by ship early? Whatever you want to test Whatever you think is the first Sort of You know Workable solution Ship that first And then add the layers of it afterwards Right Demo clearly I think That instructions will come to you as well We will sort of be You know Giving you that understanding Along with collecting feedback We not only want to do Okay I build an MVP I submit on Wednesday Great I build You know A few more features And add it Till Friday And submit it Great No At every step On a daily basis We want you to Validate your ideas We want you to Validate your user journey We want you to Validate The final product Collect a lot of feedback And iterate That's what experimentation means And that's what we'll be judging as well And how you will do that I'll come to that in one bit In one bit In one very short bit Right Once again The idea is not only to help you Just ship a product But also to validate your idea And after seven days You actually have something meaningful That could become let's say A 2K, 5K, 10K MRL business Right And we'll push you towards That direction very actively There will be challenges There will be constraints But that's where a founder mindset gets tested And that's why you are one of the thousand people In the country who have been selected So if you don't believe We do That you can do it And we will help you do that Right What painful problem can I solve Is what we put in ideas It was one of the major It was one of the major Ideas for us to accept Your application Now think about these five things Right Winning products This is how they look like Right First of all Are you making it cheap Sort of you know Time-wise If you are saving time Of anyone How much Are you automating Someone's work Or someone's version Are you reducing Friction in the process A task needs 15 steps My agent My workflow is able To do it in three Right Increasing speed At the same time And then Quality Right We'll Once again All of the things that you are seeing You will receive it after the call And the deck will also be shared Along with specific ideas as well And daily prompts To how do you think And keep on making better products On these criteria as well Right But this is the mindset And how we wanted to think about now Distribution Right How many of you All of you Most of you who are regular founders How many of you believe this That 90% of products fail Because of poor distribution People have been able to make Wonderful products But Only because they don't get Right distribution Or they don't know how to solve For Marketing or sales Or whatever that distribution Would be Or organic distribution They don't work out Right How many of you believe Yes No in the chat Or you have been able to do something But I had a great idea Great product But nobody used it How many of you have Had this problem Before? And do you want to change This in next seven days? Do you want to actively Work on changing This in next seven days? Let's change this In the chat Let's change this Now A lot of you had a question Right How do we actually help you Build momentum and distribution How do we help you Building that distribution Validating that idea Now We as an outskill And open AI Have been able to solve One thing Wonderfully well Wonderfully well There are multiple companies In the globe But only a few Have been able to solve For distribution properly And we are here To give you that arm From our side Give you that help And support from our side Right So how does that happen On a daily level You will receive Our prompts Of what actually you should be doing If you don't have a direction Or what you have been doing And we would expect Expect a daily progress from you It can be a screenshot It can be a paragraph It can be a few action items Right And you have to It is not a compulsion But if you want to actually Solve for distribution You will have to build This in public You will have to do this Hackathon in public So we will expect Either a Twitter Or a LinkedIn Or a Reddit Momentum from you What is that Whatever you do it on a daily basis We will give you that idea Of what exactly to frame How to talk about What exactly to include And post that on Twitter LinkedIn or Reddit Whichever communities that you find helpful And share it with us On the daily check-in form That will come to you And when it receives us Whichever ideas The progress notes We like the most On a daily basis We will keep on reposting that Commenting and liking And make sure You get that distribution Not only from our pool But something that you create For your own idea So in the next 7 days You not only have a product ready You also have your first 100 followers Or your first 100 users Along with you Actually validating this idea So in 7 days you actually know Oh my god This problem is not going to You know The solution that I have is not going to work Or it's going to work And I need to double down That's what is going to be expected Once again It is not compulsory It is only compulsory for people Who actually want to build distribution Along with shipping a live product In the next 7 days Right And if you want to do that We will enable that public feedback loop for you And also the daily check-in journey So you can be accountable on yourself Building that as well Right All clear in the chat All clear How many of you are in for build in public? Type build in public in the chat Everyone will get an opportunity To share their links Connect with each other And do all of that The most important part is going to be you Committing to this journey Shipping a product While building this as well While building distribution as well That's what we are going to Enable with you Perfect The chat is off now Two checkpoints As I already mentioned I'm just clarifying it one more time Two checkpoints First is Wednesday We will expect a product brief You will receive how we wanted And all the submission steps also Right But I want to make sure that you are ready And you know what's expected out of you in the first phase Which is one pager, investor pitch What is your idea? How exactly you are going to go about it What is your user flow going to look like? Why you are the right person to solve it Product brief definitely MPP screenshots or a user flow diagram By Friday Research and idea validation You would have already posted a few posts You would have received feedback You would have gotten a lot of interesting feedback And you would have iterated So what does that research say? You need to change a few things Any features that you change What are the experiments that you did What is the feedback that you received What is the idea of validation That you received with a working prototype link And a demo walkthrough video Along with that will be your final public launch post also Right Which you will submit by the end of Sunday Which you will submit by the end of Sunday Deadlines will not change Sunday, end of the day Sunday 10 to 12 pm 12 pm is when Whenever the clock hits Monday The deadline is ended Unfortunately we won't be able to change it There are a lot of people who already wanted to apply We weren't able to open it Same will happen here And we actually believe you will be able to ship this And you are not building alone You are not building alone If you think you are building alone No Definitely there will be thousand people Who are here with us Who are actively building solo products But we will make sure that is our responsibility That is why you have outskilled and opening eye together Working on this So that you can find your own peers If at the end of 7 days Even if let's say in the journey you feel Maybe this is not something I want to continue But we are able to pair you up with someone Who you may be able to work with After the 7 days You will actively get mentoring In these two days when the phases are You will get that mentor support through sessions And a lot of the questions that will come in as well You will not only build but learn in public also Through a lot of feedback that we will enable for you Through our ecosystems And also pushing into startup ecosystem A lot of first time founders A lot of first time builders Or people who already have a job How do you break out and become a founder How do you get into the startup ecosystem That is what we want you to actually do in the 7 days You don't have to worry about any of these That is our responsibility All the things that you see on this slide Is what is our responsibility You are the builder And everything around is structured around you For the next 7 days And that's what our responsibility is going to be So it is your job to build and our job to enable you To get that distribution To get that peers To get that team To get opportunity to get out And start building something of your own As I said WhatsApp community is always open While you may not be able to type in right now In a few days we will open a WhatsApp group as well So that you can interact with each other A daily check-in will happen Every morning you will get a prompt And then whatever is required You will be sort of expected to submit Or sort of update your progress by the end of the day And a networking and support ecosystem We will also do this collaborative networking Networking meetups And keep on sharing your active opportunities Where you can push in your product and launch it as well That's what we are going to do And two sessions As I said Unblocking Arts Wednesday 7pm And Friday 7pm And that's exactly when we will have this live sessions again And that's exactly what we wanted to share In very brief of the detail Once again These are the same things In terms of how you actually play fair and build real We are going to make sure And folks One more understanding We will be accepting all the new products Which have been built in this seven days Not something that we have already built before today That is not something that we are focusing on We are focusing on something That we have actually built in the next seven days So build during hackathon Policy number one Policy two, responsible AI usage And I will tell you how we will validate as well We can't share everything Live with you also here But we will check How are you looking at the AI usage What are the sort of models have you been using How have you been able to correct it Right Any plagiarized content Any sort of illegal use of any picture Photo code Whatever that is Won't be appreciated Originality I already mentioned your idea Your code And are helping you worship that muscle And at the same time No fake demos If it's a mock You can say that You can be as honest as possible with us Our job is to make you win And we can only do that if you are honest with us Right And if you trust If you put that trust in us We'll make sure that you win in the next seven days And also after that If that sort of You know for very few of people Who we believe actually is possible also Right If you are genuinely dedicated on solving the problem that you selected If you have forgotten your idea Some of you mentioned You will send it back to you on your email once again Right So that you know what you have signed up for So that's basically how we are going to You know keep some sanity check over the next seven days And once again I want to emphasize on momentum Over perfection On a daily basis The one question that will come to you is What did you get done to date? How much thinking did you did? No How much conversation did you did? No What did you get done? How much experimentation did you get done? How many times You broke your head into building that one feature Or that workflow So build that real thing Make product that is useful Do a lot of research around that also if You know you still need that help and muscle And iterate fast You are actually Actually going to look at a lot of experimentation The changing in iteration that you are going to do in the final demo as well That's what will also contribute To you winning or making it to the top five Now this today is your time This today is your time You have to build It's all on you And it's support of outside ecosystem And open AI's ecosystem to get This might be your first year product But we will make sure in the next seven days You are able to ship that And do a great job there While we help you to look at And get you your first customers or first users And at the same time how do we Open your brain to how do you be actively involved in the startup ecosystem Or if it's just a portfolio project for you How do you properly add that and pitch it to the next Let's say you know job that you would want to get Or whatever that is And how do you use this particular seven days To make it an inflection point in your career We are going to give you a lot of ideas of how to do around A lot of your goals as well Building is one thing that you need to focus on And that's the whole core job of a builder Of a founder Everything which comes along the way Is what we are going to help you Support you and guide you with So that's how this is going to look like All clear in the chat All clear in the chat Are you all following with me? Are you all understanding how we are going to do this? Do you all feel this is going to be okay Now I feel slightly more calm down Vipul I'll answer your question Give me two minutes please Do you all understood That how actually we are going to go on a YE Aditya Kaskam a YE What's the problem? What if we have forgotten our idea We'll come to that I'll tell you We'll send that to you Back okay No credits even from OpenAI Yeah there are no credits from OpenAI There are no credits from Outskill also When we started Outskill Nobody handed out credits to us When OpenAI started Nobody handed free credits to them Right? What we actually want you to do Folks once again We want you to think like a booth staff founder There are already a lot of free resources available This is not an any other hackathon to just win some grants We are not going to do that Unfortunately I'm very sorry If that is what you were expecting Right? This is not a hackathon Where you ship a product and get a grant Or get a certificate We are actually focusing on builders Who want to build real products And use our help In building that distribution And becoming something great in a startup ecosystem Right? That's what we expect Right? And that's how it's going to operate You'll get a lot of support definitely Right? From as I said from all the different teams Right? So what we'll do now For the next 10 minutes I'm going to open this up for questions We are exactly at 7 Wow it's 4 minutes left Yeah First we'll open it up for questions Then I'll also tell you What are the next steps from here Right? A lot of you would have already received Reflections link in the email I'll talk about that also very quickly Right? But while I do that While I do that Give me one second Give me one second folks Perfect Perfect So what I'm going to do now Is open the chat box for 10 seconds Keep your questions ready Keep your questions ready and type in And we are going to take a few questions And then we'll I'll drive you through the next steps And then we'll close out for the day In next 20-25 minutes And if there are more questions We'll stay back here for some time Okay? There's a Google form the team has shared Make sure you fill in that form And I'll make sure to pick in questions From there quickly And make sure Most of we are able to answer Without spamming the chat We are dropping any links apart from us And if we have time I would like to keep 10 minutes also So that we can have this networking activity also So that you can also speak and meet with each other Got it Give me one second I'm just opening up the form But folks how does this sound till now In the Do you have still permission to react I think yeah you have Oh yeah perfect Give me one second The form is just opening up Perfect I can see a couple of questions I'll just start answering them in a bit Interesting interesting Perfect So let me answer a few common questions That are coming in right Once so that we are done with them If that was your question The first question What if I have forgotten my idea How many of you have this question I forgot It's been five days I forgot my idea So what is going to happen is After this call My team is going to send you an email with your idea That you have submitted Your full application form that you submitted You will receive that So you exactly know what you are going to build Right Now in case if there's a change in idea In case if there's a change in idea I told you two things Right One is you can go deeper Do the same problem statement You can't change completely So you will also tomorrow When you receive the first check in First check in Any adjustments if you want to make to the idea Will give you that option to do that Right That's true Now next one Now it's a good question It's a good question It's coming from Sahil For the demo video can we use an AI voice over An editor video You can use your creativity You are open to do it Completely open My project is As it will usually take three to five days So I thought of another project Folks, this is a good question Let me answer that also My project is building Dash But it won't be possible to make it live as Chrome Or App Store Or another one usually takes three to five business days Of launching it live We don't expect you to launch it on any App Store in seven days What we want is some app that you can demo and show us Right Let's say if I want to build a mobile app Right It definitely will Apple will take about months to review that and get it We don't want that Do you have an APK file That you can run us through on the demo That's great Can you run it on local and drive us through Great That works That works If a person If a person has If a person has pro subscription already And another person does not How will that be monitored One second Interesting What happened? I think there was some setting problem But no worries I will make sure that happened So a lot of you would have some unfair advantages Right A lot of you would be first time builders You may not know how to build a product But you may come from some expertise We have, let me tell you this We have people who are 17 year olds And we have people who are 55 years of old in this hackathon Everybody has their own leverages Right Somebody will already have a Codex Pro account Somebody would already have cloud accounts Somebody would already have another accounts That's their advantage You can choose to use what you want But also have Codex integrated in your workflow What you can also do in case If that's We'll see if a team can enable that If some of you already have a few accounts And you would like to open up For people and use together We'll see if We can open up Now this is one question that is coming from Prayansh And I think a lot of you would have that So I'll anyways take it very honestly And answer that Right So isn't it unfair competition Someone who already has a $200 Codex plan Will have a massive unfair advantage Over anyone else Yes Yes it would be It would be Why not Why not And they have worked hard to earn that $200 To get a subscription That's why they have their expertise Right Now Someone who is let's say 20, 25 year old How many people I'll tell you the problem statement People who are at 45, 50 years old Sometimes they struggle with new ideas Fresh perspectives that you guys don't have And they spend a lot of time Working with all of you to do that So do you not have your own unfair advantage You do have As I said This is not any other hackathon Where you can come and build a product And earn grants And do nothing about it We actually want to focus on people Who want to ship real products And back them That's where all the efforts of open air And outskill go Where to find a problem statement We'll give that to you I want to change the idea I already answered that We need to make some product That we gave ideas Okay How is equality justified Some users will have Force That's fine Everybody has their own thing I live in Bangalore I have better access to start-up ecosystems Somebody does not Can we change anything about it We can't Got it And I think Can we use local LLMs Such as Olama You can What needs to be submitted like a document We'll share you exact step-by-step process As the phases come Do we need to pay any amount For this hackathon No, you do not Is there a size limit To the video submission No You can submit a video link instead Yes, you can Build in public and support From team for a project How will that be distributed and conducted Also timelines while a PPT Yeah, we'll share that All of that with you Specifically as well And on a daily basis We'll keep collecting questions So when we come to Wednesday We already know the questions And where you are Is it strictly individual Or can we team up to If we have same idea And both of us got approved It is fine if you do that But only when you know each other We won't be building things for you Does it need to be open source Not a requirement It can be, it can be not Do we have to build products from scratch Or no Build something that you were Building during this hackathon How will you track usage We will, in the sort of criteria That we give it to you We'll have that understanding of it What if the idea of the app That you are building requires us to build the app As I said We want to see a demo of it Not a, I don't want to go and play store And download your apps It's basically We don't want to publish you Wherever the process takes time Which is not in your control That's fine We don't want you to once again Publish on App Store or Amazon Or whichever store It takes seven days It's just not seven days It actually takes months to actually get approved also But you want to see something that you build And you can share the link of that in a drive As an APK that we can download and check and use If you choose not to do the distribution part Will that affect our marketing negatively? No No If you do not participate or want to do Building public activity or daily check-ins That's completely fine It will not impact in any of your submissions Any of your final scoring Right But if you want to use the muscle that we have built And are leveraged to get you You can do that But if you do not do it It does not impact your final rating Can we use any IDE? Yes, you can What is the price of the winner? Oh, did we not share it? Yeah Folks, everybody All the submissions that happen until Sunday The results will be coming out on Tuesday Or Wednesday Right We can share the dates also So today we are exactly at 25th May The hackathon will end on 31st May Sunday The final results will come in at On 2nd June or 3rd June Right And 5, top 5 builders will be selected Who will receive Codex Pro account for 1 full year Individually 5 individual accounts will be given out To people who actually go out And are there any other bonuses? Let's see, Karthik How about Yeah, we will share it As we go deeper But as I said We want to actually back people Who actually want to build meaningful products And take that journey, right? Is it possible to have a pitch for other products as well Which I shipped? No, that won't be considered Is it okay to use other coding tools? It is okay to use that Why can we not change the idea? That can be a case where you might have found a different domain or a gap That's completely fine If you want to change the idea completely from what you selected It won't sort of You know, that was one of the important part of you getting selected The submission might get The final selection might get impacted But also at the same time You will get the idea that you have put out in the form Again in the emails that we shared with you And I have Can we build a solution as a containerized web app? You can For a product where it is not revenue based product What are the criterias for selection? Folks, once again Revenue Or any distribution is not a part of the final selection Final selection only depends on the five criterias that I shared And that does not involve that You will have to have 100 users Or you will need to generate money from it A final working app Or a prototype or a product Or that automation is what is going to be considered The tech stack is the goal here Community idea question Can you make a discord if it's possible? Participated in No, we'll write now for one, two days We'll keep it to WhatsApp And after that, we'll sort of, you know, get to it Can we get all things set in a meeting as document Because I'm attending while traveling to some emergency Yes, you will get that If the idea or product is a B2B Is it okay? Like, it is fine Yes, it is fine B2B, B2C, B2B, B2C Everything is fine If your idea is selected If you are here Idea that you have thought of is already in So you can go ahead on top and build on top of that A lot of ideas A lot of questions are around that Can we get a copy? You will get Build whatever we build We'll have full control and coordinates Everything is yours We don't want anything Any idea that you build Anything that you ship Anything that you share on the forms Everything with us Outskill If your idea controls nothing It is your product It is owned by you completely And definitely if you are following the rules of Whatever platforms that you have been using But we don't own anything So if I think like a booster founder Can I use any LLM Or are we tied up with codecs You can use everything But also integrate codecs in the building journey As a student How can I build full application without Will you help me? We'll keep on sharing daily updates on If you are first time builders Like a lot of you are On a daily basis We'll keep on sharing ideas of how you should think How you should build So it's easier for you to do that We'll also share you examples Of what people have been building inside community So that you keep on consistently getting that advice also As a first time builder How to kickstart To build one such large scale What are the key indicators One must keep in mind There is nothing large scale That we need to eye for seven days Who is this This is Siddhi Agarwal Siddhi there is nothing large scale We don't want an Amazon to be built in seven days What we want is If let's say an idea off like that Can you build a simple app which Where you can list List a book List a product And people can buy A first MVP That is workable and shippable And can be used by people I want to implement a much better idea Having better ROI and potential Is that possible Google is provisioning Okay Any reasons No reasons If basically you want to Integrate multiple facts You can do that Feel free to do that I have not received your email with reflection link I will just take you through one more time My products copyright issues I think I covered that It remains yours I need like a good validation of my idea Of is it really good and scalable in future Because giving without cause is not viable So need help in that particular area Exactly why building public method is designed How will you help us with actual distribution of a product's release Please the hackathon is great by the way How will we help As and when you keep on sharing your daily progress notes You will see that coming through We will also share it within our own communities In our own user basis And the socials as well These are all the common questions that I am seeing There are about exactly 300 questions to be really honest And all of them As I was skimming through All of them talk about exact same thing Which is about these couple of challenges and things What I am going to do now Do is one In the chat In the chat Are we all clear Anything that I have not covered You can drop it in the chat now for next 10 seconds And then I will run you through the reflections post And then we should have time for a quick breakout activity In the chat Opening it now Got it Turning the chat off now Jerome Jerome What if we have forgotten our idea Can we get access to see Jerome I mentioned Yes You will get access How you will get access Our team will send you your idea That is shortlisted On your email After this call ends If I get selected into top five Will we get help after it Promoting it by mentor Mohit You might get it And we will share it As we reach all the milestones Will the winners get PPO in OpenAI No Can't promise Okay One second If I get Okay What if already started building that product If you have started building Sunday It is completely fine But not something that is already created Before that Okay Okay Okay Okay Okay Okay Okay Okay Okay Okay Okay Okay Okay Okay And then that is already created before that Can I show dummy user on my app You can But once again Users and all of that Are not the major criteria While we will do Help you You are getting the direction Can you re-share the links Yeah My Q&A is not addressed Swamsee Better we would have put the question itself I will open chat once again Once again My idea does not include any agents Or any AI features in the application Will this be okay It is fine It is fine Folks we want A product An automation to come in It may not be AI first product or AI first thing, while it is built with AI, right? Built with AI is major focus, then requesting the recording, you will get it. Share the PPT. We will share it. My idea. Okay. Can we build a dev tool? You can build a dev tool. Can we network with web of an open AI team after even the hackathon? I'll tell you as we reach, you know, the each milestone folks, there are surprises also coming in. I can't tell literally everything on the first call, right? Let's focus on building and we will make sure what you will get and whatnot as we get deeper into it. Can we do an offline meetup? I don't know. We may or we may not. Got it. Perfect. Uh, one second. There was someone who said my question was not answered. I'm trying to find, but we have so much. So we keep it to that. Understood. Understood. Please answer this. It's a genuine question. I have my idea. I may be built as a website. So the product that I will be building is under that and not exactly in that website. So can I do this? But I will be using that website for the users to understand about my product. Uh, Shubham, we will recommend you to build a new product. Uh, you know, if it's already on a website, that's fine, but whatever you are building new, you can share that as a demo. Okay. Perfect. Perfect. So folks, what happened is. When we shared you the link, when we sort of gave you the, uh, acceptance, we also shared a reflection post, right? What is the reflection post? I'll show you as well. This product also is built with, uh, AI itself. So I'll quickly run you through and also share the link in the chat very quickly. And yeah, so I'm dropping the link in the chat. Okay. So what is this? So what we have done for every session, for every check-in, for every phase, this is how we are going to move forward one second. Now this is something that we shared with all of you. I spoke about the built-in public concept. This is how we start the hackathon night, everybody who's on call with me, you can go on the link and you can, first of all, add your image. If you have it handy, I'll show you how, uh, sort of this works out. I've added my image, my name, which is your name. What is your product or idea or a problem statement at this point of time, if you do not remember, you can talk about what are you excited in building? What are you excited in terms of what excites you in joining and building through this hackathon? Right. Let's say, uh, one second. I am excited to help thousand builders launch, build and launch their products in next seven days. Okay. Okay. So in this profession, who am I? I'm a student. I, what is my designation? Whatever that is. If you are a student, you can type in student or whatever your designation would be head of community and JTM. What's your company? If you are in a college or an Institute, type your name or name on Institute. Once you click on generate post an image, you will see a post getting generated along with an image that will come in along with an image that will come in excited to share that I have been shortlisted for the open AI outskill AI builders hackathon over the next week. I'll be building alongside thousand selected builders from across the country to launch real products using codecs by open AI will also get access. This is basically what the post generates. And this is the picture that gets generated. You can do two things. You can either directly click on post on LinkedIn or you can copy text and download the image and go to X or you can sort of, you know, come to, come to LinkedIn, drop this and copy and paste the post that time in and click on post, click on post after today. You will also get, let's say, let me actually do that. After today, what you will also receive is a form, whoever has made this post already, you will have to sort of just give us the link so that we can sort of amplify this post view. This is how it will look like when you click here, copy the link to post. This is what you'll sort of submit or you can go to Twitter. You can once again copy the image and talk about what are you excited about? Let's say at this point of time, I'll mention this one, two things, right? And I'll mention Forex, outskill. And yeah, if you want to add any other one and you can click on post, you also see something on my Twitter, right? Build in public. We are going to create a few smaller communities so that you can actively connect with each other, share it with each other and share it with an ecosystem that actually promotes building products where people actually keep on building. A lot of you would already be familiar with a lot of these activities, but we'll share you. How do you build? You focus on building the idea. We'll focus on how do you build the distribution and helping you support with that and giving you steps and doing that, right? So that's basically how we look at doing this with you. And that's basically what this link will do that for you. At every phase, you will receive a similar infrastructure, similar page or similar one. At this point of time, everybody who is starting and who is committing for this journey, make sure you do that. It is not compulsory. Once again, it is not compulsory. It is for you to build that momentum for you and getting started with it so that daily, when you keep on posting about what you're building, your audience knows what you're building and people, when we promote your post, when people come to you, they exactly see that journey that you have been building and you can see that just doing this. We have been in the last five years, I've been able to train almost 15 million learners and about people have not only built their own distribution, but also built following along with it. And we see this model working for everyone who sort of actually wants to become a builder. One of the major problems, you can build a wonderful product, but if you can crack distribution, that's when you become a wonderful founder also, right? But regardless of that, don't worry about any of that right now, your focus is on building and building only now in the chat, in the chat, in the chat, do you want to do a quick breakout activity exactly, exactly 10 minutes? I'll open the chat now, first answer me one, are we all clear and are we all ready in the chat? Are we all ready in the chat? Are we all ready in the chat? Why is it called Codex if the hackathon does not provide Codex access and participant? It is also called open AI and out skill hackathon, right? Because you get support from these both teams to actually do this, right? But okay. Perfect. Are we all ready Folks, please, no links in the chat, we will give you enough time to network with each other. We will give you time. We'll give you time. We'll give you time. We'll give you time to promote your GitHub. We'll give you time. We'll give you time. And everyone who is doing this, please, please, right, please don't tell me that you did you guys didn't give clarity, right? Let's let's all work together as a team to help each other out, right? In the chat, are we all clear and ready? And if we see someone spamming, can we please remove them at least for today? Yeah. Rahul, you will get the answers as we go deeper right now. The focus is on building and not funding. Have you built it already? No. Seven days hackathon is for builders. If you're already a builder, this is not for you. Please do not spam. It is not helpful. It is not professional and it would not be appreciated, right? Please folks, I'm trying to be as helpful as possible. Let's help people who actually want to build and do that, right? If you have been selected, we see some evaluation and helping that from you. Okay. Perfect. Perfect. Do you want to do? Do you want to do? Do you want to do a breakout activity quickly? Perfect. I think we'll go slightly above if we do that. So I'll just take final few questions which are coming in and then we'll close out for the day. Can we use GitHub? Rasha, thank you for dropping it 50 times. Can we use GitHub and use Netlify to deploy and give a link to access? You can do that. You can do that. Is no codex an eliminator? Yes, it is. How do we access technical help if we get stuck? Dhruv, you will receive the Q&A forms every day and we'll help you with the resources to do that as well. Also, the calls will happen along with that. How do I access the Outskill LinkedIn tool? Richard, we'll share the link one more time in the chat and also on the email once the call is done. Can we exchange the codex subscription for a laptop or something? As a community, if you want to do that, we'll see how we can make that available. But for now, no. My MVP will have the feature. I given my idea, but also many more features as I want to go deeper. You can do that. Tandi. Will top five participants get... Yeah. Will Sama join in last day? No. Abhijit. I can't promise that. Can I use my premium? You can. Okay. Got it. I think there were a few people who want. Please answer. Will you help the winner to launch the selected product at scale? Apoorva, we cannot promise that. This is a hackathon to ship out a product. What happens after that will come in at the end of it. Not right. Right. For the next seven days, the focus is on building and building only. Perfect. I think we have reactions on folks already, all clear, all excited, all excited. Can we take a quick picture? If we all can turn our cameras on, if we all can turn our cameras on, we'd like to take a quick picture and announce it to the world on. Perfect. Perfect. Perfect. Perfect. Perfect. I have, I'll just one second folks. I'll hide non-video participants. Perfect. Perfect. Perfect. Can we, can we all do a thumbs up? Can we all do a thumbs up? Yeah. Let's do that. Wow. You can, you can also react on that along with that. I'm seeing a lot of familiar faces also. I'm seeing a lot of familiar faces also. Got it. Got it. Perfect. Perfect. Wonderful. I think I got it. I think I got it. I think I got it. It's wonderful to see. I'll take a couple of names whom I have seen in a couple of chats. I have seen Saurabh before. Saurabh Omik. I've seen Preetam Ji who's here. You know, a couple of times Preetam Sirul Ji. Sayyid Hassan is here. Long time standing. Karthikare who's just here. So he's also on camera. I have Nitin. Vedant. I don't know if I know Anuja. I think I've seen in some session. But yeah, there are a lot of people without cameras also. Apoorva Pandey I think one I see. There are a lot of people. Folks, how many of you have seen me in any sessions before this? What do you call this? Yeah. Got it. Abhisheep. Yeah. This is the first time. Thank you. Got it. I think I've also not seen me. Teeka. Teeka. Appreciate folks. First of all, gratitude. Thank you so much for all for joining this call and also joining this hackathon. I personally will make sure that you all get a wonderful experience in the next seven days and you actually achieve the outcomes that you have signed up for. Right. And everybody who has seen me before can vouch for that. At least I can say that. In the chat, can we confirm that I would be able to do that? Everybody who has seen me before. I'll open the chat for those people. Yeah. For everybody else. For everybody else. You have come in from Web of Instagram. Right. Web of YouTube channel. How many of you have come from Staying Ahead Community? You follow Web of Sisanti and you saw this reel and you came in. Or on LinkedIn or you saw chat GPT India or you saw. Right. They're all. Did you come in? Nice. Perfect. Perfect. Kapila. I already answered that. Please do not spam. The recording will come to you. You can see that one more time. If that's the case. PPT will also be shared. Folks. I'll answer that question already. I'll share the recording. Got it. With that. With that. With that. Thank you so much all for joining in. Appreciate all of your support. All of your excitement. I think it makes me also excited along with a lot of them. So I'll also be accountable on LinkedIn and other platforms to show you what we have been able to achieve. And a lot of you that will get in. Right. I hope we see wonderful products getting shipped. We'll give you as much support as we can. We'll make sure that you don't get stuck around into a lot of technical details. And where you can access a lot of free credits. How you can sort of go around building that. How could you can use that to boost our founder mindset and get. Get things done in the next seven days. And I hope to see a lot of people getting success at a global stage. And that's what we want to prepare you for. With that. With that. This is Aum Asnani. Signing off for the day. For AI Builders Hikeathon. We have kicked off the first phase. And we hope to see a lot of interesting ideas getting built your ideas. Once again you will receive it on emails. You know after this call is done along with the recording of this. So that you can refer and the deck that will come to you as well. Right. For everybody who's seeing me. I'll see you once again in couple of days and on WhatsApp. Right. Thank you so much for joining in. Thank you so much. Can do a quick way of the hands. Can you do that. Perfect. Thank you so much folks. We'll see you very soon. Right. Bye. Thank you.

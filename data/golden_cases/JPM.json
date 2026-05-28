@@ -1,0 +1,16 @@
+{
+  "ticker": "JPM",
+  "stress_scenario": "financial_credit_stress_standard",
+  "assumptions": {
+    "revenue_haircut_pct": 12.0,
+    "margin_compression_bps": 180,
+    "wacc_premium_bps": 140,
+    "terminal_growth_delta": -0.3
+  },
+  "expected_output": {
+    "weighted_fair_value_range": [175, 195],
+    "bear_price_range": [168, 178],
+    "overvalued_pct_min": 5
+  },
+  "tolerance_pct": 5
+}

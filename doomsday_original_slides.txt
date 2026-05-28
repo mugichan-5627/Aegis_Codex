@@ -1,0 +1,202 @@
+
+--- Slide 1 ---
+[ MILAN AI WEEK HACKATHON — LIVE SYSTEM ]
+SWARM ACTIVE
+SWARM ACTIVE
+THREAT: HIGH
+[!]
+PROJECT DOOMSDAY
+MULTI-AGENT BLACK SWAN STRESS-TESTING ENGINE
+"Every portfolio has a breaking point. We find it in 60 seconds."
+5
+AI AGENTS
+6
+PARALLEL SEARCH VECTORS
+<60s
+ANALYSIS TIME
+BUILT WITH:  GOOGLE GEMINI 2.0 FLASH  |  TAVILY  |  STREAMLIT  |  PYTHON
+MOOSA  //  IIM KOZHIKODE  //  BATCH 29
+
+--- Slide 2 ---
+// 01  THE PROBLEM
+BLIND SPOTS KILL PORTFOLIOS
+[01] NORMAL DISTRIBUTION FAILURE
+Traditional models assume gaussian returns — they collapse precisely when tail risk materialises. 2008, COVID, SVB were not outliers. They were the model's blind spot.
+[02] SILOED RISK IDENTIFICATION
+Analysts identify risks in isolation, missing second-order cascades and geographic convergence. Risk [A] triggering Risk [B] triggering Risk [C] is invisible to current tools.
+[03] THE TOOLING GAP
+Existing tools are either too simplistic (flat % haircuts), too slow (weeks of manual scenario work), or black boxes with zero methodology transparency.
+THE GAP
+No tool exists that identifies specific, current Black Swan risks — validates them adversarially — maps geographic propagation — models contagion cascades — and computes distressed valuations. Transparently. In under 60 seconds.
+93%
+OF INSTITUTIONAL INVESTORS CITE TAIL RISK AS #1 CONCERN
+YET ONLY 12% HAVE SYSTEMATIC TOOLS TO MODEL IT
+— CFA INSTITUTE 2024 SURVEY
+PROJECT DOOMSDAY — CONFIDENTIAL
+
+--- Slide 3 ---
+// 02  SYSTEM ARCHITECTURE
+HOW IT WORKS: 7-STEP PIPELINE
+01
+USER INPUT
+Ticker + Chaos Level (0–1)
+02
+WORLD STATE
+Live VIX / Oil / Gold / Yields → Global Fear Class
+03
+COMPANY PROFILE
+Smart ticker resolve · Auto USD normalisation
+04
+INTELLIGENCE SCAN
+6 parallel Tavily vectors → Gemini synthesises 6 material risks
+05
+ADVERSARIAL TRIBUNAL
+Bear ⟷ Bull ⟷ Judge — 3-agent debate per risk
+06
+GEOGRAPHIC MAPPING
+Fracture nodes + curved convergence lines on Plotly globe
+07
+VALUATION + CASCADE
+5-path methodology · Contagion propagation · Transparent waterfall
+◀  PHASE 1: INTELLIGENCE GATHERING
+◀  PHASE 2: ANALYSIS & OUTPUT
+⚡  5 AI AGENTS IN COORDINATION  ·  GEMINI 2.0 FLASH VIA GOOGLE AI STUDIO  ·  FAILOVER: NVIDIA NIM + FIREWORKS AI
+
+--- Slide 4 ---
+// 03  MULTI-AGENT SYSTEM
+5 SPECIALIZED AGENTS IN COORDINATED SWARM
+INTELLIGENCE ANALYST
+RISK DISCOVERY
+T=0.5
+Synthesises 6 Tavily vectors + company fundamentals into geolocated risk scenarios with severity, probability & revenue-at-risk estimates.
+BEAR ADVOCATE
+PROSECUTION
+T=0.6
+Argues worst-case with historical precedents and catastrophic framing. Pushes severity UP. Adversarial counterweight.
+BULL ADVOCATE
+DEFENCE
+T=0.6
+Challenges evidence, presents mitigating factors, argues market has priced the risk in. Pushes severity DOWN.
+FRACTURE JUDGE
+FINAL VERDICT
+T=0.3
+Low-temperature, high-conviction. Calibrated rubric: 8+ catastrophic, 6–7 material, <4 dismissed. Final authority.
+CONTAGION MODELER
+CASCADE
+T=0.5
+Models 2nd / 3rd / 4th-order propagation. Traces how a shock cascades through P&L → credit → refinancing → capex.
+▸  Single-agent = confirmation bias  ·  adversarial architecture forces steel-manning before judgment
+▸  Mimics real IC process: Research Analyst → IC Debate → PM Decision  ·  Judge T=0.3 = calibrated low-variance verdicts
+
+--- Slide 5 ---
+// 04  DIFFERENTIATORS
+WHAT MAKES THIS DIFFERENT
+D1
+CONTEXT-AWARE VALUATION
+5 distinct methodologies routed by company type. Banks get P/BV. Cyclicals get normalised EBITDA. High-growth gets EV/Revenue. Market-anchored, stressed downward only.
+D2
+GEOGRAPHIC INTELLIGENCE
+Every risk mapped to physical coordinates. Curved convergence lines show vulnerability concentration. Visual answer to: where on Earth is my exposure?
+D3
+CONTAGION CASCADES
+Models Risk A → Effect B → Effect C propagation. Compound correlation (ρ → 1) as chaos increases. Inspired by Kiyotaki-Moore credit cycles and Minsky Moments.
+D4
+FULL TRANSPARENCY
+Every formula shown with numbers plugged in. Every routing decision flagged. Every agent reasoning visible. Same inputs → same methodology → same output.
+DOOMSDAY vs. MARKET
+FEATURE
+OURS
+PEERS
+Adversarial validation
+✓
+✗
+Real-time intelligence
+✓
+✗
+Contagion cascade model
+✓
+✗
+Methodology transparency
+✓
+✗
+Indian market (NSE/BSE)
+✓
+✗
+Sub-60s analysis
+✓
+Partial
+Geographic risk map
+✓
+Partial
+5 valuation engines
+✓
+1–2
+
+--- Slide 6 ---
+// 05  GO-TO-MARKET
+FROM HACKATHON TO PRODUCT
+$65B
+RISK ANALYTICS MARKET 2027
+$25K
+BLOOMBERG SEAT / YR
+$5M
+ANNUAL BESPOKE SCENARIO SPEND
+FREE
+$0
+Retail / Students
+3 analyses/day  ·  Lead generation
+PRO
+$99–299/mo
+Analysts / RIAs / Funds
+Unlimited  ·  PDF export  ·  API access
+INSTITUTIONAL
+$2K–10K/mo
+Hedge Funds / PE / Family Offices
+Custom domains  ·  SEBI filings  ·  White-label
+API-AS-A-SERVICE
+Per-call
+Fintech / Robo-advisors
+Embed stress-test into existing products
+UNIT ECONOMICS — PRO TIER
+GEMINI API COST / ANALYSIS   $0.03–0.08
+TAVILY COST / ANALYSIS   $0.01–0.02
+GROSS MARGIN AT SCALE   >95%
+INDIAN MARKET (NSE/BSE) SUPPORT — MASSIVELY UNDERSERVED BY WESTERN TOOLS — KEY MOAT
+
+--- Slide 7 ---
+// 06  TECH STACK + ROADMAP
+BUILT WITH — NEXT 3–6 MONTHS
+PRIMARY AI
+Gemini 2.0 Flash
+Best latency/cost for structured JSON · Google AI Studio
+FAILOVER AI
+NVIDIA NIM (Llama 3.3 70B)
+Auto-switch if rate-limited — zero user disruption
+REAL-TIME SEARCH
+Tavily API
+Grounds AI in live events — no stale hallucinations
+FINANCIAL DATA
+yfinance
+Live prices, fundamentals, FX — 60+ global exchanges
+FRONTEND
+Streamlit
+Single Python file — deploy in minutes
+VISUALISATION
+Plotly
+Interactive maps (Scattermapbox) · Waterfall charts
+[ ROADMAP — NEXT 3–6 MONTHS ]
+NEXT
+SEC EDGAR 10-K Item 1A auto-parsing
+NEXT
+SEBI / BSE filing integration for Indian equities
+Q3
+Portfolio-level analysis + cross-holding correlation
+Q3
+PDF export: McKinsey-style IC memo
+Q4
+"Lying Gap" detection: news vs filing divergence = alpha signal
+Q4
+Macro feedback loops: Chaos >0.8 auto-adjusts VIX/Oil
+Q4
+Slack / Teams webhook alerts for watchlist stocks
+"The next crisis won't look like the last one. Doomsday doesn't predict which domino falls — it maps every domino, debates which are unstable, and calculates what happens when they all fall at once."

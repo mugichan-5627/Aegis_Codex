@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DOOMSDAY RAPID AGENT v2.0</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.x/tabler-icons.min.css">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600&family=Syne:wght@400;500;700&display=swap');
+:root {
+  --bg: #050810;
+  --bg2: #090d16;
+  --bg3: #0d1320;
+  --border: #1c2640;
+  --border2: #263352;
+  --text: #d4dff5;
+  --muted: #4a5a7a;
+  --dim: #2a3854;
+  --red: #ff3344;
+  --red-bg: rgba(255,51,68,0.08);
+  --red-border: rgba(255,51,68,0.3);
+  --teal: #00e5cc;
+  --teal-bg: rgba(0,229,204,0.07);
+  --teal-border: rgba(0,229,204,0.3);
+  --amber: #f5a623;
+  --amber-bg: rgba(245,166,35,0.08);
+  --amber-border: rgba(245,166,35,0.3);
+  --blue: #4d9fff;
+  --blue-bg: rgba(77,159,255,0.07);
+  --blue-border: rgba(77,159,255,0.3);
+  --mono: 'JetBrains Mono', 'Courier New', monospace;
+  --display: 'Syne', sans-serif;
+  --radius: 6px;
+  --radius-lg: 10px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:var(--mono);font-size:13px;line-height:1.6;overflow-x:hidden}
+/* ---- LAYOUT ---- */
+.app{min-height:100vh;display:flex;flex-direction:column}
+/* ---- HEADER ---- */
+.hdr{background:var(--bg2);border-bottom:1px solid var(--border);padding:10px 24px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100}
+.logo{font-family:var(--display);font-size:14px;font-weight:700;letter-spacing:6px;text-transform:uppercase}
+.logo .accent{color:var(--red)}
+.hdr-right{display:flex;align-items:center;gap:20px}
+.live-ind{display:flex;align-items:center;gap:6px;font-size:11px;color:var(--muted)}
+.live-dot{width:6px;height:6px;border-radius:50%;background:var(--teal);animation:pulse 2s infinite}
+.threat-badge{font-size:10px;padding:3px 10px;border-radius:20px;border:1px solid var(--red-border);color:var(--red);background:var(--red-bg);letter-spacing:2px;text-transform:uppercase;animation:blink 2s infinite}
+/* ---- NAV ---- */
+.nav{background:var(--bg2);border-bottom:1px solid var(--border);padding:0 24px;display:flex;gap:4px}
+.nav-btn{background:none;border:none;border-bottom:2px solid transparent;font-family:var(--mono);font-size:10px;letter-spacing:2.5px;text-transform:uppercase;padding:10px 16px;cursor:pointer;color:var(--muted);transition:color 0.15s;display:flex;align-items:center;gap:6px}
+.nav-btn:hover{color:var(--text)}
+.nav-btn.active{color:var(--text);border-bottom-color:var(--red)}
+.nav-pill{background:var(--red-bg);color:var(--red);border-radius:10px;padding:1px 6px;font-size:9px;letter-spacing:0;font-weight:500}
+/* ---- BODY ---- */
+.body{flex:1;padding:20px 24px;background:var(--bg)}
+/* ---- PANELS ---- */
+.panel{display:none;animation:fadeIn 0.2s ease}
+.panel.active{display:block}
+@keyframes fadeIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}
+/* ---- CARD ---- */
+.card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius-lg);padding:16px;margin-bottom:12px}
+.card-hdr{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--muted);margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:center}
+/* ---- GRIDS ---- */
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+/* ---- TERMINAL ---- */
+.term{background:var(--bg3);border:1px solid var(--border);border-radius:var(--radius);padding:12px 14px;font-size:11.5px;line-height:2;min-height:120px;max-height:260px;overflow-y:auto}
+.tok{color:var(--dim)}
+.t-ok{color:#40d080}
+.t-err{color:var(--red)}
+.t-warn{color:var(--amber)}
+.t-inf{color:var(--blue)}
+.t-dim{color:var(--muted)}
+/* ---- METRIC CARD ---- */
+.mc{background:var(--bg3);border:1px solid var(--border);border-radius:var(--radius);padding:12px 8px;text-align:center}
+.mc-v{font-size:22px;font-weight:500;color:var(--text);font-family:var(--display)}
+.mc-v.red{color:var(--red)}
+.mc-v.grn{color:var(--teal)}
+.mc-v.amb{color:var(--amber)}
+.mc-l{font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-top:3px}
+/* ---- INCIDENT CARD ---- */
+.inc{border-left:3px solid var(--red);padding:10px 14px;background:var(--bg3);border-radius:0 var(--radius) var(--radius) 0;margin-bottom:8px;cursor:pointer;transition:background 0.15s,border-color 0.15s}
+.inc:hover{background:var(--bg2)}
+.inc.amb{border-left-color:var(--amber)}
+.inc.blu{border-left-color:var(--blue)}
+.inc-ticker{font-size:14px;font-weight:500;font-family:var(--display);color:var(--text)}
+.inc-desc{font-size:11.5px;color:var(--muted);margin-top:3px;line-height:1.4}
+.inc-meta{display:flex;gap:14px;margin-top:7px;font-size:10px;color:var(--dim)}
+/* ---- DEBATE ---- */
+.dbm{border-left:3px solid;padding:11px 14px;margin-bottom:10px;border-radius:0 var(--radius) var(--radius) 0;font-size:12.5px;line-height:1.65}
+.dbm-bear{border-color:var(--red);background:var(--red-bg)}
+.dbm-bull{border-color:var(--teal);background:var(--teal-bg)}
+.dbm-judge{border-color:var(--amber);background:var(--amber-bg)}
+.dbm-role{font-size:9px;letter-spacing:2.5px;text-transform:uppercase;font-weight:600;margin-bottom:5px}
+.dbm-bear .dbm-role{color:var(--red)}
+.dbm-bull .dbm-role{color:var(--teal)}
+.dbm-judge .dbm-role{color:var(--amber)}
+/* ---- REVIEW GATE ---- */
+.rgate{border:1px solid var(--red-border);border-radius:var(--radius-lg);padding:14px;background:var(--red-bg)}
+.rgate-title{font-size:9px;letter-spacing:2.5px;text-transform:uppercase;color:var(--red);margin-bottom:10px;font-weight:600}
+.rfield{display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px solid rgba(255,51,68,0.12);font-size:12px}
+.rfield:last-child{border:none}
+.rfield-k{color:rgba(255,100,100,0.75)}
+.rfield-v{color:var(--text);font-weight:500}
+.rgate-btns{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
+/* ---- VERDICT STAMP ---- */
+.vstamp{font-family:var(--display);font-size:17px;font-weight:700;color:var(--red);border:1.5px solid var(--red-border);border-radius:var(--radius);padding:7px 16px;display:inline-block;letter-spacing:4px;text-transform:uppercase;margin-bottom:14px}
+/* ---- BUTTONS ---- */
+.btn{font-family:var(--mono);font-size:10px;letter-spacing:1.5px;text-transform:uppercase;padding:8px 16px;cursor:pointer;border-radius:var(--radius);border:1px solid var(--border2);background:var(--bg3);color:var(--text);transition:opacity 0.15s,background 0.15s;display:inline-flex;align-items:center;gap:5px}
+.btn:hover{background:var(--bg2);border-color:var(--text)}
+.btn:disabled{opacity:0.4;cursor:not-allowed}
+.btn.prim{background:var(--red);color:#fff;border-color:var(--red)}
+.btn.prim:hover{background:#cc2233;border-color:#cc2233}
+.btn.grn{background:rgba(0,229,204,0.15);color:var(--teal);border-color:var(--teal-border)}
+.btn.grn:hover{background:rgba(0,229,204,0.25)}
+.btn.amb{background:rgba(245,166,35,0.12);color:var(--amber);border-color:var(--amber-border)}
+.btn.amb:hover{background:rgba(245,166,35,0.22)}
+/* ---- TAGS ---- */
+.tag{display:inline-block;font-size:9px;padding:2px 7px;border-radius:10px;letter-spacing:1.5px;text-transform:uppercase;font-weight:500;margin-right:3px}
+.tag-r{background:var(--red-bg);color:var(--red);border:1px solid var(--red-border)}
+.tag-a{background:var(--amber-bg);color:var(--amber);border:1px solid var(--amber-border)}
+.tag-g{background:var(--teal-bg);color:var(--teal);border:1px solid var(--teal-border)}
+.tag-b{background:var(--blue-bg);color:var(--blue);border:1px solid var(--blue-border)}
+/* ---- WATCHLIST CHIPS ---- */
+.wlc{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+.wl{font-size:11.5px;font-weight:500;padding:5px 12px;border:1px solid var(--border2);border-radius:20px;cursor:pointer;color:var(--muted);background:var(--bg3);transition:all 0.15s}
+.wl:hover{color:var(--text);border-color:var(--text)}
+.wl.alert{border-color:var(--red-border);color:var(--red);background:var(--red-bg);animation:pulse 2.5s infinite}
+/* ---- WATERFALL ---- */
+.wf-row{display:flex;align-items:center;gap:10px;margin-bottom:7px;font-size:12px}
+.wf-lbl{width:150px;color:var(--muted);flex-shrink:0;font-size:11px}
+.wf-bar{flex:1;height:4px;background:var(--border);border-radius:2px;overflow:hidden}
+.wf-fill{height:100%;border-radius:2px;transition:width 0.8s ease}
+.fill-r{background:var(--red)}
+.fill-a{background:var(--amber)}
+.fill-g{background:var(--teal)}
+.fill-b{background:var(--blue)}
+.wf-val{width:70px;text-align:right;font-weight:500}
+/* ---- PROGRESS ---- */
+.pbar-wrap{background:var(--border);height:4px;border-radius:2px;overflow:hidden;margin:4px 0}
+.pbar-fill{height:100%;border-radius:2px;background:var(--red);transition:width 2.5s ease-in-out}
+/* ---- JSON BLOCK ---- */
+.json-block{background:var(--bg3);border:1px solid var(--border);border-radius:var(--radius);padding:12px 14px;font-size:11.5px;line-height:1.85;max-height:220px;overflow-y:auto;font-family:var(--mono)}
+.jk{color:#7dcfff}
+.jv{color:#9ece6a}
+.jn{color:#ff9e64}
+/* ---- DIVIDER ---- */
+.div{border:none;border-top:1px solid var(--border);margin:14px 0}
+/* ---- SCENARIO LINES ---- */
+.sc-row{display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px solid var(--border);font-size:12px}
+.sc-row:last-child{border:none}
+/* ---- SCAN STATUS ---- */
+.scan-wrap{margin-bottom:10px}
+/* ---- ANIMATIONS ---- */
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.4}}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0.5}}
+@keyframes spin{to{transform:rotate(360deg)}}
+/* ---- CODE PATCH PREVIEW ---- */
+.code-patch{background:var(--bg3);border:1px solid var(--border);border-radius:var(--radius);padding:12px 14px;font-size:11px;line-height:2;max-height:200px;overflow-y:auto;font-family:var(--mono)}
+/* ---- SCROLLBAR ---- */
+::-webkit-scrollbar{width:4px;height:4px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px}
+/* ---- STATUS LINE ---- */
+.status-bar{background:var(--bg2);border-top:1px solid var(--border);padding:6px 24px;display:flex;gap:24px;font-size:10px;color:var(--dim)}
+.status-item{display:flex;align-items:center;gap:5px}
+/* sector label */
+.section-label{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--muted);margin-bottom:8px;margin-top:2px}
+/* memo body */
+.memo-body{font-size:12.5px;line-height:1.7;color:var(--text)}
+/* codex field */
+.cx-field{display:flex;flex-direction:column;gap:2px;padding:8px 0;border-bottom:1px solid var(--border);font-size:12px}
+.cx-k{font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--muted)}
+.cx-v{color:var(--text);line-height:1.5}
+.cx-field:last-child{border:none}
+</style>
+</head>
+<body>
+<div class="app">
+
+<!-- HEADER -->
+<div class="hdr">
+  <div class="logo"><span class="accent">DOOMSDAY</span> RAPID AGENT v2.0</div>
+  <div class="hdr-right">
+    <div class="live-ind"><span class="live-dot"></span>Watchtower active</div>
+    <div class="live-ind"><span class="live-dot" style="background:var(--blue)"></span>Codex ready</div>
+    <div class="live-ind"><span class="live-dot" style="background:var(--amber)"></span>Arize tracing</div>
+    <div class="threat-badge">ELEVATED</div>
+  </div>
+</div>
+
+<!-- NAV -->
+<div class="nav">
+  <button class="nav-btn active" onclick="switchTab('watchtower')">
+    <i class="ti ti-radar-2"></i> Watchtower <span class="nav-pill" id="inc-count">3</span>
+  </button>
+  <button class="nav-btn" onclick="switchTab('tribunal')">
+    <i class="ti ti-flame"></i> Tribunal
+  </button>
+  <button class="nav-btn" onclick="switchTab('verdict')">
+    <i class="ti ti-file-check"></i> Verdict
+  </button>
+  <button class="nav-btn" onclick="switchTab('codex')">
+    <i class="ti ti-code"></i> Codex
+  </button>
+  <button class="nav-btn" onclick="switchTab('radar')">
+    <i class="ti ti-radar-2"></i> Threat Orbit
+  </button>
+</div>
+
+<!-- BODY -->
+<div class="body">
+
+<!-- =================== WATCHTOWER =================== -->
+<div class="panel active" id="panel-watchtower">
+  <div class="g2">
+    <div>
+      <div class="card">
+        <div class="card-hdr">Watchlist <span><span class="tag tag-r">2 triggered</span></span></div>
+        <div class="wlc">
+          <span class="wl alert" title="Critical — export control trigger">NVDA</span>
+          <span class="wl alert" title="Critical — geopolitical proximity">TSM</span>
+          <span class="wl" onclick="this.classList.toggle('alert')">ASML</span>
+          <span class="wl" onclick="this.classList.toggle('alert')">AMAT</span>
+          <span class="wl" onclick="this.classList.toggle('alert')">RELIANCE.NS</span>
+        </div>
+        <div class="section-label">Trigger Thresholds</div>
+        <div style="display:flex;flex-direction:column;gap:6px;margin-bottom:14px">
+          <div style="display:flex;justify-content:space-between;font-size:11.5px">
+            <span style="color:var(--muted)">VIX spike > 25</span>
+            <span class="tag tag-a">armed · VIX 28.4</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;font-size:11.5px">
+            <span style="color:var(--muted)">Ticker drawdown > 8%</span>
+            <span class="tag tag-r">triggered · NVDA −9.2%</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;font-size:11.5px">
+            <span style="color:var(--muted)">Risk keyword match</span>
+            <span class="tag tag-g">scanning</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;font-size:11.5px">
+            <span style="color:var(--muted)">Sector geopolitical flag</span>
+            <span class="tag tag-r">triggered · semiconductor</span>
+          </div>
+        </div>
+        <div id="scan-status-wrap" style="display:none;margin-bottom:10px">
+          <div id="scan-status-txt" class="t-inf" style="font-size:11px;margin-bottom:4px">Initialising scan...</div>
+          <div style="background:var(--border);height:4px;border-radius:2px">
+            <div class="pbar-fill" id="scanbar" style="width:0%"></div>
+          </div>
+        </div>
+        <div style="display:flex;gap:8px">
+          <button class="btn prim" onclick="runScan()" id="scan-btn">
+            <i class="ti ti-refresh"></i> Scan Watchlist
+          </button>
+          <button class="btn" onclick="switchTab('tribunal')">
+            Load Incident →
+          </button>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="card" style="height:100%">
+        <div class="card-hdr">Autonomous Agent Log <span class="tag tag-g">live</span></div>
+        <div class="term" id="agent-log">
+          <div><span class="tok">05:12:00 </span><span class="t-inf">watchtower.init</span> — monitoring 5 tickers</div>
+          <div><span class="tok">05:12:07 </span><span class="t-ok">elastic.mcp</span> — macro_risk_index_v4 loaded (847 docs)</div>
+          <div><span class="tok">05:12:11 </span><span class="t-ok">tavily.search</span> — live news feed active</div>
+          <div><span class="tok">05:12:19 </span><span class="t-dim">yfinance</span> — market data stream open</div>
+          <div><span class="tok">05:13:04 </span><span class="t-warn">signal.vix</span> — VIX 28.4 ↑ (threshold 25.0)</div>
+          <div><span class="tok">05:13:31 </span><span class="t-err">trigger.NVDA</span> — drawdown −9.2%, "export control" ×47</div>
+          <div><span class="tok">05:13:33 </span><span class="t-err">trigger.TSM</span> — geopolitical proximity, "strait" ×23</div>
+          <div><span class="tok">05:13:35 </span><span class="t-warn">action.queue</span> — 2 incidents → HUMAN REVIEW REQUIRED</div>
+          <div><span class="tok">05:13:36 </span><span class="t-ok">snapshot.save</span> — data/incidents.json written</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- INCIDENT QUEUE -->
+  <div class="card">
+    <div class="card-hdr">Incident Queue <span><span class="tag tag-r">2 critical</span><span class="tag tag-a">1 elevated</span></span></div>
+
+    <div class="inc" onclick="loadAndGo('nvda')">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start">
+        <div class="inc-ticker">NVDA — Nvidia Corp.</div>
+        <div><span class="tag tag-r">critical</span><span class="tag tag-a">semiconductor</span></div>
+      </div>
+      <div class="inc-desc">US-China semiconductor export control escalation — EAR-99 expansion to H100/A100 successors expected within Q3. Full China datacenter market exit forced. 23% revenue concentration risk materialises.</div>
+      <div class="inc-meta">
+        <span><i class="ti ti-clock" style="font-size:10px"></i> 05:13:31</span>
+        <span>VIX 28.4</span>
+        <span>Rev. at risk: 38%</span>
+        <span>Chaos: 0.76</span>
+        <span>Drawdown: −9.2%</span>
+      </div>
+    </div>
+
+    <div class="inc" onclick="loadAndGo('tsm')">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start">
+        <div class="inc-ticker">TSM — Taiwan Semiconductor Mfg.</div>
+        <div><span class="tag tag-r">critical</span><span class="tag tag-b">geopolitical</span></div>
+      </div>
+      <div class="inc-desc">Cross-strait military posturing escalation — PLA naval exercises resuming adjacent to TSMC N3/N2 fab corridors. Insurance underwriter withdrawal notices issued to 4 major fabs.</div>
+      <div class="inc-meta">
+        <span><i class="ti ti-clock" style="font-size:10px"></i> 05:13:33</span>
+        <span>VIX 28.4</span>
+        <span>Rev. at risk: 55%</span>
+        <span>Chaos: 0.81</span>
+        <span>Drawdown: −7.1%</span>
+      </div>
+    </div>
+
+    <div class="inc amb" onclick="loadAndGo('asml')">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start">
+        <div class="inc-ticker">ASML — ASML Holding N.V.</div>
+        <div><span class="tag tag-a">elevated</span><span class="tag tag-b">regulatory</span></div>
+      </div>
+      <div class="inc-desc">EUV export license renewal under joint US-Dutch review. 18-month license cycle due Q4 2026. China accounted for 29% of shipments. Diplomatic pressure escalating.</div>
+      <div class="inc-meta">
+        <span><i class="ti ti-clock" style="font-size:10px"></i> 05:13:41</span>
+        <span>VIX 28.4</span>
+        <span>Rev. at risk: 21%</span>
+        <span>Chaos: 0.61</span>
+        <span>Drawdown: −3.4%</span>
+      </div>
+    </div>
+  </div>
+</div><!-- /watchtower -->
+
+<!-- =================== TRIBUNAL =================== -->
+<div class="panel" id="panel-tribunal">
+  <div class="card" style="border-left:3px solid var(--red)">
+    <div class="card-hdr">Active Incident — <span id="tri-ticker">NVDA</span> &nbsp;<span class="tag tag-r blink" id="tri-sev">critical</span></div>
+    <div id="tri-desc" style="font-size:12.5px;color:var(--muted);margin-bottom:14px;line-height:1.5">US-China semiconductor export control escalation — EAR-99 expansion to H100/A100 successors. Full China market exit likely Q3 2026.</div>
+    <div class="g4">
+      <div class="mc"><div class="mc-v amb" id="tri-chaos">0.76</div><div class="mc-l">Chaos Index</div></div>
+      <div class="mc"><div class="mc-v red" id="tri-rev">38%</div><div class="mc-l">Rev. at Risk</div></div>
+      <div class="mc"><div class="mc-v" id="tri-bear-score">—</div><div class="mc-l">Bear Score</div></div>
+      <div class="mc"><div class="mc-v" id="tri-bull-score">—</div><div class="mc-l">Bull Score</div></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-hdr">
+      Adversarial Tribunal — Round <span id="round-num">0</span>/3
+      <button class="btn prim" onclick="launchTribunal()" id="tri-btn">
+        <i class="ti ti-player-play"></i> Launch Tribunal
+      </button>
+    </div>
+    <div id="debate-stream">
+      <div style="text-align:center;padding:40px 20px;color:var(--muted);font-size:12px">
+        <i class="ti ti-robot" style="font-size:28px;display:block;margin-bottom:10px;opacity:0.3"></i>
+        Fracture swarm on standby.<br>Load an incident from Watchtower, then launch.
+      </div>
+    </div>
+  </div>
+</div><!-- /tribunal -->
+
+<!-- =================== VERDICT =================== -->
+<div class="panel" id="panel-verdict">
+  <div class="g2">
+    <div>
+      <div class="card">
+        <div class="card-hdr">Investment Committee Memo <span class="tag tag-a">human review required</span></div>
+
+        <div class="vstamp" id="vstamp">HEDGE RECOMMENDED</div>
+
+        <div style="margin-bottom:14px">
+          <div class="section-label">Executive Verdict — NVDA / Semiconductor Export Control</div>
+          <div class="memo-body">
+            Nvidia faces a structural 38% revenue exposure to US-China export control escalation. The Bear case — full EAR-99 compliance forcing complete China datacenter market exit — carries 72% probability within 18 months based on regulatory trajectory. The Bull adaptation path (US hyperscaler absorption) requires 24+ months of transition risk. <strong style="color:var(--text)">Recommend: hedge 40% of long exposure via protective puts, $550 strike, 6M expiry. Downside target: $472.</strong>
+          </div>
+        </div>
+
+        <hr class="div">
+
+        <div style="margin-bottom:14px">
+          <div class="section-label">Valuation Waterfall</div>
+          <div class="wf-row"><div class="wf-lbl">Base Enterprise Value</div><div class="wf-bar"><div class="wf-fill fill-b" style="width:100%"></div></div><div class="wf-val" style="color:var(--blue)">$1,040B</div></div>
+          <div class="wf-row"><div class="wf-lbl">Revenue haircut</div><div class="wf-bar"><div class="wf-fill fill-r" style="width:68%"></div></div><div class="wf-val" style="color:var(--red)">−$149B</div></div>
+          <div class="wf-row"><div class="wf-lbl">Margin compression</div><div class="wf-bar"><div class="wf-fill fill-r" style="width:37%"></div></div><div class="wf-val" style="color:var(--red)">−$78B</div></div>
+          <div class="wf-row"><div class="wf-lbl">WACC premium</div><div class="wf-bar"><div class="wf-fill fill-a" style="width:24%"></div></div><div class="wf-val" style="color:var(--amber)">−$51B</div></div>
+          <div class="wf-row"><div class="wf-lbl">Distressed EV</div><div class="wf-bar"><div class="wf-fill fill-g" style="width:73%"></div></div><div class="wf-val" style="color:var(--teal)">$762B</div></div>
+        </div>
+
+        <hr class="div">
+
+        <div style="margin-bottom:12px">
+          <div class="section-label">Top 3 Risks</div>
+          <div style="display:flex;flex-direction:column;gap:6px;font-size:12px">
+            <div style="display:flex;gap:10px;align-items:baseline"><span class="tag tag-r">R1</span><span style="color:var(--muted)">EAR-99 full expansion — China datacenter exit forced within 12M</span></div>
+            <div style="display:flex;gap:10px;align-items:baseline"><span class="tag tag-r">R2</span><span style="color:var(--muted)">Huawei Ascend ecosystem substitution — Chinese enterprise substitution by 2027</span></div>
+            <div style="display:flex;gap:10px;align-items:baseline"><span class="tag tag-a">R3</span><span style="color:var(--muted)">US hyperscaler capex deceleration — absorption capacity risk if AI bubble sentiment shifts</span></div>
+          </div>
+        </div>
+
+        <hr class="div">
+
+        <div>
+          <div class="section-label">Audit Trail</div>
+          <div style="font-size:11px;color:var(--muted);line-height:2.1">
+            <div><i class="ti ti-database" style="font-size:11px"></i> Elastic: macro_risk_index_v4 → 847 docs retrieved</div>
+            <div><i class="ti ti-world" style="font-size:11px"></i> Tavily: 12 live articles (Reuters, Bloomberg, FT, WSJ)</div>
+            <div><i class="ti ti-activity" style="font-size:11px"></i> Arize: tribunal_run_20260527_0514 → 3 rounds, 18 spans</div>
+            <div><i class="ti ti-calculator" style="font-size:11px"></i> Valuation: Multi-Factor DCF + EV/Revenue blend, WACC 9.2%</div>
+          </div>
+        </div>
+
+        <div style="margin-top:14px;display:flex;gap:8px">
+          <button class="btn" onclick="downloadMemo()"><i class="ti ti-download"></i> Download Memo</button>
+          <button class="btn amb" onclick="switchTab('codex')"><i class="ti ti-code"></i> View Codex Patch →</button>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="card" style="border:1px solid var(--red-border);margin-bottom:12px">
+        <div class="card-hdr" style="color:var(--red)">
+          <span><i class="ti ti-alert-triangle"></i> Human Review Gate</span>
+          <span class="tag tag-r">Approval Required</span>
+        </div>
+        <div style="font-size:12px;color:var(--muted);margin-bottom:12px;line-height:1.5">
+          Review proposed stress assumptions before applying to live valuation model. Agents pause here — human judgment required.
+        </div>
+        <div class="rgate">
+          <div class="rgate-title"><i class="ti ti-settings" style="font-size:10px"></i> Proposed Stress Assumptions</div>
+          <div class="rfield"><span class="rfield-k">Revenue haircut</span><span class="rfield-v">−28.5% on China segment</span></div>
+          <div class="rfield"><span class="rfield-k">Margin compression</span><span class="rfield-v">−420 bps EBITDA</span></div>
+          <div class="rfield"><span class="rfield-k">WACC premium</span><span class="rfield-v">+380 bps (regulatory risk)</span></div>
+          <div class="rfield"><span class="rfield-k">Terminal growth</span><span class="rfield-v">4.2% → 2.8%</span></div>
+          <div class="rfield"><span class="rfield-k">EV downside (base)</span><span class="rfield-v" style="font-size:14px;color:var(--red)">−26.7%</span></div>
+        </div>
+        <div class="rgate-btns">
+          <button class="btn grn" onclick="reviewAction('approve')"><i class="ti ti-check"></i> Approve Hedge</button>
+          <button class="btn amb" onclick="reviewAction('soften')"><i class="ti ti-adjustments"></i> Soften −15%</button>
+          <button class="btn" onclick="reviewAction('dismiss')"><i class="ti ti-x"></i> Dismiss</button>
+        </div>
+        <div id="review-result" style="display:none;margin-top:10px;padding:10px 12px;border-radius:var(--radius);font-size:12px;line-height:1.5"></div>
+      </div>
+
+      <div class="card">
+        <div class="card-hdr">Scenario Downside Matrix</div>
+        <div class="sc-row">
+          <span style="color:var(--muted)">Bear — full China exit</span>
+          <div style="text-align:right"><div style="color:var(--red);font-weight:500">$472 / −38%</div><div style="font-size:10px;color:var(--muted)">Prob. 62%</div></div>
+        </div>
+        <div class="sc-row">
+          <span style="color:var(--muted)">Base — partial curb</span>
+          <div style="text-align:right"><div style="color:var(--amber);font-weight:500">$631 / −19%</div><div style="font-size:10px;color:var(--muted)">Prob. 28%</div></div>
+        </div>
+        <div class="sc-row">
+          <span style="color:var(--muted)">Bull — market adaptation</span>
+          <div style="text-align:right"><div style="color:var(--teal);font-weight:500">$791 / +1%</div><div style="font-size:10px;color:var(--muted)">Prob. 10%</div></div>
+        </div>
+        <div style="font-size:11px;color:var(--muted);margin-top:10px;padding:8px;background:var(--bg3);border-radius:var(--radius)">
+          Weighted fair value: <strong style="color:var(--text)">$591</strong> &nbsp;·&nbsp; Current price: $784 &nbsp;·&nbsp; <strong style="color:var(--red)">Overvalued by 33%</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- /verdict -->
+
+<!-- =================== CODEX =================== -->
+<div class="panel" id="panel-codex">
+  <div class="g2">
+    <div>
+      <div class="card">
+        <div class="card-hdr">
+          Codex Task Brief
+          <span class="tag tag-b">codex_task.md</span>
+        </div>
+
+        <div class="cx-field">
+          <div class="cx-k">Task ID</div>
+          <div class="cx-v" style="color:var(--blue);font-weight:500">DOOMSDAY_PATCH_20260527_001</div>
+        </div>
+        <div class="cx-field">
+          <div class="cx-k">Triggered By</div>
+          <div class="cx-v">tribunal_run_20260527_0514 — NVDA export control scenario</div>
+        </div>
+        <div class="cx-field">
+          <div class="cx-k">Objective</div>
+          <div class="cx-v">Add a dedicated <code style="color:var(--blue);background:var(--blue-bg);padding:1px 5px;border-radius:3px">ExportControlStress</code> module to <code style="color:var(--blue);background:var(--blue-bg);padding:1px 5px;border-radius:3px">valuation_engine.py</code>. Current model applies generic revenue haircuts; patch must implement jurisdiction-specific EAR-99 compliance scenarios with tiered geographic revenue disaggregation and regulatory WACC premium curve.</div>
+        </div>
+        <div class="cx-field">
+          <div class="cx-k">Model Changes Required</div>
+          <div class="cx-v" style="line-height:2">
+            1. Add <code style="color:var(--teal)">ExportControlScenario</code> dataclass with <code style="color:var(--amber)">jurisdiction_exposure_pct</code>, <code style="color:var(--amber)">compliance_timeline_months</code>, <code style="color:var(--amber)">substitute_revenue_pct</code><br>
+            2. Tiered haircut logic: immediate / partial / adaptation paths<br>
+            3. Regulatory risk premium curve in WACC engine<br>
+            4. Geographic revenue disaggregation (China / Non-China split)
+          </div>
+        </div>
+        <div class="cx-field">
+          <div class="cx-k">Expected Tests</div>
+          <div class="cx-v" style="line-height:2">
+            <span style="color:var(--teal)">✓</span> <code>test_export_control_nvda_baseline</code> — China 38%, full exit<br>
+            <span style="color:var(--teal)">✓</span> <code>test_wacc_regulatory_premium</code> — +380bps on base 9.2%<br>
+            <span style="color:var(--teal)">✓</span> <code>test_regression_nvda_golden</code> — ±5% snapshot tolerance<br>
+            <span style="color:var(--amber)">○</span> <code>test_regression_tsm_golden</code> — pending TSM run
+          </div>
+        </div>
+        <div class="cx-field">
+          <div class="cx-k">Human Approval Gate</div>
+          <div class="cx-v" style="color:var(--amber)">Required before merging patch to valuation engine</div>
+        </div>
+        <div style="margin-top:14px;display:flex;gap:8px;flex-wrap:wrap">
+          <button class="btn" onclick="downloadTask()"><i class="ti ti-download"></i> Download task brief</button>
+          <button class="btn prim" onclick="generatePatch()" id="patch-btn"><i class="ti ti-cpu"></i> Generate Patch Proposal</button>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="card">
+        <div class="card-hdr">Scenario Patch <span class="tag tag-b">scenario_patch.json</span></div>
+        <div class="json-block">
+<span class="jk">"scenario_id"</span>: <span class="jv">"export_ctrl_semiconductor_2026"</span>,<br>
+<span class="jk">"trigger_event"</span>: <span class="jv">"EAR_99_CHINA_GPU_EXPANSION"</span>,<br>
+<span class="jk">"affected_tickers"</span>: [<span class="jv">"NVDA"</span>, <span class="jv">"TSM"</span>, <span class="jv">"ASML"</span>],<br>
+<span class="jk">"assumptions"</span>: {<br>
+&nbsp;&nbsp;<span class="jk">"china_revenue_exposure"</span>: <span class="jn">0.385</span>,<br>
+&nbsp;&nbsp;<span class="jk">"compliance_scenarios"</span>: {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="jk">"immediate"</span>: {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="jk">"haircut"</span>: <span class="jn">0.38</span>,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="jk">"wacc_delta_bps"</span>: <span class="jn">450</span>,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="jk">"terminal_growth_delta"</span>: <span class="jn">-0.014</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="jk">"partial"</span>: {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="jk">"haircut"</span>: <span class="jn">0.18</span>,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="jk">"wacc_delta_bps"</span>: <span class="jn">250</span>,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="jk">"terminal_growth_delta"</span>: <span class="jn">-0.008</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="jk">"adaptation"</span>: {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="jk">"haircut"</span>: <span class="jn">0.05</span>,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="jk">"wacc_delta_bps"</span>: <span class="jn">80</span>,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="jk">"timeline_months"</span>: <span class="jn">24</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;},<br>
+&nbsp;&nbsp;<span class="jk">"margin_compression_bps"</span>: <span class="jn">420</span>,<br>
+&nbsp;&nbsp;<span class="jk">"geographic_split"</span>: { <span class="jk">"china"</span>: <span class="jn">0.385</span>, <span class="jk">"row"</span>: <span class="jn">0.615</span> }<br>
+},<br>
+<span class="jk">"human_approval_required"</span>: <span class="jv">true</span>,<br>
+<span class="jk">"codex_generated"</span>: <span class="jv">false</span>,<br>
+<span class="jk">"regression_cases"</span>: [<span class="jv">"NVDA"</span>, <span class="jv">"TSM"</span>, <span class="jv">"ASML"</span>]
+        </div>
+      </div>
+
+      <div class="card" id="patch-output" style="margin-top:0;display:none">
+        <div class="card-hdr">Generated Patch Preview <span class="tag tag-g">codex proposal</span></div>
+        <div class="code-patch" id="patch-content"></div>
+        <div style="margin-top:10px;display:flex;gap:8px">
+          <button class="btn grn" onclick="reviewAction('approve');switchTab('verdict')"><i class="ti ti-check"></i> Approve & apply</button>
+          <button class="btn" onclick="downloadTask()"><i class="ti ti-download"></i> Download patch</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- /codex -->
+
+<!-- =================== THREAT ORBIT RADAR =================== -->
+<div class="panel" id="panel-radar">
+  <div class="g2" style="grid-template-columns:1fr 380px;gap:14px;align-items:start">
+    <!-- CANVAS ZONE -->
+    <div class="card" style="padding:0;overflow:hidden;position:relative">
+      <div style="position:absolute;top:12px;left:16px;z-index:10;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--muted)">Threat Orbit Map</div>
+      <div style="position:absolute;top:12px;right:16px;z-index:10;display:flex;gap:8px;align-items:center">
+        <span class="tag tag-r" id="orbit-crit-count">2 CRITICAL</span>
+        <span class="tag tag-a" id="orbit-elevated">1 ELEVATED</span>
+      </div>
+      <canvas id="orbitCanvas" style="display:block;width:100%;height:420px"></canvas>
+    </div>
+    <!-- RIGHT COLUMN -->
+    <div style="display:flex;flex-direction:column;gap:12px">
+      <!-- CUBE -->
+      <div class="card" style="padding:14px">
+        <div class="card-hdr">Sector Exposure Cube</div>
+        <div style="display:flex;justify-content:center;align-items:center;height:190px">
+          <canvas id="cubeCanvas" width="190" height="190"></canvas>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:8px">
+          <div class="cube-legend" data-face="0"><span class="dot" style="background:var(--red)"></span><span>Semiconductor</span><span class="cube-pct">84%</span></div>
+          <div class="cube-legend" data-face="1"><span class="dot" style="background:var(--amber)"></span><span>Geopolitical</span><span class="cube-pct">71%</span></div>
+          <div class="cube-legend" data-face="2"><span class="dot" style="background:var(--blue)"></span><span>Macro / Rates</span><span class="cube-pct">42%</span></div>
+          <div class="cube-legend" data-face="3"><span class="dot" style="background:#40d080)"></span><span>Supply Chain</span><span class="cube-pct">28%</span></div>
+        </div>
+      </div>
+      <!-- WATCHLIST TABLE -->
+      <div class="card" style="padding:14px">
+        <div class="card-hdr">Watchlist Signals</div>
+        <div id="orbit-ticker-list"></div>
+      </div>
+    </div>
+  </div>
+</div><!-- /radar -->
+
+<style>
+.cube-legend{display:flex;align-items:center;gap:5px;font-size:11px;color:var(--muted);padding:4px 0}
+.cube-legend .dot{width:7px;height:7px;border-radius:50%;flex-shrink:0}
+.cube-legend .cube-pct{margin-left:auto;color:var(--text);font-weight:500;font-size:11px}
+.orbit-row{display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid var(--border);font-size:11.5px;cursor:pointer;transition:background 0.1s}
+.orbit-row:last-child{border:none}
+.orbit-row:hover{background:rgba(255,255,255,0.02);border-radius:4px}
+.orbit-badge{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+</style>
+
+
+
+<!-- STATUS BAR -->
+<div class="status-bar">
+  <div class="status-item"><span class="live-dot" style="width:5px;height:5px;background:var(--teal)"></span>Arize Phoenix: tracing</div>
+  <div class="status-item"><span class="live-dot" style="width:5px;height:5px;background:var(--blue)"></span>Elastic MCP: connected</div>
+  <div class="status-item"><span class="live-dot" style="width:5px;height:5px;background:var(--amber)"></span>Codex: standby</div>
+  <div class="status-item" style="margin-left:auto;color:var(--muted)" id="clock">—</div>
+</div>
+
+</div><!-- /app -->
+
+<script>
+// ===================== ORBIT + CUBE ANIMATIONS =====================
+const TICKERS = [
+  { sym:'NVDA',  threat:0.92, sector:'Semiconductor', type:'critical', price:'$784',  chg:'-9.2%',  orbit:90,  angle:0.8,   speed:0.006 },
+  { sym:'TSM',   threat:0.85, sector:'Geopolitical',  type:'critical', price:'$168',  chg:'-7.1%',  orbit:115, angle:2.3,   speed:0.005 },
+  { sym:'ASML',  threat:0.60, sector:'Regulatory',    type:'elevated', price:'€724',  chg:'-3.4%',  orbit:155, angle:4.1,   speed:0.004 },
+  { sym:'AMAT',  threat:0.38, sector:'Semiconductor', type:'watch',    price:'$198',  chg:'-1.2%',  orbit:195, angle:1.0,   speed:0.003 },
+  { sym:'RELIANCE', threat:0.22, sector:'Macro',     type:'monitor',  price:'₹2841', chg:'+0.4%',  orbit:230, angle:3.7,   speed:0.0025 },
+];
+
+const THREAT_COLORS = { critical:'#ff3344', elevated:'#f5a623', watch:'#4d9fff', monitor:'#40d080' };
+
+function initOrbitCanvas() {
+  const canvas = document.getElementById('orbitCanvas');
+  if (!canvas) return;
+  const dpr = window.devicePixelRatio || 1;
+  const W = canvas.offsetWidth; const H = 420;
+  canvas.width = W * dpr; canvas.height = H * dpr;
+  canvas.style.height = H + 'px';
+  const ctx = canvas.getContext('2d');
+  ctx.scale(dpr, dpr);
+  const cx = W / 2, cy = H / 2;
+
+  // particle trails
+  const trails = TICKERS.map(() => []);
+
+  function drawOrbit() {
+    ctx.clearRect(0, 0, W, H);
+
+    // bg grid
+    ctx.strokeStyle = 'rgba(26,37,56,0.5)'; ctx.lineWidth = 0.5;
+    for (let r = 60; r <= 260; r += 40) {
+      ctx.beginPath(); ctx.arc(cx, cy, r, 0, Math.PI * 2); ctx.stroke();
+    }
+    // radial lines
+    for (let a = 0; a < Math.PI * 2; a += Math.PI / 6) {
+      ctx.beginPath(); ctx.moveTo(cx, cy);
+      ctx.lineTo(cx + Math.cos(a) * 260, cy + Math.sin(a) * 260); ctx.stroke();
+    }
+
+    // threat zone rings
+    const zones = [
+      { r: 80,  color:'rgba(255,51,68,0.04)',  label:'CRITICAL' },
+      { r: 130, color:'rgba(245,166,35,0.03)', label:'ELEVATED' },
+      { r: 175, color:'rgba(77,159,255,0.02)', label:'WATCH' },
+    ];
+    zones.forEach(z => {
+      ctx.beginPath(); ctx.arc(cx, cy, z.r, 0, Math.PI * 2);
+      ctx.fillStyle = z.color; ctx.fill();
+      ctx.fillStyle = 'rgba(90,111,130,0.5)'; ctx.font = '8px JetBrains Mono';
+      ctx.fillText(z.label, cx + z.r + 4, cy - 3);
+    });
+
+    // center orb
+    const gr = ctx.createRadialGradient(cx, cy, 0, cx, cy, 40);
+    gr.addColorStop(0, 'rgba(255,51,68,0.35)');
+    gr.addColorStop(0.5, 'rgba(255,51,68,0.08)');
+    gr.addColorStop(1, 'transparent');
+    ctx.beginPath(); ctx.arc(cx, cy, 40, 0, Math.PI * 2);
+    ctx.fillStyle = gr; ctx.fill();
+    ctx.strokeStyle = 'rgba(255,51,68,0.4)'; ctx.lineWidth = 1;
+    ctx.beginPath(); ctx.arc(cx, cy, 40, 0, Math.PI * 2); ctx.stroke();
+    ctx.fillStyle = '#ff3344'; ctx.font = 'bold 9px JetBrains Mono';
+    ctx.textAlign = 'center'; ctx.fillText('DOOMSDAY', cx, cy + 3);
+    ctx.fillStyle = 'rgba(255,51,68,0.5)'; ctx.font = '7px JetBrains Mono';
+    ctx.fillText('CORE', cx, cy + 13);
+    ctx.textAlign = 'left';
+
+    // orbit + tick positions
+    TICKERS.forEach((t, i) => {
+      t.angle += t.speed;
+      const x = cx + Math.cos(t.angle) * t.orbit;
+      const y = cy + Math.sin(t.angle) * t.orbit;
+
+      // trail
+      trails[i].push({ x, y, a: 0.55 });
+      if (trails[i].length > 30) trails[i].shift();
+      trails[i].forEach((pt, j) => {
+        const a = (j / trails[i].length) * pt.a;
+        ctx.beginPath(); ctx.arc(pt.x, pt.y, 2.5, 0, Math.PI * 2);
+        ctx.fillStyle = `${THREAT_COLORS[t.type]}${Math.floor(a * 255).toString(16).padStart(2,'0')}`;
+        ctx.fill();
+      });
+
+      // orbit ring
+      ctx.beginPath(); ctx.setLineDash([3,6]);
+      ctx.arc(cx, cy, t.orbit, 0, Math.PI * 2);
+      ctx.strokeStyle = `${THREAT_COLORS[t.type]}22`; ctx.lineWidth = 1; ctx.stroke();
+      ctx.setLineDash([]);
+
+      // node
+      const nr = t.type === 'critical' ? 14 : t.type === 'elevated' ? 12 : 10;
+      const gn = ctx.createRadialGradient(x, y, 0, x, y, nr);
+      gn.addColorStop(0, THREAT_COLORS[t.type] + 'cc');
+      gn.addColorStop(1, THREAT_COLORS[t.type] + '11');
+      ctx.beginPath(); ctx.arc(x, y, nr, 0, Math.PI * 2);
+      ctx.fillStyle = gn; ctx.fill();
+      ctx.strokeStyle = THREAT_COLORS[t.type]; ctx.lineWidth = 1.2; ctx.stroke();
+
+      // pulse ring for critical
+      if (t.type === 'critical') {
+        const pulse = Math.sin(Date.now() / 500 + i) * 6 + nr + 4;
+        ctx.beginPath(); ctx.arc(x, y, pulse, 0, Math.PI * 2);
+        ctx.strokeStyle = THREAT_COLORS[t.type] + '44'; ctx.lineWidth = 1; ctx.stroke();
+      }
+
+      // label
+      ctx.font = 'bold 10px JetBrains Mono'; ctx.fillStyle = '#eceff1';
+      ctx.textAlign = 'center';
+      ctx.fillText(t.sym, x, y + 3.5);
+      ctx.font = '7.5px JetBrains Mono';
+      ctx.fillStyle = THREAT_COLORS[t.type];
+      ctx.fillText(Math.round(t.threat * 100) + '%', x, y + 14);
+      ctx.textAlign = 'left';
+
+      // threat vector line to center (for critical)
+      if (t.type === 'critical') {
+        ctx.beginPath(); ctx.moveTo(x, y); ctx.lineTo(cx, cy);
+        ctx.strokeStyle = THREAT_COLORS[t.type] + '18'; ctx.lineWidth = 0.8; ctx.stroke();
+      }
+    });
+    requestAnimationFrame(drawOrbit);
+  }
+  drawOrbit();
+}
+
+// ---- CUBE ----
+function initCubeCanvas() {
+  const canvas = document.getElementById('cubeCanvas');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  const W = 190, H = 190, cx = W/2, cy = H/2;
+  const SIZE = 58;
+  let ang = 0;
+
+  const FACES = [
+    { label:'SEMI', fill:0.84, color:'#ff3344' },
+    { label:'GEO',  fill:0.71, color:'#f5a623' },
+    { label:'MACRO',fill:0.42, color:'#4d9fff' },
+    { label:'SC',   fill:0.28, color:'#40d080' },
+  ];
+
+  function project(x, y, z, ax, ay) {
+    const cosX = Math.cos(ax), sinX = Math.sin(ax);
+    const cosY = Math.cos(ay), sinY = Math.sin(ay);
+    const y2 = y * cosX - z * sinX; const z2 = y * sinX + z * cosX;
+    const x2 = x * cosY + z2 * sinY;
+    return [cx + x2, cy + y2];
+  }
+
+  const verts = [
+    [-1,-1,-1],[1,-1,-1],[1,1,-1],[-1,1,-1],
+    [-1,-1,1],[1,-1,1],[1,1,1],[-1,1,1],
+  ].map(v => v.map(c => c * SIZE));
+
+  const FACE_VERTS = [[0,1,2,3],[4,5,6,7],[0,1,5,4],[2,3,7,6],[1,2,6,5],[0,3,7,4]];
+
+  // partial fill progress
+  const fillProgress = FACES.map(f => ({ current: 0, target: f.fill }));
+  fillProgress.forEach(fp => fp.current = 0);
+
+  function drawCube() {
+    ctx.clearRect(0, 0, W, H);
+    ang += 0.008;
+    const ax = ang * 0.6, ay = ang;
+
+    const proj = verts.map(v => project(v[0], v[1], v[2], ax, ay));
+
+    // compute face normals for visibility + sort back-to-front
+    const faceData = FACE_VERTS.map((fi, idx) => {
+      const pts = fi.map(i => proj[i]);
+      const v0 = verts[fi[0]], v1 = verts[fi[1]], v2 = verts[fi[2]];
+      const [p0x,p0y] = project(v0[0],v0[1],v0[2],ax,ay);
+      const [p1x,p1y] = project(v1[0],v1[1],v1[2],ax,ay);
+      const [p2x,p2y] = project(v2[0],v2[1],v2[2],ax,ay);
+      const cross = (p1x-p0x)*(p2y-p0y)-(p1y-p0y)*(p2x-p0x);
+      return { idx, pts, visible: cross < 0 };
+    });
+
+    // draw all faces, hidden first
+    faceData.sort((a,b) => a.visible - b.visible);
+
+    faceData.forEach(({ idx, pts, visible }) => {
+      const fi = idx % FACES.length;
+      const { color } = FACES[fi];
+      const fp = fillProgress[fi];
+      if (fp.current < fp.target) fp.current = Math.min(fp.current + 0.003, fp.target);
+
+      ctx.beginPath();
+      pts.forEach(([x,y],i)=> i===0 ? ctx.moveTo(x,y) : ctx.lineTo(x,y));
+      ctx.closePath();
+
+      if (visible) {
+        // base face
+        ctx.fillStyle = 'rgba(9,13,22,0.92)'; ctx.fill();
+        // fill overlay based on threat
+        const alpha = fp.current * 0.45 + (Math.sin(ang * 3 + fi) * 0.04);
+        ctx.fillStyle = color + Math.floor(alpha * 255).toString(16).padStart(2,'0');
+        ctx.fill();
+        // scanline effect
+        for (let s = 0; s < 1; s += 0.12) {
+          if (s > fp.current) break;
+          ctx.beginPath();
+          pts.forEach(([x,y],i)=> i===0 ? ctx.moveTo(x,y) : ctx.lineTo(x,y));
+          ctx.closePath();
+          ctx.strokeStyle = color + '22'; ctx.lineWidth = 0.5; ctx.stroke();
+        }
+        // label
+        const lx = pts.reduce((a,p)=>a+p[0],0)/pts.length;
+        const ly = pts.reduce((a,p)=>a+p[1],0)/pts.length;
+        ctx.fillStyle = color; ctx.font = 'bold 8px JetBrains Mono';
+        ctx.textAlign = 'center';
+        ctx.fillText(FACES[fi].label, lx, ly);
+        ctx.fillStyle = '#eceff199'; ctx.font = '7px JetBrains Mono';
+        ctx.fillText(Math.round(fp.current * 100) + '%', lx, ly + 11);
+        ctx.textAlign = 'left';
+        ctx.strokeStyle = color + '88'; ctx.lineWidth = 1.2;
+      } else {
+        ctx.fillStyle = 'rgba(9,13,22,0.5)'; ctx.fill();
+        ctx.strokeStyle = 'rgba(26,37,56,0.6)'; ctx.lineWidth = 0.5;
+      }
+      ctx.beginPath();
+      pts.forEach(([x,y],i)=> i===0 ? ctx.moveTo(x,y) : ctx.lineTo(x,y));
+      ctx.closePath(); ctx.stroke();
+    });
+
+    requestAnimationFrame(drawCube);
+  }
+  drawCube();
+}
+
+// ---- WATCHLIST TABLE ----
+function buildOrbitTable() {
+  const el = document.getElementById('orbit-ticker-list');
+  if (!el) return;
+  el.innerHTML = TICKERS.map(t => `
+    <div class="orbit-row" onclick="loadAndGo('${t.sym.toLowerCase().split('.')[0]}')">
+      <div class="orbit-badge" style="background:${THREAT_COLORS[t.type]}"></div>
+      <div style="flex:1">
+        <div style="font-weight:500;color:var(--text)">${t.sym}</div>
+        <div style="font-size:10px;color:var(--muted)">${t.sector}</div>
+      </div>
+      <div style="text-align:right">
+        <div style="color:${THREAT_COLORS[t.type]};font-weight:500">${Math.round(t.threat*100)}% threat</div>
+        <div style="font-size:10px;color:${parseFloat(t.chg)<0?'var(--red)':'var(--teal)'}">${t.chg} ${t.price}</div>
+      </div>
+    </div>
+  `).join('');
+}
+
+// init on tab switch
+const origSwitch = window.switchTab;
+window.switchTab = function(tab) {
+  origSwitch(tab);
+  if (tab === 'radar') {
+    setTimeout(() => { initOrbitCanvas(); initCubeCanvas(); buildOrbitTable(); }, 50);
+  }
+};
+
+setInterval(() => {
+  const d = new Date();
+  document.getElementById('clock').textContent = d.toLocaleTimeString('en-GB', {hour:'2-digit',minute:'2-digit',second:'2-digit'}) + ' UTC';
+}, 1000);
+
+// Tab switching
+function switchTab(tab) {
+  document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('panel-' + tab).classList.add('active');
+  document.querySelectorAll('.nav-btn').forEach(b => {
+    if (b.textContent.trim().toLowerCase().startsWith(tab.toLowerCase().substring(0,5))) b.classList.add('active');
+  });
+}
+
+// Scan
+function runScan() {
+  const btn = document.getElementById('scan-btn');
+  btn.disabled = true; btn.innerHTML = '<i class="ti ti-refresh" style="animation:spin 1s linear infinite;display:inline-block"></i> Scanning...';
+  const wrap = document.getElementById('scan-status-wrap'); wrap.style.display = 'block';
+  const bar = document.getElementById('scanbar');
+  setTimeout(() => bar.style.width = '100%', 50);
+  const log = document.getElementById('agent-log');
+  const msgs = [
+    ['t-inf','tavily.live','fetching semiconductor sector — 89 articles found'],
+    ['t-inf','elastic.query','running macro_risk_v4 keyword scan...'],
+    ['t-warn','signal.drawdown','NVDA −9.2% (last 48h, threshold −8%)'],
+    ['t-err','keyword.hit','export control × 47 | GPU ban × 31 | China tech × 63'],
+    ['t-err','trigger.fire','NVDA → INCIDENT_CRITICAL stored'],
+    ['t-warn','geopolitical.scan','Taiwan strait × 23 | PLA exercise × 17'],
+    ['t-err','trigger.fire','TSM → INCIDENT_CRITICAL stored'],
+    ['t-ok','snapshot.save','incidents.json — 3 incidents written, 2 critical'],
+  ];
+  msgs.forEach((m, i) => {
+    setTimeout(() => {
+      const d = new Date(); const ts = d.toTimeString().substring(0,8);
+      const el = document.createElement('div');
+      el.innerHTML = `<span class="tok">${ts} </span><span class="${m[0]}">${m[1]}</span> — ${m[2]}`;
+      log.appendChild(el); log.scrollTop = log.scrollHeight;
+      if (i === msgs.length - 1) {
+        setTimeout(() => {
+          btn.disabled = false; btn.innerHTML = '<i class="ti ti-refresh"></i> Re-scan';
+          document.getElementById('scan-status-txt').textContent = '✓ Scan complete — 2 critical, 1 elevated';
+          document.getElementById('scan-status-txt').className = 't-ok';
+        }, 400);
+      }
+    }, i * 520);
+  });
+}
+
+// Incidents data
+const INCIDENTS = {
+  nvda: { ticker:'NVDA', desc:'US-China semiconductor export control — EAR-99 expansion to H100/A100 successors. Full China datacenter exit forced Q3 2026.', chaos:'0.76', rev:'38%', sev:'critical' },
+  tsm:  { ticker:'TSM',  desc:'Cross-strait military posturing — PLA naval exercises near TSMC N3/N2 fab corridors. Insurance withdrawals issued.', chaos:'0.81', rev:'55%', sev:'critical' },
+  asml: { ticker:'ASML', desc:'EUV export license renewal under US-Dutch joint review. China 29% of shipments. Renewal uncertain Q4 2026.', chaos:'0.61', rev:'21%', sev:'elevated' },
+};
+let ACTIVE = 'nvda';
+
+function loadAndGo(id) {
+  ACTIVE = id;
+  const inc = INCIDENTS[id];
+  document.getElementById('tri-ticker').textContent = inc.ticker;
+  document.getElementById('tri-desc').textContent = inc.desc;
+  document.getElementById('tri-chaos').textContent = inc.chaos;
+  document.getElementById('tri-rev').textContent = inc.rev;
+  document.getElementById('tri-sev').textContent = inc.sev;
+  document.getElementById('tri-bear-score').textContent = '—';
+  document.getElementById('tri-bull-score').textContent = '—';
+  document.getElementById('round-num').textContent = '0';
+  document.getElementById('debate-stream').innerHTML = `<div style="text-align:center;padding:30px;color:var(--muted);font-size:12px">Incident loaded: <strong style="color:var(--text)">${inc.ticker}</strong>. Click Launch Tribunal.</div>`;
+  const btn = document.getElementById('tri-btn'); btn.disabled = false; btn.innerHTML = '<i class="ti ti-player-play"></i> Launch Tribunal';
+  switchTab('tribunal');
+}
+
+// Debate scripts
+const DEBATES = {
+  nvda: [
+    { role:'bear', label:'Bear Analyst', text:'NVDA faces a structural demand collapse in its largest growth market. China represented 23% of FY2024 revenue. Under EAR-99 expansion covering H100/A100 successors, the entire China datacenter segment faces mandatory compliance — no architecture workaround is viable. Our model projects a 38% revenue haircut within 12 months, accelerating to 45% with Huawei Ascend ecosystem substitution taking hold. WACC repricing is mandatory: +450bps minimum to reflect regulatory overhang. Bear fair value: $441. Downside probability: 78%.' },
+    { role:'bull', label:'Bull Analyst', text:'The Bear overstates substitution risk dramatically. NVIDIA is architecturally irreplaceable for AI training workloads outside China. Non-China datacenter demand — Microsoft, Amazon, Google, Meta — is growing at 67% YoY and will absorb full China exit revenue within 18 months. Gross margin actually expands 200bps as lower-ASP China mix exits. Regulatory curbs historically create a premium for US-compliant suppliers. Bull fair value: $830, upside to $910 on AI capex super-cycle continuation.' },
+    { role:'judge', label:'Black Swan Judge — Synthesis', text:'The tribunal reaches a split verdict weighted toward the Bear. The Bull adaptation math is technically correct — but requires 18-24 months for hyperscaler demand absorption. The market will price the interim revenue gap at full discount, not forward-looking absorption. Probability-weighted synthesis: Bear 62%, Bull 38%. Distressed EV: $762B. Weighted fair value: $591. RECOMMENDATION — HEDGE: protective puts, 40% of long exposure, $550 strike, 6-month expiry. Escalate to IC for approval. Codex patch required for export-control stress module.' },
+  ],
+  tsm: [
+    { role:'bear', label:'Bear Analyst', text:'TSM faces existential geography risk. 100% of leading-edge fabrication is physically located in Taiwan. PLA exercises adjacent to fab corridors are not posturing — they are rehearsal. Insurance withdrawal is a leading indicator. Bear scenario: 30-day production disruption probability 15% in 12 months, 55% in 36 months. Fair value: $68. Hedge immediately.' },
+    { role:'bull', label:'Bull Analyst', text:'US strategic dependency on TSMC is the strongest geopolitical hedge in technology. CHIPS Act investment, Arizona fab expansion, and US military commitment make TSMC systemically protected. The Bear ignores that TSMC\'s destruction would simultaneously collapse global semiconductor supply — deterrence is structural. N5/N3 Arizona ramp by 2027 provides geographic distribution. Bull fair value: $189.' },
+    { role:'judge', label:'Black Swan Judge — Synthesis', text:'Geopolitical risk is real but currently mispriced in both directions. The Bear ignores deterrence; the Bull ignores that deterrence can fail. Weighted synthesis: $128 fair value, 19% downside from current. RECOMMENDATION — PARTIAL HEDGE: reduce position by 20%, maintain core holding given strategic moat. Monitor PLA exercise schedule as primary leading indicator.' },
+  ],
+  asml: [
+    { role:'bear', label:'Bear Analyst', text:'ASML\'s EUV export licenses represent a single point of diplomatic failure. China contributed 29% of 2025 shipments. License non-renewal effectively eliminates a quarter of revenue with 6 months notice. The Dutch government has limited leverage to resist US pressure. Bear fair value: €510 on full China exclusion.' },
+    { role:'bull', label:'Bull Analyst', text:'ASML is irreplaceable. No Chinese company is within 8 years of EUV capability. Demand from Samsung, TSMC, and Intel for N2/A14 ramps is growing 40% YoY. Loss of China orders is painful but survivable — and creates a stronger regulatory moat against future competitors. Bull fair value: €900.' },
+    { role:'judge', label:'Black Swan Judge — Synthesis', text:'The ASML risk is manageable relative to TSM and NVDA. China revenue is already declining as TSMC/Samsung capacity ramps. The real risk is political, not fundamental. Weighted fair value: €728. RECOMMENDATION — HOLD, no immediate hedge required. Monitor license renewal timeline Q4 2026. Codex: flag for model update if license lapses.' },
+  ],
+};
+
+let tribunalRunning = false;
+function launchTribunal() {
+  if (tribunalRunning) return;
+  tribunalRunning = true;
+  const btn = document.getElementById('tri-btn');
+  btn.disabled = true; btn.innerHTML = '<i class="ti ti-cpu" style="animation:spin 1s linear infinite;display:inline-block"></i> Tribunal running...';
+  const stream = document.getElementById('debate-stream'); stream.innerHTML = '';
+  const msgs = DEBATES[ACTIVE] || DEBATES.nvda;
+
+  msgs.forEach((msg, i) => {
+    setTimeout(() => {
+      document.getElementById('round-num').textContent = i + 1;
+      if (msg.role === 'bear') document.getElementById('tri-bear-score').textContent = '7.8';
+      if (msg.role === 'bull') document.getElementById('tri-bull-score').textContent = '6.4';
+
+      const div = document.createElement('div');
+      div.className = `dbm dbm-${msg.role}`;
+      div.innerHTML = `<div class="dbm-role">${msg.label}</div><div id="dbm-text-${i}"></div>`;
+      stream.appendChild(div); stream.scrollTop = stream.scrollHeight;
+
+      typewrite(`dbm-text-${i}`, msg.text, () => {
+        if (i === msgs.length - 1) {
+          tribunalRunning = false;
+          btn.disabled = false; btn.innerHTML = '<i class="ti ti-refresh"></i> Re-run Tribunal';
+          setTimeout(() => {
+            const fin = document.createElement('div');
+            fin.style.cssText = 'text-align:center;margin-top:14px;padding:12px;background:var(--bg3);border-radius:var(--radius);font-size:12px;color:var(--muted)';
+            fin.innerHTML = 'Tribunal complete &nbsp;·&nbsp; <button class="btn grn" onclick="switchTab(\'verdict\')" style="font-size:10px;padding:5px 12px"><i class="ti ti-file-check"></i> View IC Memo & Review Gate</button>';
+            stream.appendChild(fin); stream.scrollTop = stream.scrollHeight;
+          }, 600);
+        }
+      });
+    }, i * 4500);
+  });
+}
+
+function typewrite(id, text, cb) {
+  const el = document.getElementById(id); let i = 0;
+  const iv = setInterval(() => {
+    el.textContent += text[i++];
+    if (i >= text.length) { clearInterval(iv); if (cb) cb(); }
+  }, 16);
+}
+
+// Review gate
+function reviewAction(action) {
+  const res = document.getElementById('review-result'); res.style.display = 'block';
+  if (action === 'approve') {
+    res.style.background = 'var(--teal-bg)'; res.style.color = 'var(--teal)'; res.style.border = '1px solid var(--teal-border)';
+    res.textContent = '✓ Approved. Stress assumptions applied to valuation model. Codex patch queued. IC memo finalised.';
+    const stamp = document.getElementById('vstamp');
+    if (stamp) { stamp.textContent = 'APPROVED — HEDGE ACTIVE'; stamp.style.color = 'var(--teal)'; stamp.style.borderColor = 'var(--teal-border)'; }
+  } else if (action === 'soften') {
+    res.style.background = 'var(--amber-bg)'; res.style.color = 'var(--amber)'; res.style.border = '1px solid var(--amber-border)';
+    res.textContent = '⟳ Softened by −15%. Revenue haircut → −24.2%, WACC premium → +323bps. Re-running valuation engine...';
+  } else {
+    res.style.background = 'var(--bg3)'; res.style.color = 'var(--muted)'; res.style.border = '1px solid var(--border)';
+    res.textContent = '— Dismissed. Incident archived. No model changes applied.';
+  }
+}
+
+// Codex patch generation
+const PATCH_LINES = [
+  '<span style="color:#7dcfff">@dataclass</span>',
+  '<span style="color:#ff9e64">class</span> <span style="color:#e0af68">ExportControlScenario</span>:',
+  '    jurisdiction_exposure_pct: <span style="color:#9ece6a">float</span>',
+  '    compliance_timeline_months: <span style="color:#9ece6a">int</span>',
+  '    substitute_revenue_pct: <span style="color:#9ece6a">float</span> = 0.0',
+  '',
+  '<span style="color:#7dcfff">def</span> <span style="color:#7aa2f7">apply_export_control_stress</span>(',
+  '    base: SimpleValuation,',
+  '    scenario: ExportControlScenario',
+  ') -> SimpleValuation:',
+  '    haircut = scenario.jurisdiction_exposure_pct',
+  '    months = scenario.compliance_timeline_months',
+  '    wacc_delta = <span style="color:#ff9e64">0.038</span> * (<span style="color:#ff9e64">1</span> + months / <span style="color:#ff9e64">24</span>)',
+  '    base.revenue_haircut += haircut',
+  '    base.stressed_wacc += wacc_delta',
+  '    return base',
+  '',
+  '<span style="color:#73daca"># Tests generated:</span>',
+  '<span style="color:#9ece6a">✓</span> test_export_control_nvda_baseline',
+  '<span style="color:#9ece6a">✓</span> test_wacc_regulatory_premium',
+  '<span style="color:#9ece6a">✓</span> test_regression_nvda_golden',
+];
+
+let patchRunning = false;
+function generatePatch() {
+  if (patchRunning) return; patchRunning = true;
+  const btn = document.getElementById('patch-btn');
+  btn.disabled = true; btn.innerHTML = '<i class="ti ti-cpu" style="animation:spin 1s linear infinite;display:inline-block"></i> Generating...';
+  const out = document.getElementById('patch-output'); out.style.display = 'block';
+  const content = document.getElementById('patch-content'); content.innerHTML = '';
+  PATCH_LINES.forEach((line, i) => {
+    setTimeout(() => {
+      const el = document.createElement('div');
+      el.innerHTML = line || '&nbsp;';
+      content.appendChild(el); content.scrollTop = content.scrollHeight;
+      if (i === PATCH_LINES.length - 1) {
+        patchRunning = false; btn.disabled = false;
+        btn.innerHTML = '<i class="ti ti-refresh"></i> Regenerate';
+      }
+    }, i * 180);
+  });
+}
+
+function downloadTask() { alert('In production: codex_task.md downloads as Markdown for direct Codex handoff.'); }
+function downloadMemo() { alert('In production: IC memo downloads as PDF via Markdown → PDF pipeline.'); }
+</script>
+</body>
+</html>
