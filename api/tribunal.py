@@ -58,6 +58,13 @@ def handle(payload: dict[str, Any]) -> dict:
     )
 
 
+def _fallback_payload(ticker: str = "NVDA") -> dict:
+    try:
+        return _fallback(str(ticker or "NVDA").upper())
+    except Exception:
+        return dict(_STATIC_FALLBACK)
+
+
 class handler(BaseHTTPRequestHandler):
     def do_OPTIONS(self) -> None:
         _json_response(self, {"ok": True})
@@ -74,17 +81,18 @@ class handler(BaseHTTPRequestHandler):
 
     def do_POST(self) -> None:
         result = None
+        payload: dict[str, Any] = {}
         try:
-            result = handle(_read_json(self))
-        except Exception:
-            pass
+            payload = _read_json(self)
+            result = handle(payload)
+        except Exception as exc:
+            traceback.print_exc()
 
         if result is None:
             # Try ticker-specific static fallback
             try:
-                payload = _read_json(self)
                 ticker = str(payload.get("ticker") or "NVDA").upper()
-                result = _fallback(ticker)
+                result = _fallback_payload(ticker)
             except Exception:
                 pass
 

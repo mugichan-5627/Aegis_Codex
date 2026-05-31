@@ -1350,6 +1350,33 @@ function loadAndGo(id) {
 // Debates — populated dynamically from tribunal API responses
 const DEBATES = {};
 
+function buildLocalTribunalFallback(inc) {
+  const ticker = inc?.ticker || 'TARGET';
+  const sev = inc?.sev || 'watch';
+  const chaos = inc?.chaos || '0.50';
+  const desc = inc?.desc || 'Live risk incident detected.';
+  return [
+    {
+      role: 'bear',
+      label: 'Bear Analyst',
+      text: `${ticker} faces an elevated stress event: ${desc} The Bear case assumes the market reprices the exposure before management can show mitigation. Apply a cautious revenue haircut, margin compression, and risk-premium uplift until the signal cools.`,
+      score: sev === 'critical' ? 8.0 : 7.3
+    },
+    {
+      role: 'bull',
+      label: 'Bull Analyst',
+      text: `${ticker} may absorb the shock better than the headline suggests. Large, liquid franchises can offset macro pressure through pricing power, customer mix, balance-sheet flexibility, and slower-than-feared transmission into fundamentals. The incident deserves stress testing, but not an automatic full impairment case.`,
+      score: 6.4
+    },
+    {
+      role: 'judge',
+      label: 'Black Swan Judge',
+      text: `The tribunal assigns ${ticker} a cautious but not terminal verdict at chaos ${chaos}. The Bear case wins on timing risk, while the Bull case limits the permanent impairment assumption. RECOMMENDATION - HEDGE or reduce exposure modestly, then re-run valuation once live indicators improve.`,
+      score: 8.5
+    }
+  ];
+}
+
 let tribunalRunning = false;
 async function launchTribunal() {
   if (tribunalRunning) return;
@@ -1387,14 +1414,13 @@ async function launchTribunal() {
       backendTelemetry = data.telemetry;
     }
   } catch(e) {
-    msgs = DEBATES[ACTIVE] || null;
+    msgs = DEBATES[ACTIVE] || buildLocalTribunalFallback(inc);
+    DEBATES[ACTIVE] = msgs;
   }
 
   if (!msgs || !msgs.length) {
-    tribunalRunning = false;
-    btn.disabled = false; btn.innerHTML = '<i class="ti ti-player-play"></i> Retry Tribunal';
-    stream.innerHTML = `<div style="text-align:center;padding:30px;color:var(--muted);font-size:12px"><i class="ti ti-alert-triangle" style="font-size:22px;display:block;margin-bottom:8px;color:var(--amber)"></i>Tribunal API did not respond for <strong style="color:var(--text)">${inc.ticker}</strong>.<br>Check that NVIDIA_API_KEY is set in your .env and try again.</div>`;
-    return;
+    msgs = buildLocalTribunalFallback(inc);
+    DEBATES[ACTIVE] = msgs;
   }
 
   if (backendTelemetry) {

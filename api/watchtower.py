@@ -26,7 +26,7 @@ from lib.risk_engine import (
     sector_label,
     utc_timestamp,
 )
-from arize_mcp_client import arize_client
+from lib.local_telemetry import GLOBAL_TRACE_CONSOLE, arize_client
 
 
 load_dotenv(ROOT / ".env")
@@ -169,7 +169,6 @@ def handle(payload: dict[str, Any]) -> dict:
     arize_client.complete_trace(trace_id=trace_id)
     
     # Extract trace from memory store to return to frontend
-    from arize_mcp_client import GLOBAL_TRACE_CONSOLE
     matching_trace = None
     for t in GLOBAL_TRACE_CONSOLE:
         if t["trace_id"] == trace_id:

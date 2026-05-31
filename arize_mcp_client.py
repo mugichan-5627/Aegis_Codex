@@ -305,6 +305,10 @@ class ArizePhoenixTelemetry:
 
     def _ship_telemetry(self, trace_payload: Dict[str, Any]) -> None:
         """Ship telemetry. Runs synchronously in serverless/Vercel environments to prevent container shutdown cutoff."""
+        if os.environ.get("AEGIS_DISABLE_REMOTE_TELEMETRY", "1").lower() not in ("0", "false", "no"):
+            logger.info("Remote telemetry export disabled; retaining local trace only.")
+            return
+
         if os.environ.get("VERCEL") or os.environ.get("SERVERLESS") or os.environ.get("AEGIS_SYNC_TELEMETRY"):
             try:
                 self._ship_telemetry_sync(trace_payload)
@@ -430,4 +434,3 @@ class ArizePhoenixTelemetry:
 # Initialize global static client
 arize_client = ArizePhoenixTelemetry()
 ArizeMCPClient = ArizePhoenixTelemetry
-

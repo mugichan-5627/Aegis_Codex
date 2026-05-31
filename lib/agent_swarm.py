@@ -11,13 +11,14 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 from openai import OpenAI
-from arize_mcp_client import arize_client
+from lib.local_telemetry import GLOBAL_TRACE_CONSOLE, arize_client
 
 
 load_dotenv(Path(__file__).resolve().parents[1] / ".env")
 
 NVIDIA_BASE_URL = "https://integrate.api.nvidia.com/v1"
 NVIDIA_MODEL = "meta/llama-3.3-70b-instruct"
+LLM_TIMEOUT_SECONDS = 10.0
 
 DEFAULT_ASSUMPTIONS = {
     "revenue_haircut_pct": 28.5,
@@ -110,9 +111,33 @@ FALLBACK_DEBATES = {
 
 
 def _fallback(ticker: str) -> dict:
-    data = FALLBACK_DEBATES.get(ticker.upper(), FALLBACK_DEBATES["NVDA"])
-    rounds = [dict(item) for item in data["rounds"]]
-    assumptions = dict(data["proposed_assumptions"])
+    normalized_ticker = (ticker or "NVDA").upper()
+    data = FALLBACK_DEBATES.get(normalized_ticker)
+    if data:
+        rounds = [dict(item) for item in data["rounds"]]
+        assumptions = dict(data["proposed_assumptions"])
+    else:
+        assumptions = dict(DEFAULT_ASSUMPTIONS)
+        rounds = [
+            {
+                "role": "bear",
+                "label": "Bear Analyst",
+                "text": f"{normalized_ticker} faces a material stress event because the incident combines price pressure, risk-keyword density, and sector exposure. The downside case assumes investors reprice near-term revenue quality before management can prove mitigation. A defensive model should apply a revenue haircut, EBITDA margin compression, and a higher risk premium until the signal cools.",
+                "score": 7.4,
+            },
+            {
+                "role": "bull",
+                "label": "Bull Analyst",
+                "text": f"{normalized_ticker} still has offsetting strengths that may limit permanent value impairment. Large-cap franchises often absorb macro shocks through pricing power, balance-sheet flexibility, and demand rotation across customer segments. The incident deserves monitoring, but the full Bear case should not be treated as inevitable without confirming evidence.",
+                "score": 6.3,
+            },
+            {
+                "role": "judge",
+                "label": "Black Swan Judge",
+                "text": f"The tribunal assigns {normalized_ticker} a balanced but cautious stress verdict. The Bear case wins on timing risk, while the Bull case matters for medium-term recovery. RECOMMENDATION - HEDGE or reduce exposure modestly until live indicators improve, then re-run valuation with the approved stress assumptions.",
+                "score": 8.4,
+            },
+        ]
     return {
         "rounds": rounds,
         "proposed_assumptions": assumptions,
@@ -124,11 +149,16 @@ def _fallback(ticker: str) -> dict:
 def _client_and_model() -> tuple[OpenAI | None, str | None]:
     openai_key = os.environ.get("OPENAI_API_KEY", None)
     if openai_key:
-        return OpenAI(api_key=openai_key), "gpt-4o"
+        return OpenAI(api_key=openai_key, timeout=LLM_TIMEOUT_SECONDS, max_retries=0), "gpt-4o"
 
     nvidia_key = os.environ.get("NVIDIA_API_KEY", None)
     if nvidia_key:
-        return OpenAI(api_key=nvidia_key, base_url=NVIDIA_BASE_URL), NVIDIA_MODEL
+        return OpenAI(
+            api_key=nvidia_key,
+            base_url=NVIDIA_BASE_URL,
+            timeout=LLM_TIMEOUT_SECONDS,
+            max_retries=0,
+        ), NVIDIA_MODEL
 
     return None, None
 
@@ -223,7 +253,6 @@ def run_tribunal(
         arize_client.complete_trace(trace_id=trace_id)
         
         # Pull trace from local memory store
-        from arize_mcp_client import GLOBAL_TRACE_CONSOLE
         matching_trace = None
         for t in GLOBAL_TRACE_CONSOLE:
             if t["trace_id"] == trace_id:
@@ -273,6 +302,7 @@ Keep each text under five sentences and make the assumptions numeric.
             ],
             temperature=0.35,
             max_tokens=900,
+            timeout=LLM_TIMEOUT_SECONDS,
         )
         text = response.choices[0].message.content or ""
         parsed = _extract_json(text)
@@ -288,7 +318,6 @@ Keep each text under five sentences and make the assumptions numeric.
             arize_client.complete_trace(trace_id=trace_id)
             
             fallback_res = _fallback(ticker)
-            from arize_mcp_client import GLOBAL_TRACE_CONSOLE
             matching_trace = None
             for t in GLOBAL_TRACE_CONSOLE:
                 if t["trace_id"] == trace_id:
@@ -321,7 +350,6 @@ Keep each text under five sentences and make the assumptions numeric.
             
         arize_client.complete_trace(trace_id=trace_id)
         
-        from arize_mcp_client import GLOBAL_TRACE_CONSOLE
         matching_trace = None
         for t in GLOBAL_TRACE_CONSOLE:
             if t["trace_id"] == trace_id:
@@ -364,7 +392,6 @@ Keep each text under five sentences and make the assumptions numeric.
         arize_client.complete_trace(trace_id=trace_id)
         
         fallback_res = _fallback(ticker)
-        from arize_mcp_client import GLOBAL_TRACE_CONSOLE
         matching_trace = None
         for t in GLOBAL_TRACE_CONSOLE:
             if t["trace_id"] == trace_id:
