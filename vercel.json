@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "functions": {
-    "api/tribunal.py":    { "runtime": "python3.12", "maxDuration": 30 },
-    "api/watchtower.py":  { "runtime": "python3.12", "maxDuration": 30 },
-    "api/valuation.py":   { "runtime": "python3.12", "maxDuration": 15 },
-    "api/codex_patch.py": { "runtime": "python3.12", "maxDuration": 30 }
-  },
+  "builds": [
+    { "src": "api/tribunal.py",    "use": "@vercel/python", "config": { "maxDuration": 30 } },
+    { "src": "api/watchtower.py",  "use": "@vercel/python", "config": { "maxDuration": 30 } },
+    { "src": "api/valuation.py",   "use": "@vercel/python", "config": { "maxDuration": 15 } },
+    { "src": "api/codex_patch.py", "use": "@vercel/python", "config": { "maxDuration": 30 } },
+    { "src": "index.html",         "use": "@vercel/static" }
+  ],
   "crons": [
     { "path": "/api/watchtower", "schedule": "0 * * * *" }
   ],
