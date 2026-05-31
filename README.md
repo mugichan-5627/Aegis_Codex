@@ -1,83 +1,153 @@
-# Doomsday Rapid Agent ☢️
+# Aegis Codex — Doomsday Rapid Agent v2.0
 
-**A Google Cloud Rapid Agent Hackathon Submission**
+**Autonomous geopolitical & financial risk intelligence platform**
 
-⚡ **Live Streamlit Dashboard:** [doomsday-rapid-agent.streamlit.app](https://doomsday-rapid-agent.streamlit.app/)
+Aegis Codex is an executive-level adversarial threat simulator built for the hackathon. It runs a multi-agent "Fracture Tribunal" that stress-tests company valuations against chaos scenarios — export controls, geopolitical flashpoints, supply chain shocks — and surfaces IC-ready memos with a human review gate before any model changes are applied.
 
-Doomsday Rapid Agent is an executive-level adversarial threat simulator. Built as a high-velocity offshoot of the broader **Project Doomsday** initiative, this specialized platform features a multi-agent "Fracture Swarm" powered by **Gemini 3**, grounded in real-time with **Elastic MCP**, and fully observable via **Arize MCP** — all wrapped in a sleek, military-grade Geopolitical Risk Dashboard.
+The system runs autonomously: an hourly cron job scans your watchlist, auto-triggers tribunal debates for critical incidents, and has results waiting when you open the app. The only thing a portfolio manager needs to do is Approve, Soften, or Dismiss.
 
----
-
-## ⚡ The Doomsday Offshoot Advancements
-
-While carrying the DNA of the original Project Doomsday, the **Doomsday Rapid Agent** introduces fundamental structural and mathematical enhancements optimized for rapid decision cycles:
-
-1. **Upgraded Swarm Logic (`agent_swarm.py`)**: 
-   Introduces dynamic multi-agent adversarial debate rounds. The Geopolitical, Supply Chain, and Financial agents participate in a structured dialectic tribunal. They present rapid bull/bear arguments before the Black Swan Judge (Synthesizer) renders a finalized severity consensus.
-2. **Enhanced Valuation Mathematics (`valuation_engine.py`)**:
-   Rewrites the systemic degradation engine. Modern enterprise valuation models (Multi-Factor DCF, Cyclical, EV/Revenue) are devalued dynamically based on chaos parameters. The engine projects WACC degradation, direct revenue haircuts, and structural margin compression (BPS haircuts) directly into distress waterfalls.
-3. **Advanced Telemetry Observability (`arize_mcp_client.py`)**:
-   First-class tracing, evaluation, and latency logging. Tracks nested prompt latencies, model parameters, and raw chain-of-thought outputs back to Arize Phoenix.
+**Live demo:** deploy your own instance via the Vercel button below or follow the quickstart.
 
 ---
 
-## 🏗️ Architecture & Technology Stack
+## Architecture
 
-The platform is designed around a clean, decoupled agentic architecture:
+```
+index.html          — single-page frontend (no framework, pure JS)
+api/
+  watchtower.py     — scans tickers via yfinance + Tavily, computes chaos index
+  tribunal.py       — runs adversarial Bear / Bull / Judge LLM debate
+  valuation.py      — multi-factor DCF + EV/Revenue distressed valuation
+  codex_patch.py    — generates Python stress module stub via OpenAI
+lib/
+  agent_swarm.py    — orchestrates the Fracture Tribunal swarm (Nvidia NIM / OpenAI)
+  risk_engine.py    — chaos index, severity classification, keyword scoring
+  valuation_engine.py — WACC degradation, revenue haircuts, scenario matrix
+  portfolio_manager.py — ticker validation, sector mapping
+  arize_mcp_client.py  — OTLP trace export to Arize Phoenix
+```
 
-1. **The Executive Cockpit (`app.py`)**: A Streamlit dashboard that visualizes the risk terrain using a dynamic **Plotly Mapbox Spoke-and-Hub Geopolitical Map**.
-2. **The Valuation Router (`valuation_engine.py`)**: Automatically routes structural financials into the most appropriate mathematical model and calculates distressed WACC.
-3. **The Fracture Swarm (`agent_swarm.py`)**: A multi-agent framework orchestrating high-velocity debates.
-
-### 🔌 Partner MCP Integrations
-
-*   **Elastic Model Context Protocol (MCP)**: The agents ground their severity scores and probability matrix calculations by querying macro indices and unstructured intelligence feeds stored in Elasticsearch via `elastic_mcp_client.py`.
-*   **Arize Phoenix MCP**: Logs every step of the multi-agent debate—including token cost, latency, and chain-of-thought retrieval—to Arize Phoenix via `arize_mcp_client.py`.
-
----
-
-## 🔑 Observability & API Key Setup (Arize Phoenix)
-
-To make deploying and running this project as seamless as possible, the observability system features **Graceful Degradation Logic**:
-
-*   **No Collector Required (Default)**: If no Arize Phoenix credentials or collector endpoints are detected, the system **automatically falls back to local dashboard logging**. The visual logs stream directly to the local UI console, allowing anyone to run the dashboard out-of-the-box without signup!
-*   **Active Telemetry Configuration**: If you wish to pipe trace graphs to your Arize Cloud space or a local Phoenix server:
-    *   **Via Environment Variables**: Define `PHOENIX_API_KEY` (or `ARIZE_API_KEY`) and `PHOENIX_COLLECTOR_ENDPOINT` in your local `.env` file.
-    *   **Via Sidebar Console**: Expand the **"API CONFIG"** card directly in the Streamlit sidebar to enter your active Phoenix key and endpoint dynamically. The telemetry client will dynamically re-initialize and begin shipping trace spans instantly!
+Deployed as Vercel serverless functions (Python 3.12). The frontend is a static HTML file served directly. No database — scan results and pre-run tribunal debates are cached in `/tmp` between invocations.
 
 ---
 
-## 🚀 Quickstart Guide
+## Quickstart — local development
 
 ### Prerequisites
-- Python 3.10+
-- A Google Gemini API Key (or Nvidia NIM / Fireworks API key)
-- (Optional) Arize Phoenix API Key for cloud tracing
-- (Optional) Elastic Cloud credentials for live data retrieval
 
-### Installation
+- Node.js (for Vercel CLI)
+- Python 3.12
+- At minimum one LLM API key (Nvidia NIM or OpenAI)
+
+### 1. Clone
+
 ```bash
-# Clone the repository
-git clone https://github.com/mugichan-5627/Doomsday-Rapid-Agent.git
-cd Doomsday_Rapid_Agent
+git clone https://github.com/mugichan-5627/Aegis_Codex.git
+cd Aegis_Codex
+```
 
-# Install the required dependencies
+### 2. Install Python dependencies
+
+```bash
 pip install -r requirements.txt
 ```
 
-### Running the Executive Cockpit
-Deploy the Streamlit dashboard locally:
-```bash
-python -m streamlit run app.py
+### 3. Set environment variables
+
+Create a `.env` file in the project root:
+
+```env
+# Required — pick one LLM provider
+NVIDIA_API_KEY=your_nvidia_nim_key
+
+# Optional — enables live news search (falls back to keyword scoring without it)
+TAVILY_API_KEY=your_tavily_key
+
+# Optional — enables Arize Phoenix telemetry tracing
+PHOENIX_API_KEY=your_phoenix_key
+PHOENIX_COLLECTOR_ENDPOINT=https://app.phoenix.arize.com/v1/traces
+
+# Optional — enables AI-generated code stubs in the Codex tab
+OPENAI_API_KEY=your_openai_key
 ```
-*The dashboard will automatically open in your default browser at `http://localhost:8501`.*
+
+The app runs without any keys — it falls back to hardcoded demo data for all LLM calls.
+
+### 4. Install Vercel CLI and run locally
+
+```bash
+npm install -g vercel
+vercel dev
+```
+
+Opens at `http://localhost:3000`. This runs the Python serverless functions exactly as Vercel does in production — what you test is what gets deployed.
 
 ---
 
-## 💡 How to Use
-1. **Target Acquisition**: Input the target company ticker, baseline financials (Revenue, Debt, Margins), and HQ location in the sidebar's **RAPID AGENT CONSOLE**.
-2. **Chaos Injector**: Slide the Global Chaos Index (0.0 to 1.0) to set the severity of the macro environment.
-3. **Execute Protocol**: Hit "LAUNCH ANALYSIS" to trigger the Fracture Swarm. Watch as the agents debate the most critical risks, ground them in real-world geospatial nexuses, and devalue the enterprise value in real-time.
+## Deploy to Vercel
+
+### Option A — connect your GitHub repo
+
+1. Go to [vercel.com](https://vercel.com) → New Project → import `mugichan-5627/Aegis_Codex`
+2. Framework preset: **Other**
+3. Add your environment variables under Settings → Environment Variables
+4. Deploy
+
+### Option B — Vercel CLI
+
+```bash
+vercel deploy --prod
+```
 
 ---
-*Built for the Google Cloud Rapid Agent Hackathon.*
+
+## Environment variables reference
+
+| Variable | Required | Purpose |
+|---|---|---|
+| `NVIDIA_API_KEY` | Recommended | Powers the Fracture Tribunal LLM debate (Llama 3.3 70B via Nvidia NIM) |
+| `OPENAI_API_KEY` | Optional | Generates Python code stubs in the Codex tab |
+| `TAVILY_API_KEY` | Optional | Live news search for risk keyword scoring |
+| `PHOENIX_API_KEY` | Optional | Arize Phoenix cloud telemetry |
+| `PHOENIX_COLLECTOR_ENDPOINT` | Optional | OTLP endpoint for Arize (defaults to Phoenix SaaS) |
+
+---
+
+## How it works
+
+### Autonomous operation
+
+Aegis runs an hourly cron job (`vercel.json`) that:
+1. Scans the default watchlist via `GET /api/watchtower`
+2. Caches results to `/tmp/aegis_last_scan.json`
+3. Auto-triggers a tribunal debate for the first critical incident found
+4. Caches the pre-run debate to `/tmp/aegis_last_tribunal.json`
+
+When a user opens the app, incidents are already rendered and a red alert banner appears if any chaos index exceeds 0.7. The tribunal debate has already run — the user only needs to review the verdict.
+
+### User flow
+
+1. **Watchtower** — view live or cached scan results. Import your portfolio via text input (`AAPL, MSFT`) or upload a CSV file (first column = ticker). Click Scan Watchlist to run a fresh scan.
+2. **Tribunal** — click any incident to load it, then Launch Tribunal. Bear, Bull, and Black Swan Judge agents debate the scenario in real time.
+3. **Verdict** — review the IC memo, valuation waterfall, and scenario matrix. The Human Review Gate pauses the system — Approve, Soften (−15%), or Dismiss.
+4. **Codex** — generate a Python stress module stub for the valuation engine based on the active scenario.
+5. **Threat Orbit** — animated radar map showing all watchlist tickers orbiting a threat core, sized by threat score.
+6. **Arize Telemetry** — live OTLP trace explorer showing every span from watchtower scans and tribunal runs.
+
+### Portfolio import
+
+- **Text input**: comma or space-separated tickers, e.g. `NVDA, TSM, ASML`
+- **CSV upload**: any CSV where the first column contains ticker symbols. Header row is auto-detected and skipped.
+
+---
+
+## Partner integrations
+
+- **Nvidia NIM** — Llama 3.3 70B Instruct for the Fracture Tribunal debate
+- **Arize Phoenix** — OTLP telemetry tracing for every agent span
+- **Tavily** — live news search grounding for risk keyword scoring
+- **yfinance** — real-time price data and drawdown calculation
+
+---
+
+*Built for the hackathon. Human oversight is a first-class feature, not an afterthought.*
