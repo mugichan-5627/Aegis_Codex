@@ -830,15 +830,38 @@ body{background:var(--bg);color:var(--text);font-family:var(--mono);font-size:13
 
 <script>
 // ===================== ORBIT + CUBE ANIMATIONS =====================
-const TICKERS = [
-  { sym:'NVDA',  threat:0.92, sector:'Semiconductor', type:'critical', price:'$784',  chg:'-9.2%',  orbit:90,  angle:0.8,   speed:0.006 },
-  { sym:'TSM',   threat:0.85, sector:'Geopolitical',  type:'critical', price:'$168',  chg:'-7.1%',  orbit:115, angle:2.3,   speed:0.005 },
-  { sym:'ASML',  threat:0.60, sector:'Regulatory',    type:'elevated', price:'€724',  chg:'-3.4%',  orbit:155, angle:4.1,   speed:0.004 },
-  { sym:'AMAT',  threat:0.38, sector:'Semiconductor', type:'watch',    price:'$198',  chg:'-1.2%',  orbit:195, angle:1.0,   speed:0.003 },
-  { sym:'RELIANCE', threat:0.22, sector:'Macro',     type:'monitor',  price:'₹2841', chg:'+0.4%',  orbit:230, angle:3.7,   speed:0.0025 },
-];
+// Rebuilt dynamically from scan results — starts empty
+let TICKERS = [];
 
 const THREAT_COLORS = { critical:'#ff3344', elevated:'#f5a623', watch:'#4d9fff', monitor:'#40d080' };
+
+function severityType(sev) {
+  if (sev === 'critical') return 'critical';
+  if (sev === 'elevated') return 'elevated';
+  if (sev === 'watch') return 'watch';
+  return 'monitor';
+}
+
+function rebuildOrbitTickers(incidents) {
+  const orbitRadii = [90, 115, 155, 195, 230, 260, 290];
+  const speeds     = [0.006, 0.005, 0.004, 0.003, 0.0025, 0.002, 0.0018];
+  TICKERS = incidents.map((inc, i) => ({
+    sym:    inc.ticker,
+    threat: Math.min(1, Math.max(0, Number(inc.chaos_index || 0))),
+    sector: inc.sector || 'Unknown',
+    type:   severityType(inc.severity),
+    price:  '—',
+    chg:    `${Number(inc.drawdown_pct || 0).toFixed(1)}%`,
+    orbit:  orbitRadii[i % orbitRadii.length],
+    angle:  (i * 1.3) % (Math.PI * 2),
+    speed:  speeds[i % speeds.length],
+  }));
+  // Update orbit count badges
+  const critEl = document.getElementById('orbit-crit-count');
+  const elevEl = document.getElementById('orbit-elevated');
+  if (critEl) critEl.textContent = TICKERS.filter(t => t.type === 'critical').length + ' CRITICAL';
+  if (elevEl) elevEl.textContent = TICKERS.filter(t => t.type === 'elevated').length + ' ELEVATED';
+}
 
 function initOrbitCanvas() {
   const canvas = document.getElementById('orbitCanvas');
@@ -1227,6 +1250,7 @@ function renderIncidents(incidents) {
   document.getElementById('inc-count').textContent = incidents.length;
   if (summary) summary.innerHTML = `<span class="tag tag-r">${critical} critical</span><span class="tag tag-a">${elevated} elevated</span>`;
   renderWatchlist(loadWatchlist(), incidents);
+  rebuildOrbitTickers(incidents);
 }
 
 function updateAgentLog(incidents) {
@@ -1307,17 +1331,14 @@ function runScanFallback() {
   });
 }
 
-// Incidents data
-const INCIDENTS = {
-  nvda: { ticker:'NVDA', desc:'US-China semiconductor export control — EAR-99 expansion to H100/A100 successors. Full China datacenter exit forced Q3 2026.', chaos:'0.76', rev:'38%', sev:'critical' },
-  tsm:  { ticker:'TSM',  desc:'Cross-strait military posturing — PLA naval exercises near TSMC N3/N2 fab corridors. Insurance withdrawals issued.', chaos:'0.81', rev:'55%', sev:'critical' },
-  asml: { ticker:'ASML', desc:'EUV export license renewal under US-Dutch joint review. China 29% of shipments. Renewal uncertain Q4 2026.', chaos:'0.61', rev:'21%', sev:'elevated' },
-};
-let ACTIVE = 'nvda';
+// Incidents — populated dynamically from scan results
+const INCIDENTS = {};
+let ACTIVE = null;
 
 function loadAndGo(id) {
   ACTIVE = id;
-  const inc = INCIDENTS[id] || INCIDENTS.nvda;
+  const inc = INCIDENTS[id];
+  if (!inc) return;
   document.getElementById('tri-ticker').textContent = inc.ticker;
   document.getElementById('tri-desc').textContent = inc.desc;
   document.getElementById('tri-chaos').textContent = inc.chaos;
@@ -1342,34 +1363,22 @@ function loadAndGo(id) {
   switchTab('tribunal');
 }
 
-// Debate scripts
-const DEBATES = {
-  nvda: [
-    { role:'bear', label:'Bear Analyst', text:'NVDA faces a structural demand collapse in its largest growth market. China represented 23% of FY2024 revenue. Under EAR-99 expansion covering H100/A100 successors, the entire China datacenter segment faces mandatory compliance — no architecture workaround is viable. Our model projects a 38% revenue haircut within 12 months, accelerating to 45% with Huawei Ascend ecosystem substitution taking hold. WACC repricing is mandatory: +450bps minimum to reflect regulatory overhang. Bear fair value: $441. Downside probability: 78%.' },
-    { role:'bull', label:'Bull Analyst', text:'The Bear overstates substitution risk dramatically. NVIDIA is architecturally irreplaceable for AI training workloads outside China. Non-China datacenter demand — Microsoft, Amazon, Google, Meta — is growing at 67% YoY and will absorb full China exit revenue within 18 months. Gross margin actually expands 200bps as lower-ASP China mix exits. Regulatory curbs historically create a premium for US-compliant suppliers. Bull fair value: $830, upside to $910 on AI capex super-cycle continuation.' },
-    { role:'judge', label:'Black Swan Judge — Synthesis', text:'The tribunal reaches a split verdict weighted toward the Bear. The Bull adaptation math is technically correct — but requires 18-24 months for hyperscaler demand absorption. The market will price the interim revenue gap at full discount, not forward-looking absorption. Probability-weighted synthesis: Bear 62%, Bull 38%. Distressed EV: $762B. Weighted fair value: $591. RECOMMENDATION — HEDGE: protective puts, 40% of long exposure, $550 strike, 6-month expiry. Escalate to IC for approval. Codex patch required for export-control stress module.' },
-  ],
-  tsm: [
-    { role:'bear', label:'Bear Analyst', text:'TSM faces existential geography risk. 100% of leading-edge fabrication is physically located in Taiwan. PLA exercises adjacent to fab corridors are not posturing — they are rehearsal. Insurance withdrawal is a leading indicator. Bear scenario: 30-day production disruption probability 15% in 12 months, 55% in 36 months. Fair value: $68. Hedge immediately.' },
-    { role:'bull', label:'Bull Analyst', text:'US strategic dependency on TSMC is the strongest geopolitical hedge in technology. CHIPS Act investment, Arizona fab expansion, and US military commitment make TSMC systemically protected. The Bear ignores that TSMC\'s destruction would simultaneously collapse global semiconductor supply — deterrence is structural. N5/N3 Arizona ramp by 2027 provides geographic distribution. Bull fair value: $189.' },
-    { role:'judge', label:'Black Swan Judge — Synthesis', text:'Geopolitical risk is real but currently mispriced in both directions. The Bear ignores deterrence; the Bull ignores that deterrence can fail. Weighted synthesis: $128 fair value, 19% downside from current. RECOMMENDATION — PARTIAL HEDGE: reduce position by 20%, maintain core holding given strategic moat. Monitor PLA exercise schedule as primary leading indicator.' },
-  ],
-  asml: [
-    { role:'bear', label:'Bear Analyst', text:'ASML\'s EUV export licenses represent a single point of diplomatic failure. China contributed 29% of 2025 shipments. License non-renewal effectively eliminates a quarter of revenue with 6 months notice. The Dutch government has limited leverage to resist US pressure. Bear fair value: €510 on full China exclusion.' },
-    { role:'bull', label:'Bull Analyst', text:'ASML is irreplaceable. No Chinese company is within 8 years of EUV capability. Demand from Samsung, TSMC, and Intel for N2/A14 ramps is growing 40% YoY. Loss of China orders is painful but survivable — and creates a stronger regulatory moat against future competitors. Bull fair value: €900.' },
-    { role:'judge', label:'Black Swan Judge — Synthesis', text:'The ASML risk is manageable relative to TSM and NVDA. China revenue is already declining as TSMC/Samsung capacity ramps. The real risk is political, not fundamental. Weighted fair value: €728. RECOMMENDATION — HOLD, no immediate hedge required. Monitor license renewal timeline Q4 2026. Codex: flag for model update if license lapses.' },
-  ],
-};
+// Debates — populated dynamically from tribunal API responses
+const DEBATES = {};
 
 let tribunalRunning = false;
 async function launchTribunal() {
   if (tribunalRunning) return;
+  const inc = INCIDENTS[ACTIVE];
+  if (!inc) {
+    document.getElementById('debate-stream').innerHTML = '<div style="text-align:center;padding:30px;color:var(--muted);font-size:12px">No incident loaded. Go to Watchtower, run a scan, and click an incident first.</div>';
+    return;
+  }
   tribunalRunning = true;
   const btn = document.getElementById('tri-btn');
   btn.disabled = true; btn.innerHTML = '<i class="ti ti-cpu" style="animation:spin 1s linear infinite;display:inline-block"></i> Tribunal running...';
   const stream = document.getElementById('debate-stream'); stream.innerHTML = '';
-  let msgs = DEBATES[ACTIVE] || DEBATES.nvda;
-  const inc = INCIDENTS[ACTIVE] || INCIDENTS.nvda;
+  let msgs = DEBATES[ACTIVE] || null;
   let backendTelemetry = null;
 
   try {
@@ -1394,7 +1403,14 @@ async function launchTribunal() {
       backendTelemetry = data.telemetry;
     }
   } catch(e) {
-    msgs = DEBATES[ACTIVE] || DEBATES.nvda;
+    msgs = DEBATES[ACTIVE] || null;
+  }
+
+  if (!msgs || !msgs.length) {
+    tribunalRunning = false;
+    btn.disabled = false; btn.innerHTML = '<i class="ti ti-player-play"></i> Retry Tribunal';
+    stream.innerHTML = `<div style="text-align:center;padding:30px;color:var(--muted);font-size:12px"><i class="ti ti-alert-triangle" style="font-size:22px;display:block;margin-bottom:8px;color:var(--amber)"></i>Tribunal API did not respond for <strong style="color:var(--text)">${inc.ticker}</strong>.<br>Check that NVIDIA_API_KEY is set in your .env and try again.</div>`;
+    return;
   }
 
   if (backendTelemetry) {
@@ -1487,8 +1503,8 @@ async function reviewAction(action) {
     const stamp = document.getElementById('vstamp');
     if (stamp) { stamp.textContent = 'APPROVED - HEDGE ACTIVE'; stamp.style.color = 'var(--teal)'; stamp.style.borderColor = 'var(--teal-border)'; }
     try {
-      const inc = INCIDENTS[ACTIVE] || INCIDENTS.nvda;
-      renderValuation(await fetchJSON('/api/valuation', {
+      const inc = INCIDENTS[ACTIVE];
+      if (inc) renderValuation(await fetchJSON('/api/valuation', {
         method: 'POST',
         headers: {'Content-Type':'application/json'},
         body: JSON.stringify({ ticker: inc.ticker, assumptions: ACTIVE_ASSUMPTIONS })
@@ -1505,8 +1521,8 @@ async function reviewAction(action) {
     };
     updateReviewGate(ACTIVE_ASSUMPTIONS);
     try {
-      const inc = INCIDENTS[ACTIVE] || INCIDENTS.nvda;
-      renderValuation(await fetchJSON('/api/valuation', {
+      const inc = INCIDENTS[ACTIVE];
+      if (inc) renderValuation(await fetchJSON('/api/valuation', {
         method: 'POST',
         headers: {'Content-Type':'application/json'},
         body: JSON.stringify({ ticker: inc.ticker, assumptions: ACTIVE_ASSUMPTIONS })
@@ -1551,7 +1567,8 @@ async function generatePatch() {
   const out = document.getElementById('patch-output'); out.style.display = 'block';
   const content = document.getElementById('patch-content'); content.innerHTML = '';
   try {
-    const inc = INCIDENTS[ACTIVE] || INCIDENTS.nvda;
+    const inc = INCIDENTS[ACTIVE];
+    if (!inc) { patchRunning = false; btn.disabled = false; btn.innerHTML = '<i class="ti ti-cpu"></i> Generate Patch Proposal'; return; }
     const data = await fetchJSON('/api/codex_patch', {
       method: 'POST',
       headers: {'Content-Type':'application/json'},
