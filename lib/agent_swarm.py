@@ -325,8 +325,29 @@ Keep each text under five sentences and make the assumptions numeric.
         matching_trace = None
         for t in GLOBAL_TRACE_CONSOLE:
             if t["trace_id"] == trace_id:
-                matching_trace = t.copy()
-                matching_trace["endpoint"] = arize_client.endpoint_url
+                # Deep-copy only serializable fields to avoid circular refs in spans
+                matching_trace = {
+                    "trace_id": t["trace_id"],
+                    "name": t["name"],
+                    "ticker": t.get("ticker", ""),
+                    "start_time": t.get("start_time", ""),
+                    "end_time": t.get("end_time", ""),
+                    "duration_ms": t.get("duration_ms", 0),
+                    "status": t.get("status", ""),
+                    "endpoint": arize_client.endpoint_url,
+                    "spans": [
+                        {
+                            "span_id": s.get("span_id", ""),
+                            "name": s.get("name", ""),
+                            "duration_ms": s.get("duration_ms", 0),
+                            "status": s.get("status", ""),
+                            "inputs": {k: str(v)[:200] for k, v in (s.get("inputs") or {}).items()},
+                            "outputs": {k: str(v)[:200] for k, v in (s.get("outputs") or {}).items()},
+                            "metadata": s.get("metadata") or {},
+                        }
+                        for s in t.get("spans", [])
+                    ],
+                }
                 break
         normalized["telemetry"] = matching_trace
         return normalized

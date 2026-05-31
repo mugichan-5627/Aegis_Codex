@@ -18,14 +18,42 @@ RISK_KEYWORDS = (
     "geopolitical",
 )
 
-SECTOR_OVERRIDES = {
-    "NVDA": "Semiconductor",
-    "TSM": "Semiconductor",
-    "ASML": "Semiconductor",
-    "AMAT": "Semiconductor",
-    "JPM": "Financial Services",
+SECTOR_MAP = {
+    # Semiconductors
+    "NVDA": "Semiconductor", "TSM": "Semiconductor", "ASML": "Semiconductor",
+    "AMAT": "Semiconductor", "INTC": "Semiconductor", "AMD": "Semiconductor",
+    "QCOM": "Semiconductor", "AVGO": "Semiconductor", "MU": "Semiconductor",
+    "LRCX": "Semiconductor", "KLAC": "Semiconductor", "MRVL": "Semiconductor",
+    # Technology
+    "AAPL": "Technology", "MSFT": "Technology", "GOOGL": "Technology",
+    "GOOG": "Technology", "META": "Technology", "AMZN": "Technology",
+    "NFLX": "Technology", "CRM": "Technology", "ORCL": "Technology",
+    "IBM": "Technology", "CSCO": "Technology", "ADBE": "Technology",
+    "NOW": "Technology", "SNOW": "Technology", "PLTR": "Technology",
+    # Financial
+    "JPM": "Financial Services", "BAC": "Financial Services", "GS": "Financial Services",
+    "MS": "Financial Services", "WFC": "Financial Services", "C": "Financial Services",
+    "BLK": "Financial Services", "AXP": "Financial Services", "V": "Financial Services",
+    "MA": "Financial Services", "PYPL": "Financial Services",
+    # Consumer
+    "TSLA": "Consumer Cyclical", "F": "Consumer Cyclical", "GM": "Consumer Cyclical",
+    "NKE": "Consumer Cyclical", "SBUX": "Consumer Cyclical", "MCD": "Consumer Cyclical",
+    "AMZN": "Consumer Cyclical",
+    # Energy
+    "XOM": "Energy", "CVX": "Energy", "COP": "Energy", "BP": "Energy",
     "RELIANCE.NS": "Energy",
+    # Healthcare
+    "JNJ": "Healthcare", "PFE": "Healthcare", "MRNA": "Healthcare",
+    "ABBV": "Healthcare", "UNH": "Healthcare", "LLY": "Healthcare",
+    # Industrial
+    "BA": "Industrial", "CAT": "Industrial", "GE": "Industrial",
+    "HON": "Industrial", "LMT": "Industrial", "RTX": "Industrial",
+    # Indian
+    "TCS.NS": "Technology", "INFY.NS": "Technology", "HDFCBANK.NS": "Financial Services",
+    "ICICIBANK.NS": "Financial Services", "SBIN.NS": "Financial Services",
 }
+
+SECTOR_OVERRIDES = SECTOR_MAP  # keep backward compat
 
 REVENUE_RISK_DEFAULTS = {
     "NVDA": 38,

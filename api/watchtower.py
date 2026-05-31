@@ -51,7 +51,7 @@ def _load_cache() -> dict | None:
 
 
 def _json_response(handler: BaseHTTPRequestHandler, payload: dict, status: int = 200) -> None:
-    body = json.dumps(payload).encode("utf-8")
+    body = json.dumps(payload, default=str).encode("utf-8")
     handler.send_response(status)
     handler.send_header("Content-Type", "application/json")
     handler.send_header("Access-Control-Allow-Origin", "*")
@@ -173,8 +173,28 @@ def handle(payload: dict[str, Any]) -> dict:
     matching_trace = None
     for t in GLOBAL_TRACE_CONSOLE:
         if t["trace_id"] == trace_id:
-            matching_trace = t.copy()
-            matching_trace["endpoint"] = arize_client.endpoint_url
+            matching_trace = {
+                "trace_id": t["trace_id"],
+                "name": t["name"],
+                "ticker": t.get("ticker", ""),
+                "start_time": t.get("start_time", ""),
+                "end_time": t.get("end_time", ""),
+                "duration_ms": t.get("duration_ms", 0),
+                "status": t.get("status", ""),
+                "endpoint": arize_client.endpoint_url,
+                "spans": [
+                    {
+                        "span_id": s.get("span_id", ""),
+                        "name": s.get("name", ""),
+                        "duration_ms": s.get("duration_ms", 0),
+                        "status": s.get("status", ""),
+                        "inputs": {k: str(v)[:200] for k, v in (s.get("inputs") or {}).items()},
+                        "outputs": {k: str(v)[:200] for k, v in (s.get("outputs") or {}).items()},
+                        "metadata": s.get("metadata") or {},
+                    }
+                    for s in t.get("spans", [])
+                ],
+            }
             break
 
     result = {
